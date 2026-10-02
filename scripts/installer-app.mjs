@@ -24,5 +24,18 @@ if (existsSync(outils)) {
   }
   console.log(`caches dans ${outils}`);
 }
-const r = spawnSync("npm", ["install"], { cwd: join(racine, "app"), env, stdio: "inherit", shell: true });
-process.exit(r.status ?? 1);
+const app = join(racine, "app");
+const r = spawnSync("npm", ["install"], { cwd: app, env, stdio: "inherit", shell: true });
+if (r.status !== 0) process.exit(r.status ?? 1);
+
+// Le binaire d'Electron se télécharge dans le script d'installation du paquet electron ; s'il manque, on le relance.
+const electron = join(app, "node_modules", "electron");
+if (!existsSync(join(electron, "dist")) && existsSync(join(electron, "install.js"))) {
+  console.log("binaire d'Electron absent : téléchargement");
+  const e = spawnSync(process.execPath, ["install.js"], { cwd: electron, env, stdio: "inherit" });
+  if (e.status !== 0 || !existsSync(join(electron, "dist"))) {
+    console.error("le binaire d'Electron n'a pas pu être téléchargé (réseau ou proxy ?)");
+    process.exit(e.status || 1);
+  }
+}
+console.log("application prête : cd app && npm run dev");
