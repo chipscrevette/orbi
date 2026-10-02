@@ -24,8 +24,9 @@ s.texte(60, 96, 2300, "Le modèle lit, le code décide. Le domaine ne connaît n
         "sans carte graphique.", 22, "#1971c2")
 
 # ---------------------------------------------------------------- la question
-q = s.carte(60, 230, 380, 190, "Une question", c("« Puis-je poser un abri de 8 m² à 50 cm du mur du voisin, 5 impasse Monnier "
-                                                  "à Biarritz ? »", 34), GRIS, 26, 17)
+q = s.carte(60, 230, 400, 330, "app/ → api/ · l'application",
+            c("L'application de bureau (Electron, React) envoie la question au serveur local (api/, FastAPI, port 4770), qui "
+              "fait tourner l'agent et renvoie chaque étape en direct, puis le lieu et la réponse.", 34), GRIS, 26, 17)
 
 # ---------------------------------------------------------------- le paquet orbi
 s.cadre(500, 170, 1160, 860, GRIS, pointille=True)
