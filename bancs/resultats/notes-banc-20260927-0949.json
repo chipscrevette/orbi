@@ -1,0 +1,178 @@
+{
+ "titre": "Passage 4 : un verrou de zone, une recherche fixée par le code, et la réflexion courte confirmée",
+ "noms": [
+  "Passage 3",
+  "Passage 4"
+ ],
+ "historique": [
+  {
+   "nom": "Passage 1",
+   "banc": "resultats/banc-20260926-2256.json"
+  },
+  {
+   "nom": "Passage 2",
+   "banc": "resultats/banc-20260927-0158.json"
+  }
+ ],
+ "sortie": "avant-apres-20260927-0949.html",
+ "etapes_qui": {
+  "redaction": "K2, réflexion courte d'abord",
+  "perimetre": "code : périmètre et verrou de zone"
+ },
+ "exemple": "V18",
+ "temps": "le serveur rend maintenant sa mémoire après chaque réponse : la carte graphique ne sature plus (0,06 s par jeton tout le passage)",
+ "corrections": [
+  [
+   "perimetre",
+   "Le verrou de zone",
+   "Une table écrite dans le code, vérifiée dans l'article 1 de chaque zone : une maison neuve en Ncu, Ner, UG, UY, IIAU ou en zone N hors secteurs habitables donne « non », quoi qu'écrive le modèle ; un abri en zone N dépend de la date de la maison (N 2 b). La phrase du règlement qui fonde le verrou est ajoutée aux citations si le modèle l'oublie.",
+   "Le garde-corps ne discute pas avec le vent.",
+   [
+    "V27",
+    "V28",
+    "V29"
+   ]
+  ],
+  [
+   "articles",
+   "Une recherche que le modèle ne choisit pas",
+   "Les mots rares de la question que le règlement emploie (« parpaing enduit bac ») forment une recherche fixée par le code : le tri avait encore cherché « matériaux de construction », le passage qui interdit les parpaings nus revient quand même.",
+   "On cherche aussi avec les mots exacts du client.",
+   [
+    "V18"
+   ]
+  ],
+  [
+   "articles",
+   "Le meilleur morceau de chaque recherche",
+   "Corrige mon bug du passage 3 : un long article apporte le meilleur morceau de chaque recherche, pas seulement ceux de la première ; la recherche générale ajoute un article par recherche, pour garder le contexte court.",
+   "Chaque témoin a droit à une question.",
+   [
+    "V07",
+    "V18"
+   ]
+  ],
+  [
+   "garde_fous",
+   "Les « … » remis dans les citations cousues",
+   "Deux passages exacts mis bout à bout sans « … » : le code remet les points de suspension, 300 caractères de saut au plus, jamais si un chiffre ou une négation disparaît.",
+   "On montre la coupure au lieu de la cacher.",
+   [
+    "V05",
+    "V08"
+   ]
+  ],
+  [
+   "garde_fous",
+   "Verdict et texte d'accord, 4 phrases au plus",
+   "Un « oui » dont le texte dit « est interdit par » est renvoyé, comme une réponse de plus de 4 phrases. Rejoués sur 52 réponses avant d'être branchés : un seul déclenchement, aucune fausse alerte. Mais la correction pour longueur n'a pas réussi (V06 : même réponse renvoyée).",
+   "La conclusion doit dire la même chose que le titre.",
+   [
+    "V28",
+    "V06"
+   ]
+  ]
+ ],
+ "inchange": {
+  "tri": [
+   "Inchangé",
+   "Ses recherches ne suffisent pas toujours : le code en ajoute une, à l'étape Articles."
+  ],
+  "outils": [
+   "Inchangés",
+   "Adresse, parcelle, zone et contraintes : justes sur les 30 questions depuis le passage 2."
+  ],
+  "demarche": [
+   "Inchangée",
+   "Les 18 démarches attendues sont justes depuis le passage 2."
+  ],
+  "redaction": [
+   "Inchangée",
+   "Même consigne, réflexion courte d'abord. La réflexion moyenne est mesurée à part, sur le même code, juste en dessous."
+  ]
+ },
+ "variante": {
+  "banc": "resultats/banc-20260927-1024.json",
+  "nom": "Réflexion moyenne",
+  "titre": "Réflexion courte ou moyenne : même code, deux passages",
+  "texte": "Le passage 4 a tourné deux fois de suite, avec le même code et le même banc : une fois en réflexion courte d'abord, une fois en réflexion moyenne d'abord. En vert, le meilleur des deux.",
+  "conclusion": "La réflexion moyenne ne fait pas mieux et prend plus de deux fois plus de temps. Chacune commet un contresens, sur une question différente : l'écart tient dans la variance d'un passage à l'autre. La réflexion courte reste le réglage par défaut.",
+  "nom_base": "Réflexion courte"
+ },
+ "banc_titre": "Même banc, même notation",
+ "banc_sous_titre": "Rien n'a changé dans le banc depuis le passage 2 : les comparaisons sont directes.",
+ "banc_corrige": [
+  [
+   "Même modèle",
+   "K2 Horizon 7B, sur la même carte graphique, aux mêmes réglages de température."
+  ],
+  [
+   "Serveur relancé",
+   "Avant ce passage, le serveur K2 a été relancé et rend sa mémoire après chaque réponse : les temps des passages 2 et 3 étaient gonflés par une carte saturée."
+  ],
+  [
+   "La variance",
+   "La même question peut changer de verdict d'un passage à l'autre à code égal (V06 : juste aux passages 2 et 3, contresens au 4). Un seul passage ne départage pas deux réglages proches."
+  ]
+ ],
+ "restes": {
+  "V02": "Toujours la frontière de catégorie : « le PLU ne s'applique pas ? » est lu comme une explication, donc « information ». Le fond est juste.",
+  "V06": "Contresens nouveau : « l'abri peut être autorisé », alors que le texte dit qu'il « devra donc être déplacé ». Juste aux passages 2 et 3 : c'est la variance. La réponse faisait 5 phrases ; la correction a renvoyé la même réponse mot pour mot.",
+  "V14": "Toujours faux : le toit rehaussé est pris pour une « saillie », et les délais sont inventés en toutes lettres (« trois mois », « deux mois ») : le contrôle des chiffres ne lit que les chiffres écrits en chiffres.",
+  "V16": "« Oui sous conditions » : la hauteur des clôtures est prise dans la règle du secteur UDti (3 m), qui ne vaut pas en UDa (2 m). Le garde-fou des secteurs laisse passer parce que la phrase citée contient « UDti ».",
+  "V26": "L'agent recompose une ligne du tableau des hauteurs de UA 10 : dans le PDF, les colonnes du tableau sont entremêlées, aucune citation mot pour mot n'est possible. Et il ne relève pas que tout dépend de la hauteur actuelle du bâtiment."
+ },
+ "synthese": [
+  {
+   "cause": "Savoir métier",
+   "ids": "V09 · V10 · V14",
+   "remede": "définitions nationales et délais fournis par le code (garde-manger), comme la démarche"
+  },
+  {
+   "cause": "Faits existants",
+   "ids": "V14 · V26",
+   "remede": "demander le fait manquant (hauteur actuelle, date) au lieu de répondre"
+  },
+  {
+   "cause": "Contrôles à étendre",
+   "ids": "V14 · V16",
+   "remede": "chiffres écrits en lettres ; secteur appliqué alors qu'il n'est que cité"
+  },
+  {
+   "cause": "Variance",
+   "ids": "V06 · V12 · V15",
+   "remede": "mesurer chaque réglage sur deux passages, puis le banc caché"
+  },
+  {
+   "cause": "Tableaux du PDF",
+   "ids": "V26",
+   "remede": "les chiffres des tableaux viennent du code, pas de la citation"
+  }
+ ],
+ "angles_morts": [
+  {
+   "id": "V09",
+   "extrait": "Oui, une cave enterrée compte dans l'emprise au sol",
+   "pourquoi": "Faux, et faux aussi en réflexion moyenne : l'emprise se mesure « à 0,60 m du sol naturel » (DG B-5), une cave enterrée n'en fait pas partie. La phrase est dans le contexte ; le modèle n'en tire pas la conséquence. Noté juste, puisque le verdict « information » est imposé.",
+   "capteur": "un savoir métier écrit dans le code (ce qui compte ou non dans l'emprise), et la phrase clé exigée par le banc."
+  },
+  {
+   "id": "V14",
+   "extrait": "avec un délai de trois mois pour le permis et deux mois pour la déclaration",
+   "pourquoi": "Délais inventés, écrits en lettres : le contrôle des chiffres ne les voit pas. Le délai est pourtant calculé par le code et donné dans le contexte.",
+   "capteur": "lire aussi « deux », « trois »… devant « mois », « mètres », « m² »."
+  },
+  {
+   "id": "V07",
+   "extrait": "l'emprise au sol totale de 18 m² reste inférieure à la limite de 25 %",
+   "pourquoi": "Toujours la maison oubliée : l'emprise compte toutes les constructions de la parcelle (DG B-5).",
+   "capteur": "écrire dans les chiffres calculés que l'emprise existante n'est pas connue."
+  },
+  {
+   "id": "V16",
+   "extrait": "ne pas excéder 3,00 mètres en limite séparative en secteur UDti",
+   "pourquoi": "Une règle d'un autre secteur appliquée à la parcelle : le garde-fou l'excuse parce que « UDti » figure dans la phrase citée.",
+   "capteur": "refuser « en secteur X » quand X n'est pas le secteur de la parcelle, même cité."
+  }
+ ]
+}

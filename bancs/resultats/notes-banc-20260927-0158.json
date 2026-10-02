@@ -1,0 +1,38 @@
+{
+ "exemple": "V29",
+ "synthese": [
+  {"cause": "Tri instable", "ids": "V02 · V21 · V24", "remede": "les mots « dérogation », « démolir », « amende »… fixent le sujet par le code"},
+  {"cause": "Recherche", "ids": "V23 · V28", "remede": "un seul morceau par article ; en zone restrictive, articles 1 et 2 lus en entier"},
+  {"cause": "Raisonnement", "ids": "V07 · V14 · V16 · V18 · V26", "remede": "juger le projet tel qu'il est décrit ; un fait manquant (hauteur, date) donne « impossible à dire »"},
+  {"cause": "Format", "ids": "V14", "remede": "« UD7 », « Art. UD 7 » ramenés à « UD 7 » par le code"},
+  {"cause": "Lenteur", "ids": "5 questions", "remede": "essayer la réflexion courte d'abord, la moyenne en secours"}
+ ],
+ "temps": "plus lent : 5 réflexions moyennes ont tourné 150 s sans répondre (753 s perdues) ; l'essai court a répondu en 31 s en moyenne",
+ "restes": {
+  "V02": "Le tri a classé la question en « explication » (« le PLU ne s'applique pas ? »), ce qui impose « information ». Le fond est juste : le PLU s'applique, déclaration préalable, pas de dispense en site patrimonial. Le désaccord porte sur la catégorie.",
+  "V03": "« Oui » au lieu de « oui sous conditions » : la réponse dit bien que la distance ne vaut pas pour les piscines et que les autres règles restent à respecter. Frontière floue entre ces deux verdicts, pas de contresens.",
+  "V07": "Verdict juste pour une mauvaise raison : l'exception des 9 m² vaudrait « puisque la parcelle n'est pas un espace vert protégé » (c'est l'inverse), et les toitures à la Mansart sont citées pour un abri. L'article 11 ajouté aux abris a noyé le contexte (13 passages).",
+  "V14": "Le modèle écrit « UD7 » au lieu de « UD 7 » : le garde-fou refuse les trois références et la correction ne voit pas la différence. C'est au code de normaliser les références. Sur le fond, le toit rehaussé est pris pour une « saillie », et la hauteur de la zone UD (9 m) est appliquée au secteur UDa (6 m).",
+  "V16": "« Non » au lieu de « impossible à dire » : la hauteur des clôtures (2 m) est appliquée sans relever que le brise-vue est « en retrait », et l'agent affirme sans preuve que l'exception technique ou esthétique ne joue pas.",
+  "V18": "Contresens. La règle est trouvée et citée (UB 11 interdit « l'emploi à nu » des parpaings), mais l'agent juge une extension en général (« possible si… ») au lieu de celle que décrit la question, déjà faite en parpaings nus.",
+  "V21": "Le tri a classé la question en « droit » au lieu de « dérogation » (juste au passage 1) : ce classement n'est pas stable. La réponse cite la vraie règle des adaptations mineures (DG A-I), mais son « oui sous conditions » laisse croire qu'un dépassement de 6 m² passera.",
+  "V23": "La recherche a rendu deux morceaux du même article (DG B-3) et manqué DG A-I, qui dit que la règle la plus stricte s'applique. La réponse, « le PLU s'applique toujours », reste incomplète.",
+  "V24": "Même dérive du tri : « droit » au lieu de « recours ou contentieux ». L'agent répond « oui, la mairie peut vous obliger à démolir » : imprécis (c'est un juge qui ordonne une démolition) et hors du périmètre promis.",
+  "V26": "La parcelle porte deux hauteurs au plan (niveaux 3 et 5) et tout dépend de la hauteur actuelle du bâtiment, que la question ne donne pas. Les hauteurs calculées étaient dans le contexte ; l'agent ne s'en sert pas et ne cite pas UA 10.",
+  "V28": "Réponse fausse mais fidèle à son contexte : dans N 2, la recherche a rendu les passages qui disent « abri de jardin » (secteur Nh, espaces verts protégés) et manqué N 2 b), qui dit « annexes » et les admet dans toute la zone pour une maison de 1995. Une liste d'exceptions se lit en entier."
+ },
+ "angles_morts": [
+  {"id": "V01", "extrait": "Non, tu ne dépasses pas l'emprise autorisée",
+   "pourquoi": "L'agent tutoie alors que la consigne impose le vouvoiement. Aucune note ne le voit.",
+   "capteur": "repérer « tu », « ta », « ton », « tes » dans la réponse et demander la correction."},
+  {"id": "V06", "extrait": "en site patrimonial remarquable, les abris de jardin sont limités à 9 m²",
+   "pourquoi": "Faux : la limite de 9 m² vaut dans les espaces verts protégés (liste de l'article UD 2), pas dans le site patrimonial. La citation existe mais sort de son champ. Le « non » reste juste grâce à la distance.",
+   "capteur": "marquer chaque passage du règlement par sa condition (espace vert protégé, secteur, liseré) et vérifier que la parcelle la remplit."},
+  {"id": "V09", "extrait": "Il faut donc vérifier si la terrasse est un balcon",
+   "pourquoi": "Bonne conclusion, mauvaise raison : l'emprise se mesure « à 0,60 m du sol naturel » (DG B-5), c'est pour cela qu'une cave enterrée et une terrasse de plain-pied n'en font pas partie. Le banc vérifie l'article, pas la phrase.",
+   "capteur": "dans le banc, exiger la phrase clé attendue, pas seulement le bon article."},
+  {"id": "V16", "extrait": "La communauté d'agglomération de BAYONNE ANGLET BIARRITZ a décidé de soumettre les clôtures à déclaration préalable",
+   "pourquoi": "Trouvé par l'agent dans DG B-8, et c'est le code qui avait tort : notre module de démarche disait « aucune formalité » pour une clôture hors site patrimonial. À Biarritz, toute clôture demande une déclaration préalable. Invisible dans le banc : toutes ses clôtures sont en site patrimonial.",
+   "capteur": "corriger la démarche des clôtures et ajouter au banc une clôture hors site patrimonial."}
+ ]
+}

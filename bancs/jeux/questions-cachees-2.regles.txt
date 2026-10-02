@@ -1,0 +1,9 @@
+Règles du 2e banc caché, écrites le 2026-10-02 15:21, avant la lecture du passage de l'ancien agent
+(le passage de la grille est fini et lu ; celui de l'ancien agent est en cours).
+
+1. Un passage par agent, noté par plu/banc.py (scellé). Le code de l'agent ne change pas entre les deux passages (empreintes dans questions-cachees-2.sha256).
+2. Panne d'API : une question dont la réponse est « je ne trouve pas cette adresse » ou « je ne trouve pas la zone du PLU de ce terrain »
+   n'a reçu aucun fait de l'agent. Elle est rejouée UNE fois, avec le même code, pour les DEUX agents, quand le géocodeur répond
+   (outils/rejouer_infra.py). Le passage d'origine est conservé ; les deux chiffres (d'origine, après reprise) sont publiés.
+3. Les étiquettes du banc ne sont pas modifiées après coup. Un désaccord d'étiquette trouvé en lisant les traces est consigné, pas corrigé.
+4. Ce banc devient connu à la lecture des traces : il ne certifie plus aucune version corrigée de l'agent.

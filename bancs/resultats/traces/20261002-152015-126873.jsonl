@@ -1,0 +1,3 @@
+{"etape": "tri", "t": 5.6, "resultat": {"adresse": "4 Rue Uhaldia, Biarritz", "parcelle": null, "projet": "abri de jardin", "surface_m2": 20, "surface_existante_m2": null, "piscine_couverte": false, "point_de_vue": "propriétaire", "sujet": "droit", "recherches": ["abri de jardin", "zone Nh"]}, "secondes": 5.6, "jetons": 100}
+{"etape": "outils", "t": 60.8, "faits": {"trouvee": false}}
+{"etape": "fin", "resultat": {"verdict_type": "impossible à dire", "reponse": "Je ne trouve pas cette adresse : pouvez-vous la préciser (numéro, rue, ou référence cadastrale) ?", "demarche": null, "zone": null, "regles": [], "a_verifier": [], "faits": {"trouvee": false}, "garde_fous": [], "par": "code", "secondes": 60.8}}

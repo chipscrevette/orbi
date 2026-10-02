@@ -1,0 +1,1891 @@
+[
+ {
+  "id": "D01",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Terrain de 428 m² au 20 Avenue du Docteur Claisse à Biarritz. Ma maison fait 90 m² d'emprise. Je voudrais poser un abri de jardin de 8 m² à 4 m de la limite du voisin : est-ce possible ?",
+  "adresse": "20 Avenue du Docteur Claisse 64200 Biarritz",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UD",
+   "parcelle": "AB 0521",
+   "surface_m2": 428,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui : l'emprise (90 + 8 m²) est très sous les 50 % de 428 m² et la distance de 4 m dépasse les 3 m",
+   "demarche": "déclaration préalable (de 5 à 20 m² ; toujours en site patrimonial)",
+   "regles": [
+    {
+     "article": "UD 7",
+     "page": 69,
+     "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+     "dit": "sur la limite, ou à 3 m au moins"
+    },
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "L'emprise au sol maximale en UD et en secteurs UDi et UDi*, et UDt est fixée à 50%",
+     "dit": "50 % de la parcelle au plus"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UD 7",
+    "UD 9"
+   ]
+  },
+  "piege": "croire qu'un abri de moins de 9 m² est dispensé de formalité, ou qu'il faut 4 m"
+ },
+ {
+  "id": "D02",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Au 14 Rue Larivière à Biarritz, ma maison fait 80 m² d'emprise sur un terrain de 393 m². Je veux ajouter une véranda de 15 m² : ça passe ?",
+  "adresse": "14 Rue Larivière 64200 Biarritz",
+  "projet": "véranda",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UC",
+   "parcelle": "AE 0450",
+   "surface_m2": 393,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : l'emprise (95 m²) reste sous les 70 % de la parcelle ; la distance à la limite et l'aspect restent à vérifier",
+   "demarche": "déclaration préalable (15 m² créés, sous 40 m² en zone urbaine)",
+   "regles": [
+    {
+     "article": "UC 9",
+     "page": 56,
+     "citation": "l'emprise au sol maximale est fixée à 70 % de l'unité foncière",
+     "dit": "70 % de la parcelle au plus"
+    },
+    {
+     "article": "UC 7",
+     "page": 55,
+     "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+     "dit": "sur la limite, ou à 3 m au moins"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    }
+   ],
+   "a_verifier": [
+    "la distance de la véranda à la limite séparative",
+    "l'aspect de la véranda",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UC 9",
+    "UC 7"
+   ]
+  },
+  "piege": "appliquer 50 % ou 25 % d'une autre zone"
+ },
+ {
+  "id": "D03",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux refaire ma clôture sur la rue avec un mur bahut de 80 cm surmonté d'une grille, 1,40 m au total, au 12 Avenue de la Gare à Biarritz. C'est permis ?",
+  "adresse": "12 Avenue de la Gare 64200 Biarritz",
+  "projet": "clôture",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UB",
+   "parcelle": "AX 0460",
+   "surface_m2": 1607,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : en UB, 2 m au plus sur l'espace public et un mur bahut de 1 m au plus ; l'harmonie avec le voisinage reste à vérifier",
+   "demarche": "déclaration préalable (toutes les clôtures à Biarritz, délibération du 21/09/2007)",
+   "regles": [
+    {
+     "article": "UB 11",
+     "page": 48,
+     "citation": "La hauteur totale des clôtures ne peut excéder 2 mètres",
+     "dit": "2 m au plus sur l'espace public"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-12",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034355392"
+    }
+   ],
+   "a_verifier": [
+    "l'harmonie de la clôture avec les clôtures voisines",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UB 11"
+   ]
+  },
+  "piege": "appliquer les 1,50 m d'UD ou d'UC à une parcelle en UB"
+ },
+ {
+  "id": "D04",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je compte construire une maison en R+2, 10 m à l'égout du toit, au 32b Rue Petricot à Biarritz. Les hauteurs sont-elles respectées ?",
+  "adresse": "32b Rue Petricot 64200 Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UH",
+   "parcelle": "BO 0015",
+   "surface_m2": 30650,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : la zone UH admet jusqu'à R+4 (15 m à l'égout) ; implantation, emprise (50 %) et aspect restent à respecter",
+   "demarche": "permis de construire",
+   "regles": [
+    {
+     "article": "UH 10",
+     "page": 93,
+     "citation": "La hauteur d'une construction ne peut excéder 5 niveaux, soit R + 4 superposés",
+     "dit": "R+4 au plus, 15 m à l'égout"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [
+    "l'emprise (50 % au plus) et la distance aux limites",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "permis de construire",
+   "articles": [
+    "UH 10"
+   ]
+  },
+  "piege": "appliquer la hauteur d'une autre zone"
+ },
+ {
+  "id": "D05",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux creuser une piscine non couverte de 32 m² dans mon jardin, au 18 Boulevard Sainte Madeleine à Biarritz. Ai-je le droit ?",
+  "adresse": "18 Boulevard Sainte Madeleine 64200 Biarritz",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AC 0235",
+   "surface_m2": 2736,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui : une piscine non couverte est exclue de la règle de distance et ne compte pas dans l'emprise",
+   "demarche": "déclaration préalable (bassin jusqu'à 100 m²)",
+   "regles": [
+    {
+     "article": "UD 7",
+     "page": 69,
+     "citation": "Les piscines, spas et jacuzzis sont exclus de cette règle",
+     "dit": "les piscines sont exclues de la règle de distance"
+    },
+    {
+     "article": "DG B-5",
+     "page": 9,
+     "citation": "tennis ne sont pas comprises dans l’emprise au sol",
+     "dit": "une piscine non couverte ne compte pas dans l'emprise"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UD 7",
+    "DG B-5"
+   ]
+  },
+  "piege": "appliquer 3 m ou l'emprise à une piscine"
+ },
+ {
+  "id": "D06",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Ma maison fait 125 m². Je veux l'agrandir de 30 m² au 1 Rue Haraout à Biarritz, sur un terrain de 2141 m². Quelle autorisation, et est-ce permis ?",
+  "adresse": "1 Rue Haraout 64200 Biarritz",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UDc",
+   "parcelle": "AK 0643",
+   "surface_m2": 2141,
+   "contraintes": [
+    "Secteur à plan masse Haraout",
+    "Secteur à plan masse Kleber UCc",
+    "Logements sociaux - Rue Lahontine"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : l'emprise reste sous les 60 % de la parcelle en UDc ; la maison dépasse 150 m² après travaux : permis et architecte",
+   "demarche": "permis de construire avec architecte (155 m² après travaux, au-delà de 150 m²)",
+   "regles": [
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "En secteur UDc : L’emprise au sol maximale est fixée à 60% de l’unité foncière",
+     "dit": "60 % de la parcelle au plus en UDc"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    },
+    {
+     "texte": "R431-2",
+     "url": "https://www.cauegironde.com/Ma-maison-fait-plus-de-150-m-et-je-veux-faire-une-extension-dois-je-recourir-a-un-architecte/"
+    }
+   ],
+   "a_verifier": [
+    "la distance de l'extension aux limites"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "permis de construire + architecte",
+   "articles": [
+    "UD 9"
+   ]
+  },
+  "piege": "oublier le permis et l'architecte (155 m² au total)"
+ },
+ {
+  "id": "D07",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux monter un mur plein de 1,40 m sur la rue au 21 Rue Antoine Lalanne à Biarritz. C'est dans les clous ?",
+  "adresse": "21 Rue Antoine Lalanne 64200 Biarritz",
+  "projet": "clôture",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UD",
+   "parcelle": "AB 0221",
+   "surface_m2": 330,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : en UD, 1,50 m au plus sur l'espace public ; l'aspect reste à vérifier",
+   "demarche": "déclaration préalable (toutes les clôtures à Biarritz)",
+   "regles": [
+    {
+     "article": "UD 11",
+     "page": 74,
+     "citation": "La hauteur totale des clôtures ne peut excéder 1,50 m",
+     "dit": "1,50 m au plus sur la rue"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-12",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034355392"
+    }
+   ],
+   "a_verifier": [
+    "l'aspect du mur par rapport aux clôtures voisines",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UD 11"
+   ]
+  },
+  "piege": "appliquer les 2 m des limites séparatives à une clôture sur rue"
+ },
+ {
+  "id": "D08",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Terrain de 1260 m², maison de 100 m² d'emprise, au 13 Avenue du Marechal Juin à Biarritz. J'aimerais poser un abri de 15 m² (2,50 m de haut) collé à la limite de mon voisin. Possible ?",
+  "adresse": "13 Avenue du Marechal Juin 64200 Biarritz",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UD",
+   "parcelle": "AL 0160",
+   "surface_m2": 1260,
+   "contraintes": []
+  },
+  "attendu": {
+   "verdict": "oui : on peut construire sur la limite séparative, et la hauteur de 2,50 m reste sous D ≥ h − 3",
+   "demarche": "déclaration préalable (de 5 à 20 m² ; toujours en site patrimonial)",
+   "regles": [
+    {
+     "article": "UD 7",
+     "page": 69,
+     "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+     "dit": "sur la limite, ou à 3 m au moins"
+    },
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "L'emprise au sol maximale en UD et en secteurs UDi et UDi*, et UDt est fixée à 50%",
+     "dit": "50 % de la parcelle au plus"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [],
+   "verdict_type": "oui",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UD 7",
+    "UD 9"
+   ]
+  },
+  "piege": "croire qu'il faut toujours 3 m de recul"
+ },
+ {
+  "id": "D09",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Au 39e Avenue de Coulaoun à Biarritz, je veux construire une maison de 150 m² d'emprise avec un étage et des combles, 9 m à l'égout du toit. C'est conforme au PLU ?",
+  "adresse": "39e Avenue de Coulaoun 64200 Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UC",
+   "parcelle": "AL 0125",
+   "surface_m2": 31809,
+   "contraintes": []
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : 150 m² sont sous les 70 % de 31809 m² et 9 m sous les 12 m de la zone UC ; implantation et aspect restent à respecter",
+   "demarche": "permis de construire",
+   "regles": [
+    {
+     "article": "UC 9",
+     "page": 56,
+     "citation": "l'emprise au sol maximale est fixée à 70 % de l'unité foncière",
+     "dit": "70 % de la parcelle au plus"
+    },
+    {
+     "article": "UC 10",
+     "page": 57,
+     "citation": "La hauteur d'une construction ne peut excéder 4 niveaux soit R + 3 + combles",
+     "dit": "R+3+combles au plus, 12 m à l'égout"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [
+    "la distance aux limites séparatives"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "permis de construire",
+   "articles": [
+    "UC 9",
+    "UC 10"
+   ]
+  },
+  "piege": "appliquer la hauteur d'UD (9 m) ou d'UDa (6 m)"
+ },
+ {
+  "id": "D10",
+  "groupe": "A",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Véranda de 12 m² sur ma maison au 5 Avenue Voltaire à Biarritz, terrain de 265 m² : c'est autorisé ?",
+  "adresse": "5 Avenue Voltaire 64200 Biarritz",
+  "projet": "véranda",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UBa",
+   "parcelle": "AK 0303",
+   "surface_m2": 265,
+   "contraintes": [
+    "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : en UB, aucune emprise maximale n'est fixée ; l'implantation et l'aspect restent à vérifier",
+   "demarche": "déclaration préalable (12 m² créés, sous 40 m² en zone urbaine)",
+   "regles": [
+    {
+     "article": "UB 9",
+     "page": 41,
+     "citation": "L’EMPRISE AU SOL DES CONSTRUCTIONS Sans objet",
+     "dit": "pas d'emprise maximale en UB"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    }
+   ],
+   "a_verifier": [
+    "la distance de la véranda aux limites",
+    "l'aspect de la véranda",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UB 9"
+   ]
+  },
+  "piege": "appliquer une emprise maximale qui n'existe pas en UB"
+ },
+ {
+  "id": "D11",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux poser un abri de jardin de 10 m² à 1,5 m de la limite du voisin, au 8 Avenue Notre-Dame à Biarritz. J'ai le droit ?",
+  "adresse": "8 Avenue Notre-Dame 64200 Biarritz",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UD",
+   "parcelle": "BM 0224",
+   "surface_m2": 466,
+   "contraintes": [
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en UD, une construction se pose sur la limite ou à 3 m au moins ; 1,5 m n'est ni l'un ni l'autre",
+   "demarche": "déclaration préalable (de 5 à 20 m² ; toujours en site patrimonial)",
+   "regles": [
+    {
+     "article": "UD 7",
+     "page": 69,
+     "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+     "dit": "sur la limite, ou à 3 m au moins"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UD 7"
+   ]
+  },
+  "piege": "croire qu'un petit abri peut s'approcher à 1,5 m"
+ },
+ {
+  "id": "D12",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Au 9 Avenue de Chassin à Biarritz, terrain de 1576 m², ma maison fait 380 m² d'emprise. Je veux y ajouter 60 m² d'emprise : permis ?",
+  "adresse": "9 Avenue de Chassin 64200 Biarritz",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AI 0156",
+   "surface_m2": 1576,
+   "contraintes": [
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en UDa, 25 % de 1576 m² font 394 m² ; 440 m² dépassent (le 40 % ne vaut que sous 1 000 m²)",
+   "demarche": "permis de construire avec architecte (plus de 150 m²)",
+   "regles": [
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa, UDa* et UDb",
+     "dit": "25 % de la parcelle en UDa"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    },
+    {
+     "texte": "R431-2",
+     "url": "https://www.cauegironde.com/Ma-maison-fait-plus-de-150-m-et-je-veux-faire-une-extension-dois-je-recourir-a-un-architecte/"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "permis de construire + architecte",
+   "articles": [
+    "UD 9"
+   ]
+  },
+  "piege": "appliquer le 40 % réservé aux parcelles de moins de 1 000 m²"
+ },
+ {
+  "id": "D13",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Mon voisin veut élever un mur plein de 2,40 m entre nos deux terrains, au 22 Rue de l'Océan à Biarritz. A-t-il le droit ?",
+  "adresse": "22 Rue de l'Océan 64200 Biarritz",
+  "projet": "clôture",
+  "point_de_vue": "voisin",
+  "nature": "règle",
+  "faits": {
+   "zone": "UD",
+   "parcelle": "BN 0110",
+   "surface_m2": 183,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non en principe : en UD, 2 m au plus entre voisins ; plus haut seulement pour des raisons techniques ou esthétiques que la mairie apprécie",
+   "demarche": "déclaration préalable (toutes les clôtures à Biarritz)",
+   "regles": [
+    {
+     "article": "UD 11",
+     "page": 74,
+     "citation": "La hauteur de la clôture ne peut excéder 2,00 mètres",
+     "dit": "2 m au plus entre voisins"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-12",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034355392"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UD 11"
+   ]
+  },
+  "piege": "accepter 2,40 m parce que la clôture est « entre voisins »"
+ },
+ {
+  "id": "D14",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux clôturer avec un grillage rigide vert de 1,80 m, sans haie, au 10 Avenue de Pestre à Biarritz. C'est permis ?",
+  "adresse": "10 Avenue de Pestre 64200 Biarritz",
+  "projet": "clôture",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UH",
+   "parcelle": "BK 0441",
+   "surface_m2": 3494,
+   "contraintes": [
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en UH, un grillage non planté d'une haie est interdit",
+   "demarche": "déclaration préalable (toutes les clôtures à Biarritz)",
+   "regles": [
+    {
+     "article": "UH 11",
+     "page": 96,
+     "citation": "Les clôtures composées de grillage et non plantées d’une haie et celles constituées de panneaux en béton, en plastique (polycarbonate) ou en clins de bois, sont interdites",
+     "dit": "un grillage sans haie est interdit"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-12",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034355392"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "UH 11"
+   ]
+  },
+  "piege": "ne regarder que la hauteur (1,80 m < 2 m)"
+ },
+ {
+  "id": "D15",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Puis-je construire ma maison au 36 Avenue Carnot à Biarritz ?",
+  "adresse": "36 Avenue Carnot 64200 Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UG",
+   "parcelle": "BI 0083",
+   "surface_m2": 350,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en UG, les constructions destinées à l'habitation sont interdites",
+   "demarche": "sans objet",
+   "regles": [
+    {
+     "article": "UG 1",
+     "page": 77,
+     "citation": "les constructions destinées à l’habitation, sauf pour l’extension et la démolition des constructions existantes sous les conditions fixées à l’article UG 2",
+     "dit": "pas de maison neuve en UG"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "sans objet",
+   "articles": [
+    "UG 1"
+   ]
+  },
+  "piege": "raisonner comme en zone d'habitat"
+ },
+ {
+  "id": "D16",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je voudrais construire ma maison au 7 Rue Luis Mariano à Biarritz. C'est possible ?",
+  "adresse": "7 Rue Luis Mariano 64200 Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UY",
+   "parcelle": "AP 0060",
+   "surface_m2": 3129,
+   "contraintes": [
+    "Linéaire commercial protégé (L151-1 6-1)"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en zone UY, les constructions destinées à l'habitation sont interdites",
+   "demarche": "sans objet",
+   "regles": [
+    {
+     "article": "UY 1",
+     "page": 109,
+     "citation": "Sont interdits en zone UY et secteurs UY*, UYi, UYt : - les constructions destinées à l’habitation",
+     "dit": "pas d'habitation en UY"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [],
+   "verdict_type": "non",
+   "demarche_type": "sans objet",
+   "articles": [
+    "UY 1"
+   ]
+  },
+  "piege": "raisonner comme en zone d'habitat"
+ },
+ {
+  "id": "D17",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux construire une maison sur la parcelle BM 0334 à Biarritz. Le terrain est en bord de mer. Possible ?",
+  "adresse": "parcelle BM 0334, Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "Ner",
+   "parcelle": "BM 0334",
+   "surface_m2": 19487,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en Ner, seules les constructions justifiées par la sécurité, les services publics ou la confortation de l'existant sont admises",
+   "demarche": "sans objet",
+   "regles": [
+    {
+     "article": "Ner 1",
+     "page": 147,
+     "citation": "Toutes constructions qui ne seraient pas justifiées par la sécurité, l’équipement sanitaire, les services publics ou la confortation de l’existant",
+     "dit": "constructions neuves interdites en Ner"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "sans objet",
+   "articles": [
+    "Ner 1"
+   ]
+  },
+  "piege": "confondre Ner et zone constructible"
+ },
+ {
+  "id": "D18",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Ma maison est déjà en R+2 avec 9 m à l'égout du toit. Puis-je ajouter un étage de 3 m au 3 Avenue Maurice Trubert à Biarritz ?",
+  "adresse": "3 Avenue Maurice Trubert 64200 Biarritz",
+  "projet": "surélévation",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UD",
+   "parcelle": "AC 0114",
+   "surface_m2": 176,
+   "contraintes": [
+    "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en UD, 9 m à l'égout au plus (R+2+combles) ; 12 m dépassent",
+   "demarche": "dépend de la surface créée (déclaration préalable ; permis si plus de 40 m² sont créés en zone urbaine)",
+   "regles": [
+    {
+     "article": "UD 10",
+     "page": 71,
+     "citation": "en zone UD et en secteur UDb : R + 2 + Comble (3 niveaux + combles) et 9 m à l'acrotère ou égout du toit et 12,50 m au faîtage",
+     "dit": "R+2+combles, 9 m à l'égout"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "dépend de la surface créée",
+   "articles": [
+    "UD 10"
+   ]
+  },
+  "piege": "croire qu'un étage de plus entre dans les combles"
+ },
+ {
+  "id": "D19",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Au 5 Impasse Guine à Biarritz, terrain de 592 m², ma maison fait 150 m² d'emprise. Je veux l'agrandir de 40 m² d'emprise. C'est possible ?",
+  "adresse": "5 Impasse Guine 64200 Biarritz",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UDb",
+   "parcelle": "AA 0116",
+   "surface_m2": 592,
+   "contraintes": [
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en UDb, 30 % de 592 m² font 177.6 m² ; 190 m² dépassent",
+   "demarche": "permis de construire avec architecte (plus de 150 m² après travaux)",
+   "regles": [
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "à 0,30 pour les parcelles de surface inférieure à 1.000 m² en secteur UDb",
+     "dit": "30 % de la parcelle en UDb sous 1 000 m²"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    },
+    {
+     "texte": "R431-2",
+     "url": "https://www.cauegironde.com/Ma-maison-fait-plus-de-150-m-et-je-veux-faire-une-extension-dois-je-recourir-a-un-architecte/"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "permis de construire + architecte",
+   "articles": [
+    "UD 9"
+   ]
+  },
+  "piege": "appliquer les 25 % de UDa ou les 50 % de UD"
+ },
+ {
+  "id": "D20",
+  "groupe": "B",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux construire une maison avec 9 m à l'égout du toit au 16 Allée des Ormeaux à Biarritz. C'est possible ?",
+  "adresse": "16 Allée des Ormeaux 64200 Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AX 0180",
+   "surface_m2": 704,
+   "contraintes": []
+  },
+  "attendu": {
+   "verdict": "non : en UDa, R+1+combles et 6 m à l'égout au plus",
+   "demarche": "permis de construire",
+   "regles": [
+    {
+     "article": "UD 10",
+     "page": 71,
+     "citation": "en secteurs UDa, UDa*, UDi, UDi*, UDs et UDt : R + 1 + comble (2 niveaux + combles) et 6 m à l'égout du toit",
+     "dit": "R+1+combles, 6 m à l'égout en UDa"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [],
+   "verdict_type": "non",
+   "demarche_type": "permis de construire",
+   "articles": [
+    "UD 10"
+   ]
+  },
+  "piege": "appliquer les 9 m d'UD"
+ },
+ {
+  "id": "D21",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Puis-je poser un abri de jardin de 8 m² dans mon jardin au 54 Avenue de l'Impératrice à Biarritz ?",
+  "adresse": "54 Avenue de l'Impératrice 64200 Biarritz",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "N",
+   "parcelle": "AA 0008",
+   "surface_m2": 2140,
+   "contraintes": [
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire : en zone N, une annexe n'est admise que pour une construction qui existait en mars 1995 ; la question ne dit pas de quand date la maison",
+   "demarche": "déclaration préalable (de 5 à 20 m² ; toujours en site patrimonial)",
+   "regles": [
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "l'extension, aménagement, les annexes des constructions existantes à la date d'approbation de la révision du P.O.S. de mars 1995",
+     "dit": "annexes admises seulement pour une construction existant en 1995"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "la date de construction de la maison",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "N 2"
+   ]
+  },
+  "piege": "raisonner comme en zone urbaine"
+ },
+ {
+  "id": "D22",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je voudrais creuser une piscine non couverte de 30 m² au 23 Avenue d'Ilbarritz à Biarritz. C'est possible ?",
+  "adresse": "23 Avenue d'Ilbarritz 64200 Biarritz",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "N",
+   "parcelle": "BT 0041",
+   "surface_m2": 6285,
+   "contraintes": [
+    "Bande des 100m 'Loi littorale' (L121-16)",
+    "Espaces proches du rivage : EPR",
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Espace boisé classé (L113-1)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire : en zone N, une annexe (piscine) n'est admise que pour une construction qui existait en mars 1995",
+   "demarche": "déclaration préalable (bassin jusqu'à 100 m²)",
+   "regles": [
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "l'extension, aménagement, les annexes des constructions existantes à la date d'approbation de la révision du P.O.S. de mars 1995",
+     "dit": "annexes admises seulement pour une construction existant en 1995"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "la date de construction de la maison",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "N 2"
+   ]
+  },
+  "piege": "croire que la piscine échappe à la règle des annexes"
+ },
+ {
+  "id": "D23",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Ma maison est en zone Nh, au 3 Allée de Barroilhet à Biarritz. Je veux l'agrandir de 30 m² : est-ce autorisé ?",
+  "adresse": "3 Allée de Barroilhet 64200 Biarritz",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "Nh",
+   "parcelle": "CE 0082",
+   "surface_m2": 3179,
+   "contraintes": [
+    "Application de l article L.111-1-4 du code de l urbanisme"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire : en Nh, l'extension est limitée à 25 % de la surface de plancher existante avant le 27 mars 1995 ; la surface de départ n'est pas donnée",
+   "demarche": "permis de construire (plus de 20 m² hors zone urbaine)",
+   "regles": [
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "l'extension des ces constructions est limitée à 25 % de la surface de plancher existante avant l’approbation du P.O.S. le 27 mars 1995",
+     "dit": "25 % de la surface de 1995 au plus"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    }
+   ],
+   "a_verifier": [
+    "la surface de plancher de la maison avant mars 1995"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "permis de construire",
+   "articles": [
+    "N 2"
+   ]
+  },
+  "piege": "appliquer les 40 m² d'une zone urbaine"
+ },
+ {
+  "id": "D24",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Au 2 Rue Eugène Raulet à Biarritz (terrain de 422 m²), ma maison fait 100 m² d'emprise. Je veux y ajouter 60 m² d'emprise : est-ce dans les règles ?",
+  "adresse": "2 Rue Eugène Raulet 64200 Biarritz",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AT 0052",
+   "surface_m2": 422,
+   "contraintes": []
+  },
+  "attendu": {
+   "verdict": "impossible à dire : 160 m² dépassent les 25 % (105.5 m²) mais respectent les 40 % (168.8 m²) qui valent si la parcelle existait avant la révision du PLU de 2003",
+   "demarche": "permis de construire avec architecte (plus de 150 m² après travaux)",
+   "regles": [
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "à 0,40 pour les parcelles de surface inférieure à 1.000m² en secteurs Uda et UDa*existants antérieurement à la révision du P.L.U. de 2003",
+     "dit": "40 % si la parcelle existait avant 2003"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    },
+    {
+     "texte": "R431-2",
+     "url": "https://www.cauegironde.com/Ma-maison-fait-plus-de-150-m-et-je-veux-faire-une-extension-dois-je-recourir-a-un-architecte/"
+    }
+   ],
+   "a_verifier": [
+    "la date d'existence de la parcelle (avant ou après 2003)"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "permis de construire + architecte",
+   "articles": [
+    "UD 9"
+   ]
+  },
+  "piege": "appliquer 25 % sans voir l'exception de 40 %"
+ },
+ {
+  "id": "D25",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Terrain de 598 m² au 12 Allée des 3 Fontaines à Biarritz, maison de 120 m² d'emprise, je veux ajouter une extension de 50 m² d'emprise. Possible ?",
+  "adresse": "12 Allée des 3 Fontaines 64200 Biarritz",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AX 0591",
+   "surface_m2": 598,
+   "contraintes": [
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire : 170 m² dépassent les 25 % (149.5 m²) mais respectent les 40 % (239.2 m²) si la parcelle existait avant 2003",
+   "demarche": "permis de construire avec architecte (plus de 150 m² après travaux)",
+   "regles": [
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa, UDa* et UDb",
+     "dit": "25 % de la parcelle en UDa"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    },
+    {
+     "texte": "R431-2",
+     "url": "https://www.cauegironde.com/Ma-maison-fait-plus-de-150-m-et-je-veux-faire-une-extension-dois-je-recourir-a-un-architecte/"
+    }
+   ],
+   "a_verifier": [
+    "la date d'existence de la parcelle (avant ou après 2003)",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "permis de construire + architecte",
+   "articles": [
+    "UD 9"
+   ]
+  },
+  "piege": "répondre « non » sans connaître la date de la parcelle"
+ },
+ {
+  "id": "D26",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux surélever ma maison d'un étage de 3 m au 11ter Avenue de la République à Biarritz, mais je ne sais pas à quelle hauteur est mon toit aujourd'hui. Est-ce possible ?",
+  "adresse": "11ter Avenue de la République 64200 Biarritz",
+  "projet": "surélévation",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UD",
+   "parcelle": "BK 0405",
+   "surface_m2": 1191,
+   "contraintes": [
+    "Espace boisé classé (L113-1)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire : en UD, 9 m à l'égout au plus ; tout dépend de la hauteur actuelle de la maison",
+   "demarche": "dépend de la surface créée (déclaration préalable ; permis si plus de 40 m² sont créés)",
+   "regles": [
+    {
+     "article": "UD 10",
+     "page": 71,
+     "citation": "en zone UD et en secteur UDb : R + 2 + Comble (3 niveaux + combles) et 9 m à l'acrotère ou égout du toit et 12,50 m au faîtage",
+     "dit": "R+2+combles, 9 m à l'égout"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    }
+   ],
+   "a_verifier": [
+    "la hauteur actuelle de la maison à l'égout",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "dépend de la surface créée",
+   "articles": [
+    "UD 10"
+   ]
+  },
+  "piege": "répondre sans la hauteur actuelle"
+ },
+ {
+  "id": "D27",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Ma maison au 35B Rue de Madrid à Biarritz a un seul étage, je voudrais en ajouter un autre mais je ne connais pas la hauteur exacte de mon égout. Possible ?",
+  "adresse": "35B Rue de Madrid 64200 Biarritz",
+  "projet": "surélévation",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "BR 0114",
+   "surface_m2": 4287,
+   "contraintes": [
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire : en UDa, 6 m à l'égout au plus ; tout dépend de la hauteur actuelle",
+   "demarche": "dépend de la surface créée (déclaration préalable ; permis si plus de 40 m² sont créés)",
+   "regles": [
+    {
+     "article": "UD 10",
+     "page": 71,
+     "citation": "en secteurs UDa, UDa*, UDi, UDi*, UDs et UDt : R + 1 + comble (2 niveaux + combles) et 6 m à l'égout du toit",
+     "dit": "R+1+combles, 6 m à l'égout en UDa"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    }
+   ],
+   "a_verifier": [
+    "la hauteur actuelle de la maison à l'égout",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "dépend de la surface créée",
+   "articles": [
+    "UD 10"
+   ]
+  },
+  "piege": "répondre sans la hauteur actuelle"
+ },
+ {
+  "id": "D28",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux ajouter un étage de 3 m à mon immeuble au 15b Avenue de la Milady à Biarritz. Je ne sais plus combien de niveaux il a. Possible ?",
+  "adresse": "15b Avenue de la Milady 64200 Biarritz",
+  "projet": "surélévation",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UH",
+   "parcelle": "BP 0271",
+   "surface_m2": 10092,
+   "contraintes": [
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire : en UH, 5 niveaux (R+4) et 15 m à l'égout au plus ; tout dépend du nombre de niveaux actuel",
+   "demarche": "dépend de la surface créée (déclaration préalable ; permis si plus de 40 m² sont créés)",
+   "regles": [
+    {
+     "article": "UH 10",
+     "page": 93,
+     "citation": "La hauteur d'une construction ne peut excéder 5 niveaux, soit R + 4 superposés",
+     "dit": "R+4 au plus, 15 m à l'égout"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    }
+   ],
+   "a_verifier": [
+    "le nombre de niveaux et la hauteur actuels",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "dépend de la surface créée",
+   "articles": [
+    "UH 10"
+   ]
+  },
+  "piege": "répondre sans le nombre de niveaux actuel"
+ },
+ {
+  "id": "D29",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "J'ai un jardin sur la parcelle CE 0057 à Biarritz. Je pense y mettre un abri de jardin de 12 m². Est-ce autorisé ?",
+  "adresse": "parcelle CE 0057, Biarritz",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "N",
+   "parcelle": "CE 0057",
+   "surface_m2": 27712,
+   "contraintes": [
+    "Espace boisé classé (L113-1)",
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Elargissement de l'A.63",
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Application de l article L.111-1-4 du code de l urbanisme",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire : en zone N, une annexe n'est admise que pour une construction existant en mars 1995",
+   "demarche": "déclaration préalable (de 5 à 20 m² ; toujours en site patrimonial)",
+   "regles": [
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "l'extension, aménagement, les annexes des constructions existantes à la date d'approbation de la révision du P.O.S. de mars 1995",
+     "dit": "annexes admises seulement pour une construction existant en 1995"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "la date de construction de la maison",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "N 2"
+   ]
+  },
+  "piege": "raisonner comme en zone urbaine"
+ },
+ {
+  "id": "D30",
+  "groupe": "C",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Piscine non couverte de 20 m² dans mon jardin, sur la parcelle AT 0178 à Biarritz. Ai-je le droit ?",
+  "adresse": "parcelle AT 0178, Biarritz",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "N",
+   "parcelle": "AT 0178",
+   "surface_m2": 43075,
+   "contraintes": [
+    "Espace boisé classé (L113-1)",
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Application de l article L.111-1-4 du code de l urbanisme",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire : en zone N, une annexe (piscine) n'est admise que pour une construction existant en mars 1995",
+   "demarche": "déclaration préalable (bassin jusqu'à 100 m²)",
+   "regles": [
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "l'extension, aménagement, les annexes des constructions existantes à la date d'approbation de la révision du P.O.S. de mars 1995",
+     "dit": "annexes admises seulement pour une construction existant en 1995"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "la date de construction de la maison",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "impossible à dire",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "N 2"
+   ]
+  },
+  "piege": "croire qu'une piscine ouverte est libre en zone N"
+ },
+ {
+  "id": "D31",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je possède un terrain en zone Nh au 4 Rue Pierre de Chevigné à Biarritz. Je voudrais y construire une villa individuelle. C'est autorisé ?",
+  "adresse": "4 Rue Pierre de Chevigné 64200 Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "Nh",
+   "parcelle": "BX 0012",
+   "surface_m2": 14560,
+   "contraintes": [
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : en Nh, une villa individuelle est admise, sous condition d'insertion dans l'espace naturel",
+   "demarche": "permis de construire",
+   "regles": [
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "En Nh et Nhd, la construction d’une villa individuelle à caractère pavillonnaire, sous condition d’insertion dans l’espace naturel, et de ses annexes (telles que garage, piscine, abri de jardin)",
+     "dit": "villa individuelle admise en Nh"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [
+    "l'insertion dans l'espace naturel",
+    "l'emprise (10 % au plus)",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "permis de construire",
+   "articles": [
+    "N 2"
+   ]
+  },
+  "piege": "tout interdire parce que la zone est naturelle"
+ },
+ {
+  "id": "D32",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Piscine non couverte de 40 m² dans le jardin de ma villa, zone Nh, au 5 Rue de Silhouette à Biarritz. C'est possible ?",
+  "adresse": "5 Rue de Silhouette 64200 Biarritz",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "Nh",
+   "parcelle": "CE 0027",
+   "surface_m2": 5053,
+   "contraintes": [
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Espace boisé classé (L113-1)",
+    "Alignement d'arbres à conserver",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : en Nh, les annexes d'une villa (dont la piscine) sont admises",
+   "demarche": "déclaration préalable (bassin jusqu'à 100 m²)",
+   "regles": [
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "En Nh et Nhd, la construction d’une villa individuelle à caractère pavillonnaire, sous condition d’insertion dans l’espace naturel, et de ses annexes (telles que garage, piscine, abri de jardin)",
+     "dit": "les annexes, dont la piscine, sont admises en Nh"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "l'insertion dans l'espace naturel",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "N 2"
+   ]
+  },
+  "piege": "tout interdire parce que la zone est naturelle"
+ },
+ {
+  "id": "D33",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je voudrais une piscine non couverte de 35 m² au 93 Avenue de Bidart à Biarritz (zone Ncu). Est-ce autorisé ?",
+  "adresse": "93 Avenue de Bidart 64200 Biarritz",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "Ncu",
+   "parcelle": "BT 0047",
+   "surface_m2": 614,
+   "contraintes": [
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : en Ncu, une piscine non couverte par unité foncière est admise",
+   "demarche": "déclaration préalable (bassin jusqu'à 100 m²)",
+   "regles": [
+    {
+     "article": "Ncu 2",
+     "page": 142,
+     "citation": "une piscine non couverte par unité foncière",
+     "dit": "une piscine non couverte admise"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "une seule piscine par unité foncière",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "Ncu 2"
+   ]
+  },
+  "piege": "tout interdire parce que la zone est une coupure d'urbanisation"
+ },
+ {
+  "id": "D34",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Puis-je construire une maison neuve sur la parcelle CK 0037 à Biarritz ?",
+  "adresse": "parcelle CK 0037, Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "Ncu",
+   "parcelle": "CK 0037",
+   "surface_m2": 35017,
+   "contraintes": [
+    "Espace boisé classé (L113-1)",
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Application de l article L.111-1-4 du code de l urbanisme",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en Ncu, seules les constructions justifiées par la sécurité, les services publics ou la confortation de l'existant sont admises",
+   "demarche": "sans objet",
+   "regles": [
+    {
+     "article": "Ncu 1",
+     "page": 141,
+     "citation": "Toutes constructions qui ne seraient pas justifiées par la sécurité, l’équipement sanitaire, un service public ou la confortation de l’existant",
+     "dit": "constructions neuves interdites en Ncu"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "sans objet",
+   "articles": [
+    "Ncu 1"
+   ]
+  },
+  "piege": "confondre Ncu et Nh"
+ },
+ {
+  "id": "D35",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Mon voisin veut construire une maison neuve au 21 Rue de la Barthe à Biarritz : a-t-il le droit ?",
+  "adresse": "21 Rue de la Barthe 64200 Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "voisin",
+  "nature": "règle",
+  "faits": {
+   "zone": "UG",
+   "parcelle": "AM 0060",
+   "surface_m2": 6935,
+   "contraintes": []
+  },
+  "attendu": {
+   "verdict": "non : en UG, les constructions destinées à l'habitation sont interdites",
+   "demarche": "sans objet",
+   "regles": [
+    {
+     "article": "UG 1",
+     "page": 77,
+     "citation": "les constructions destinées à l’habitation, sauf pour l’extension et la démolition des constructions existantes sous les conditions fixées à l’article UG 2",
+     "dit": "pas de maison neuve en UG"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [],
+   "verdict_type": "non",
+   "demarche_type": "sans objet",
+   "articles": [
+    "UG 1"
+   ]
+  },
+  "piege": "raisonner comme en zone d'habitat"
+ },
+ {
+  "id": "D36",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Est-ce que je peux faire construire une villa au 20 Avenue du Sabaou à Biarritz ?",
+  "adresse": "20 Avenue du Sabaou 64200 Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "UY",
+   "parcelle": "AK 0441",
+   "surface_m2": 1533,
+   "contraintes": [
+    "Ligne d'implantation obligatoire ou recul minimal imposé suivant la règle applicable à l'article 6 de chaque zone"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en UY, les constructions destinées à l'habitation sont interdites",
+   "demarche": "sans objet",
+   "regles": [
+    {
+     "article": "UY 1",
+     "page": 109,
+     "citation": "Sont interdits en zone UY et secteurs UY*, UYi, UYt : - les constructions destinées à l’habitation",
+     "dit": "pas d'habitation en UY"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [],
+   "verdict_type": "non",
+   "demarche_type": "sans objet",
+   "articles": [
+    "UY 1"
+   ]
+  },
+  "piege": "raisonner comme en zone d'habitat"
+ },
+ {
+  "id": "D37",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je voudrais construire une villa neuve en zone naturelle sur la parcelle CE 0113 à Biarritz. C'est possible ?",
+  "adresse": "parcelle CE 0113, Biarritz",
+  "projet": "maison neuve",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "N",
+   "parcelle": "CE 0113",
+   "surface_m2": 26836,
+   "contraintes": [
+    "Espace boisé classé (L113-1)",
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Elargissement de l'A.63",
+    "Application de l article L.111-1-4 du code de l urbanisme",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en zone N hors secteurs habitables (Nh, Nhd), tout est interdit sauf des exceptions que ce projet ne remplit pas",
+   "demarche": "sans objet",
+   "regles": [
+    {
+     "article": "N 1",
+     "page": 132,
+     "citation": "Tous les types d'occupation ou d'utilisation des sols sont interdits",
+     "dit": "en zone N, tout est interdit sauf exceptions"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "sans objet",
+   "articles": [
+    "N 1"
+   ]
+  },
+  "piege": "confondre la zone N et ses secteurs habitables Nh"
+ },
+ {
+  "id": "D38",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Je veux poser un abri de jardin de 6 m² sur la parcelle BB 0002 à Biarritz. Possible ?",
+  "adresse": "parcelle BB 0002, Biarritz",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "Ner",
+   "parcelle": "BB 0002",
+   "surface_m2": 345,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en Ner, un abri est une construction nouvelle que l'article Ner 1 interdit",
+   "demarche": "sans objet",
+   "regles": [
+    {
+     "article": "Ner 1",
+     "page": 147,
+     "citation": "Toutes constructions qui ne seraient pas justifiées par la sécurité, l’équipement sanitaire, les services publics ou la confortation de l’existant",
+     "dit": "constructions neuves interdites en Ner"
+    }
+   ],
+   "loi": [],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "sans objet",
+   "articles": [
+    "Ner 1"
+   ]
+  },
+  "piege": "croire qu'un petit abri est toléré"
+ },
+ {
+  "id": "D39",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Ma maison est en zone Ncu au 28 Rue de Minjongo à Biarritz. Je veux l'agrandir de 25 m² d'emprise. C'est autorisé ?",
+  "adresse": "28 Rue de Minjongo 64200 Biarritz",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "Ncu",
+   "parcelle": "BX 0011",
+   "surface_m2": 71183,
+   "contraintes": [
+    "Espace boisé classé (L113-1)",
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non : en Ncu, l'extension est limitée à 20 m² d'emprise au sol depuis 1995 ; 25 m² dépassent",
+   "demarche": "permis de construire (plus de 20 m² hors zone urbaine)",
+   "regles": [
+    {
+     "article": "Ncu 2",
+     "page": 142,
+     "citation": "l'extension des constructions est limitée à 20 m² d’emprise au sol à partir de la date d'approbation de la révision n° 2 du P.O.S.",
+     "dit": "20 m² d'extension au plus"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-14",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "non",
+   "demarche_type": "permis de construire",
+   "articles": [
+    "Ncu 2"
+   ]
+  },
+  "piege": "appliquer les 40 m² d'une zone urbaine"
+ },
+ {
+  "id": "D40",
+  "groupe": "D",
+  "origine": "cas de zone (inspiré de questions de forum)",
+  "source": null,
+  "question": "Abri de jardin de 20 m² dans ma propriété en zone Nh, au 4 Rue Uhaldia à Biarritz. Possible ?",
+  "adresse": "4 Rue Uhaldia 64200 Biarritz",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "règle",
+  "faits": {
+   "zone": "Nh",
+   "parcelle": "CE 0006",
+   "surface_m2": 766,
+   "contraintes": [
+    "Espace boisé classé (L113-1)",
+    "Application de l article L.111-1-4 du code de l urbanisme",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions : en Nh, les annexes (dont l'abri de jardin) sont admises ; l'emprise (10 % au plus) et l'insertion restent à vérifier",
+   "demarche": "déclaration préalable (de 5 à 20 m² ; toujours en site patrimonial)",
+   "regles": [
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "En Nh et Nhd, la construction d’une villa individuelle à caractère pavillonnaire, sous condition d’insertion dans l’espace naturel, et de ses annexes (telles que garage, piscine, abri de jardin)",
+     "dit": "les annexes, dont l'abri de jardin, sont admises en Nh"
+    },
+    {
+     "article": "N 9",
+     "page": 136,
+     "citation": "En secteurs Nh et Nhd, l’emprise au sol est fixée à 0,10 au maximum",
+     "dit": "10 % de la parcelle au plus en Nh"
+    }
+   ],
+   "loi": [
+    {
+     "texte": "R421-9",
+     "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+    }
+   ],
+   "a_verifier": [
+    "l'emprise totale (10 % au plus)",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ],
+   "verdict_type": "oui sous conditions",
+   "demarche_type": "déclaration préalable",
+   "articles": [
+    "N 2",
+    "N 9"
+   ]
+  },
+  "piege": "tout interdire parce que la zone est naturelle"
+ }
+]

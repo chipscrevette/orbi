@@ -1,0 +1,353 @@
+[
+ {
+  "id": "R01",
+  "source": "ForumPiscine, 9 oct. 2024",
+  "url": "https://www.forumpiscine.com/forum/t32502-refus-declaration-prealable-plu.php",
+  "question": "Terrain de 530 m², emprise limitée à 30 % soit 159 m² ; maison 155 m² + piscine 28 m² = 183 m² : ma déclaration est refusée, que faire ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R02",
+  "source": "ForumPiscine, 9 oct. 2024",
+  "url": "https://www.forumpiscine.com/forum/t32502-refus-declaration-prealable-plu.php",
+  "question": "Peut-on demander une dérogation à la mairie quand on dépasse l'emprise ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "hors périmètre"
+ },
+ {
+  "id": "R03",
+  "source": "ForumPiscine, 9 oct. 2024",
+  "url": "https://www.forumpiscine.com/forum/t32502-refus-declaration-prealable-plu.php",
+  "question": "Une piscine de moins de 10 m², sans aucune demande, permettrait-elle de contourner le dépassement ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "démarche"
+ },
+ {
+  "id": "R04",
+  "source": "ForumPiscine, 9 oct. 2024",
+  "url": "https://www.forumpiscine.com/forum/t32502-refus-declaration-prealable-plu.php",
+  "question": "Une noue paysagère peut-elle compenser l'emprise de la piscine ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R05",
+  "source": "ForumPiscine, 9 oct. 2024",
+  "url": "https://www.forumpiscine.com/forum/t32502-refus-declaration-prealable-plu.php",
+  "question": "La règle des éléments de moins de 60 cm non comptés dans l'emprise s'applique-t-elle aux piscines ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "définition"
+ },
+ {
+  "id": "R06",
+  "source": "CommentCaMarche (forum droit)",
+  "url": "https://droit-finances.commentcamarche.com/forum/affich-4909524-abris-de-jardin",
+  "question": "Mon voisin a mis un abri de moins de 20 m² à 1 m de la clôture, il bouche ma baie vitrée : est-ce légal, quels recours ?",
+  "projet": "abri de jardin",
+  "point_de_vue": "voisin",
+  "nature": "règle"
+ },
+ {
+  "id": "R07",
+  "source": "CommentCaMarche (forum droit)",
+  "url": "https://droit-finances.commentcamarche.com/forum/affich-4909524-abris-de-jardin",
+  "question": "Combien d'abris peut-on construire si aucun ne dépasse la limite de surface ?",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R08",
+  "source": "CommentCaMarche (forum droit)",
+  "url": "https://droit-finances.commentcamarche.com/forum/affich-4909524-abris-de-jardin",
+  "question": "Un abri à bois de moins de 1,80 m : quelles règles ?",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "démarche"
+ },
+ {
+  "id": "R09",
+  "source": "CommentCaMarche (forum droit)",
+  "url": "https://droit-finances.commentcamarche.com/forum/affich-4909524-abris-de-jardin",
+  "question": "Plusieurs abris : sont-ils taxés ?",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "hors périmètre"
+ },
+ {
+  "id": "R10",
+  "source": "Forum Construire",
+  "url": "https://www.forumconstruire.com/construire/topic-388828-emprise-sol-rapport-surface-terrain.php",
+  "question": "954 m² de terrain dont 366 constructibles, emprise 40 % : 40 % de quoi ?",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "définition"
+ },
+ {
+  "id": "R11",
+  "source": "Forum Construire",
+  "url": "https://www.forumconstruire.com/construire/topic-388828-emprise-sol-rapport-surface-terrain.php",
+  "question": "Les parties enterrées et les patios non couverts comptent-ils dans l'emprise ?",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "définition"
+ },
+ {
+  "id": "R12",
+  "source": "Forum Construire",
+  "url": "https://www.forumconstruire.com/construire/topic-388828-emprise-sol-rapport-surface-terrain.php",
+  "question": "Le règlement du lotissement peut-il calculer l'emprise sur le terrain avant division ?",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "hors périmètre"
+ },
+ {
+  "id": "R13",
+  "source": "Forum Construire",
+  "url": "https://www.forumconstruire.com/construire/topic-388828-emprise-sol-rapport-surface-terrain.php",
+  "question": "PLU et règlement de lotissement disent des choses différentes : lequel s'applique ?",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R14",
+  "source": "CommentCaMarche, 3 nov. 2016",
+  "url": "https://droit-finances.commentcamarche.com/forum/affich-7311710-piscine-et-limite-separative",
+  "question": "Piscine refusée : le bord est à 3,5 m de la limite au lieu de 4 m ; la margelle compte-t-elle ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R15",
+  "source": "CommentCaMarche, 3 nov. 2016",
+  "url": "https://droit-finances.commentcamarche.com/forum/affich-7311710-piscine-et-limite-separative",
+  "question": "Piscine en L, petite partie en limite avec l'accord du voisin : faut-il 4 m pour la grande longueur ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R16",
+  "source": "CommentCaMarche, 3 nov. 2016",
+  "url": "https://droit-finances.commentcamarche.com/forum/affich-7311710-piscine-et-limite-separative",
+  "question": "La mairie impose « 4 mètres ou 0 » : qu'est-ce que ça veut dire ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "définition"
+ },
+ {
+  "id": "R17",
+  "source": "ForumPiscine, 11 oct. 2015",
+  "url": "https://www.forumpiscine.com/forum/t10618-mini-piscine-10m-max-et-distance-voisinage.php",
+  "question": "Une mini-piscine de 4 x 2 m, semi-enterrée ou hors sol, doit-elle être à 3 m de la limite ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R18",
+  "source": "ForumPiscine, 11 oct. 2015",
+  "url": "https://www.forumpiscine.com/forum/t10618-mini-piscine-10m-max-et-distance-voisinage.php",
+  "question": "Si je la colle contre le mur de séparation, est-ce conforme au PLU ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R19",
+  "source": "ForumPiscine, 11 oct. 2015",
+  "url": "https://www.forumpiscine.com/forum/t10618-mini-piscine-10m-max-et-distance-voisinage.php",
+  "question": "Que veut dire « limite voisinage » dans le PLU ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "définition"
+ },
+ {
+  "id": "R20",
+  "source": "Alexia (question à un avocat)",
+  "url": "https://www.alexia.fr/questions/507259/limites-separatives-abri-de-jardin.htm",
+  "question": "Abri de 7 m² : la mairie exige 2 m de retrait des limites alors que le PLU a une exception pour les abris de moins de 8 m² : laquelle s'applique ?",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R21",
+  "source": "Alexia (question à un avocat)",
+  "url": "https://www.alexia.fr/questions/412385/projet-de-creation-de-veranda-refuse-hors-le-plu-le-permet.htm",
+  "question": "Véranda de 25 m² : la mairie parle de 8 m de la limite alors que le PLU dirait 4,36 m : la mairie peut-elle être plus stricte que le PLU ?",
+  "projet": "véranda",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R22",
+  "source": "Alexia (question à un avocat)",
+  "url": "https://www.alexia.fr/questions/267070/construction-d-une-veranda-mais-qui-ne-respecte-pas-la-plu.htm",
+  "question": "Véranda de moins de 20 m² construite après déclaration, à 3 m au lieu des 4 m du PLU : la mairie peut-elle contester ?",
+  "projet": "véranda",
+  "point_de_vue": "propriétaire",
+  "nature": "hors périmètre"
+ },
+ {
+  "id": "R23",
+  "source": "Forum Construire, 13 janv. 2015",
+  "url": "https://www.forumconstruire.com/construire/topic-270827-avis-sur-faisabilite-elevation-de-toiture-.php",
+  "question": "Mes murs sont à 2 m des limites et le PLU exige 3 m : puis-je rehausser la toiture de 60 cm ?",
+  "projet": "surélévation",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R24",
+  "source": "Forum Construire, 13 janv. 2015",
+  "url": "https://www.forumconstruire.com/construire/topic-270827-avis-sur-faisabilite-elevation-de-toiture-.php",
+  "question": "Surélévation refusée faute d'une place de stationnement en plus : peut-on obtenir une dérogation ?",
+  "projet": "surélévation",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R25",
+  "source": "Forum Construire, 2015-2017",
+  "url": "https://www.forumconstruire.com/construire/topic-288055-reglementation-sur-la-pose-de-brise-vue.php",
+  "question": "Un brise-vue de 2 m sur un grillage mitoyen de 1 m, sans l'accord du voisin : possible ?",
+  "projet": "clôture",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R26",
+  "source": "Forum Construire, 2015-2017",
+  "url": "https://www.forumconstruire.com/construire/topic-288055-reglementation-sur-la-pose-de-brise-vue.php",
+  "question": "Un brise-vue à 1,5 m de la clôture, de 1,80 m à 3 m de haut : autorisé ?",
+  "projet": "clôture",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R27",
+  "source": "Alexia (question à un avocat)",
+  "url": "https://www.alexia.fr/questions/506635/plu-et-voisin.htm",
+  "question": "Brise-vue de 2,60 m légèrement en retrait de la clôture alors que le PLU limite à 2 m ; le voisin porte plainte : est-ce une clôture ?",
+  "projet": "clôture",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R28",
+  "source": "Alexia (question à un avocat)",
+  "url": "https://www.alexia.fr/questions/506635/plu-et-voisin.htm",
+  "question": "L'extension du voisin, en parpaings nus avec un toit en bac acier, ne respecte pas le PLU : que faire ?",
+  "projet": "extension",
+  "point_de_vue": "voisin",
+  "nature": "règle"
+ },
+ {
+  "id": "R29",
+  "source": "FAQ de la mairie de Bressuire",
+  "url": "https://www.ville-bressuire.fr/foire-aux-questions/",
+  "question": "Quelles autorisations pour une piscine hors-sol ?",
+  "projet": "piscine",
+  "point_de_vue": "propriétaire",
+  "nature": "démarche"
+ },
+ {
+  "id": "R30",
+  "source": "FAQ de la mairie de Bressuire",
+  "url": "https://www.ville-bressuire.fr/foire-aux-questions/",
+  "question": "Quelles autorisations pour modifier ou installer une clôture ?",
+  "projet": "clôture",
+  "point_de_vue": "propriétaire",
+  "nature": "démarche"
+ },
+ {
+  "id": "R31",
+  "source": "FAQ de la mairie de Bressuire",
+  "url": "https://www.ville-bressuire.fr/foire-aux-questions/",
+  "question": "Quelles autorisations pour installer un abri de jardin ?",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "démarche"
+ },
+ {
+  "id": "R32",
+  "source": "FAQ de la mairie de Bressuire",
+  "url": "https://www.ville-bressuire.fr/foire-aux-questions/",
+  "question": "Quelles autorisations pour agrandir une maison ou construire une véranda ?",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "démarche"
+ },
+ {
+  "id": "R33",
+  "source": "FAQ de la mairie de Bressuire",
+  "url": "https://www.ville-bressuire.fr/foire-aux-questions/",
+  "question": "Quelles autorisations pour construire un garage ?",
+  "projet": "autre",
+  "point_de_vue": "propriétaire",
+  "nature": "hors périmètre"
+ },
+ {
+  "id": "R34",
+  "source": "FAQ de la mairie de Bressuire",
+  "url": "https://www.ville-bressuire.fr/foire-aux-questions/",
+  "question": "Quels sont les délais d'instruction des dossiers ?",
+  "projet": "tous",
+  "point_de_vue": "propriétaire",
+  "nature": "démarche"
+ },
+ {
+  "id": "R35",
+  "source": "FAQ de la mairie de Bressuire",
+  "url": "https://www.ville-bressuire.fr/foire-aux-questions/",
+  "question": "Comment savoir si un bâtiment est protégé ?",
+  "projet": "tous",
+  "point_de_vue": "propriétaire",
+  "nature": "règle"
+ },
+ {
+  "id": "R36",
+  "source": "FAQ de la mairie de Bressuire",
+  "url": "https://www.ville-bressuire.fr/foire-aux-questions/",
+  "question": "Quelle différence entre surface de plancher et emprise au sol ?",
+  "projet": "tous",
+  "point_de_vue": "propriétaire",
+  "nature": "définition"
+ },
+ {
+  "id": "R37",
+  "source": "FAQ de la mairie de Bressuire",
+  "url": "https://www.ville-bressuire.fr/foire-aux-questions/",
+  "question": "Changer les fenêtres, refaire le toit, poser des panneaux solaires : quelles autorisations ?",
+  "projet": "autre",
+  "point_de_vue": "propriétaire",
+  "nature": "hors périmètre"
+ },
+ {
+  "id": "R38",
+  "source": "CAUE de la Gironde (FAQ)",
+  "url": "https://www.cauegironde.com/Ma-maison-fait-plus-de-150-m-et-je-veux-faire-une-extension-dois-je-recourir-a-un-architecte/",
+  "question": "Ma maison fait plus de 150 m² et je veux une extension : dois-je recourir à un architecte ?",
+  "projet": "extension",
+  "point_de_vue": "propriétaire",
+  "nature": "démarche"
+ },
+ {
+  "id": "R39",
+  "source": "ANIL, la parole de l'expert",
+  "url": "https://www.anil.org/parole-expert-logement-urbanisme-installation-abri-jardin/",
+  "question": "Faut-il une autorisation pour un abri de jardin, et est-il soumis à la taxe d'aménagement ?",
+  "projet": "abri de jardin",
+  "point_de_vue": "propriétaire",
+  "nature": "démarche"
+ }
+]

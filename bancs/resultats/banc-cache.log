@@ -1,0 +1,60 @@
+C01  31.2 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ grave:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+C02  30.2 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ grave:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+C03  31.6 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+C04  5.7 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+C05  51.3 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ grave:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+C06  55.3 s  attendu « non » obtenu « non »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+C07  53.6 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+C08  37.8 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+C09  35.7 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ grave:✗ demarche:✗ articles:✓ citations:✓ garde_fous:✓
+C10  15.7 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+C11  35.3 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✗ articles:✓ citations:✓ garde_fous:✓
+C12  44.9 s  attendu « information » obtenu « oui sous conditions »  verdict:✗ articles:✓ citations:✓ garde_fous:✓
+C13  21.6 s  attendu « information » obtenu « non »  verdict:✗ articles:✓ citations:✓ garde_fous:✓
+C14  294.0 s  attendu « oui sous conditions » obtenu « None »  verdict:✗ grave:✓ demarche:✓ articles:✗ citations:✓ garde_fous:✗
+C15  30.9 s  attendu « non » obtenu « non »  verdict:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+C16  39.5 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+C17  41.1 s  attendu « information » obtenu « information »  verdict:✓ demarche:✓ citations:✓ garde_fous:✓
+C18  5.6 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+C19  5.7 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+C20  5.8 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+
+{
+ "date": "2026-09-27T11:13:05",
+ "questions": 20,
+ "scores": {
+  "verdict": [
+   12,
+   20
+  ],
+  "grave": [
+   6,
+   10
+  ],
+  "demarche": [
+   8,
+   10
+  ],
+  "articles": [
+   14,
+   15
+  ],
+  "citations": [
+   20,
+   20
+  ],
+  "garde_fous": [
+   19,
+   20
+  ]
+ },
+ "efforts": [
+  "low",
+  "medium"
+ ],
+ "banc": "questions-cachees.json",
+ "temps_moyen_s": 43.6,
+ "temps_max_s": 294.0,
+ "duree_totale_s": 873
+}
+résultats : D:\PORTFOLIO\CLAUDE\assistant-plu\resultats\banc-cache-20260927-1113.json

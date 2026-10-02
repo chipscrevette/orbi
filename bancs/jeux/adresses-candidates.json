@@ -1,0 +1,462 @@
+[
+ {
+  "adresse": "2 Rue de la Bergerie 64200 Biarritz",
+  "lon": -1.552532,
+  "lat": 43.485817,
+  "parcelle": "AB 0433",
+  "surface_m2": 3470,
+  "zone": [
+   "UA"
+  ],
+  "prescriptions": [
+   "UA",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux",
+   "Ligne d'implantation obligatoire ou recul minimal imposé suivant la règle applicable à l'article 6 de chaque zone",
+   "Hauteur maximale"
+  ],
+  "informations": [
+   "DPU",
+   "2a"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "31 Avenue du Maréchal Joffre 64200 Biarritz",
+  "lon": -1.562293,
+  "lat": 43.476806,
+  "parcelle": "BL 0083",
+  "surface_m2": 200,
+  "zone": [
+   "UB"
+  ],
+  "prescriptions": [
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux",
+   "UB"
+  ],
+  "informations": [
+   "DPU",
+   "2a"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "2 Avenue d'Etienne 64200 Biarritz",
+  "lon": -1.548677,
+  "lat": 43.486725,
+  "parcelle": "AC 0035",
+  "surface_m2": 410,
+  "zone": [
+   "UB"
+  ],
+  "prescriptions": [
+   "UB",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux",
+   "Hauteur maximale"
+  ],
+  "informations": [
+   "DPU",
+   "2a"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "96 Avenue de Verdun 64200 Biarritz",
+  "lon": -1.546331,
+  "lat": 43.481067,
+  "parcelle": "AE 0250",
+  "surface_m2": 271,
+  "zone": [
+   "UBa"
+  ],
+  "prescriptions": [
+   "UBa",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux"
+  ],
+  "informations": [
+   "2a",
+   "DPU"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "20 Hameau du Reptou 64200 Biarritz",
+  "lon": -1.556661,
+  "lat": 43.47243,
+  "parcelle": "BK 0262",
+  "surface_m2": 6535,
+  "zone": [
+   "UBa"
+  ],
+  "prescriptions": [
+   "UH",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "UBa",
+   "Hauteur maximale"
+  ],
+  "informations": [
+   "DPU",
+   "2a"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "9 Allée du Moura 64200 Biarritz",
+  "lon": -1.546788,
+  "lat": 43.459905,
+  "parcelle": "AP 0033",
+  "surface_m2": 730,
+  "zone": [
+   "UC"
+  ],
+  "prescriptions": [
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux",
+   "UC",
+   "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)"
+  ],
+  "informations": [
+   "Bois d'Iraty",
+   "ZAD Iraty II",
+   "5a",
+   "DPU"
+  ],
+  "servitudes": []
+ },
+ {
+  "adresse": "30 Avenue Tamames 64200 Biarritz",
+  "lon": -1.542957,
+  "lat": 43.476183,
+  "parcelle": "AK 0183",
+  "surface_m2": 4357,
+  "zone": [
+   "UC"
+  ],
+  "prescriptions": [
+   "UC",
+   "Espace boisé classé (L113-1)",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux"
+  ],
+  "informations": [
+   "1",
+   "5a",
+   "DPU"
+  ],
+  "servitudes": []
+ },
+ {
+  "adresse": "5 Impasse Monnier 64200 Biarritz",
+  "lon": -1.541812,
+  "lat": 43.485848,
+  "parcelle": "AD 0216",
+  "surface_m2": 586,
+  "zone": [
+   "UD"
+  ],
+  "prescriptions": [
+   "UH",
+   "UD",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux"
+  ],
+  "informations": [
+   "5a",
+   "DPU"
+  ],
+  "servitudes": []
+ },
+ {
+  "adresse": "Avenue du Docteur Claisse 64200 Biarritz",
+  "lon": -1.554088,
+  "lat": 43.483882,
+  "parcelle": "AB 0323",
+  "surface_m2": 1348,
+  "zone": [
+   "UD"
+  ],
+  "prescriptions": [
+   "UD",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "informations": [
+   "DPU",
+   "2a"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "6 Rue Castellamare 64200 Biarritz",
+  "lon": -1.551352,
+  "lat": 43.480396,
+  "parcelle": "AE 0090",
+  "surface_m2": 509,
+  "zone": [
+   "UDa"
+  ],
+  "prescriptions": [
+   "UDa",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux"
+  ],
+  "informations": [
+   "DPU",
+   "2a"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "3 Rue Pierre Dartiguelongue 64200 Biarritz",
+  "lon": -1.548721,
+  "lat": 43.461823,
+  "parcelle": "AT 0049",
+  "surface_m2": 342,
+  "zone": [
+   "UDa"
+  ],
+  "prescriptions": [
+   "UDa",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux"
+  ],
+  "informations": [
+   "5a",
+   "DPU"
+  ],
+  "servitudes": []
+ },
+ {
+  "adresse": "11 Allée de la Forêt 64200 Biarritz",
+  "lon": -1.546882,
+  "lat": 43.462307,
+  "parcelle": "AT 0161",
+  "surface_m2": 6015,
+  "zone": [
+   "UG"
+  ],
+  "prescriptions": [
+   "UDa",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux",
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "UH"
+  ],
+  "informations": [
+   "5a",
+   "4",
+   "1",
+   "DPU"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "37 Allée du Moura 64200 Biarritz",
+  "lon": -1.539738,
+  "lat": 43.46009,
+  "parcelle": "AO 0265",
+  "surface_m2": 8522,
+  "zone": [
+   "UG"
+  ],
+  "prescriptions": [
+   "Elargissement de la rue du Moura (15 m)"
+  ],
+  "informations": [
+   "Bois d'Iraty",
+   "5a",
+   "ZAD Iraty II",
+   "DPU"
+  ],
+  "servitudes": [
+   "SUP T1 des Pyrénées-Atlantiques"
+  ]
+ },
+ {
+  "adresse": "14C Rue de Larreguy 64200 Biarritz",
+  "lon": -1.54798,
+  "lat": 43.462809,
+  "parcelle": "AT 0117",
+  "surface_m2": 19716,
+  "zone": [
+   "UH"
+  ],
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "UDa",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux",
+   "Espace boisé classé (L113-1)",
+   "UH",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux",
+   "UC"
+  ],
+  "informations": [
+   "1",
+   "5a",
+   "DPU"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "21 Avenue de Ségure 64200 Biarritz",
+  "lon": -1.553539,
+  "lat": 43.476843,
+  "parcelle": "AX 0038",
+  "surface_m2": 5465,
+  "zone": [
+   "UH"
+  ],
+  "prescriptions": [
+   "UH",
+   "UDa",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux"
+  ],
+  "informations": [
+   "DPU",
+   "2a",
+   "3",
+   "5a"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "14 Rue du Moulin de Chabiague 64200 Biarritz",
+  "lon": -1.573921,
+  "lat": 43.46549,
+  "parcelle": "BT 0179",
+  "surface_m2": 30189,
+  "zone": [
+   "N"
+  ],
+  "prescriptions": [
+   "Prolongement de la rue Minjongo (14 m)"
+  ],
+  "informations": [
+   "1"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "6 Rue Eugène Raulet 64200 Biarritz",
+  "lon": -1.549208,
+  "lat": 43.461742,
+  "parcelle": "AT 0048",
+  "surface_m2": 361,
+  "zone": [
+   "N"
+  ],
+  "prescriptions": [
+   "UDa",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux"
+  ],
+  "informations": [
+   "5a",
+   "DPU",
+   "1"
+  ],
+  "servitudes": []
+ },
+ {
+  "adresse": "Allée Gabrielle Dorziat 64200 Biarritz",
+  "lon": -1.556342,
+  "lat": 43.459633,
+  "parcelle": "CA 0044",
+  "surface_m2": 22737,
+  "zone": [
+   "Ncu"
+  ],
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "informations": [
+   "1"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "20 Avenue de la Plage 64200 Biarritz",
+  "lon": -1.574541,
+  "lat": 43.462601,
+  "parcelle": "BT 0098",
+  "surface_m2": 759,
+  "zone": [
+   "Ncu"
+  ],
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "UDa",
+   "Majoration des volumes constructibles pour les programmes comportant des logements locatifs sociaux"
+  ],
+  "informations": [
+   "2a",
+   "1",
+   "DPU"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "28bis Boulevard Marcel Dassault 64200 Biarritz",
+  "lon": -1.559917,
+  "lat": 43.450633,
+  "parcelle": "CK 0054",
+  "surface_m2": 44693,
+  "zone": [
+   "Nh"
+  ],
+  "prescriptions": [
+   "Espaces proches du rivage : EPR",
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Règles architecturales particulières (cf. Art. 11)",
+   "Application de l article L.111-1-4 du code de l urbanisme"
+  ],
+  "informations": [
+   "1",
+   "DPU",
+   "4"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ]
+ },
+ {
+  "adresse": "1 Allée de Barroilhet 64200 Biarritz",
+  "lon": -1.556841,
+  "lat": 43.449916,
+  "parcelle": "CE 0064",
+  "surface_m2": 3807,
+  "zone": [
+   "Nh"
+  ],
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Application de l article L.111-1-4 du code de l urbanisme"
+  ],
+  "informations": [],
+  "servitudes": []
+ }
+]

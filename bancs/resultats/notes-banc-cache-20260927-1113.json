@@ -1,0 +1,71 @@
+{
+ "titre": "Le banc caché : 20 questions jamais vues, un seul passage",
+ "chapo": "Même code et mêmes réglages que le passage 5, figés et scellés avant le passage ; 17 vraies questions de forums transposées sur des adresses neuves, et 3 cas de zone. Les verdicts justes tombent de 80 % au banc de mise au point (passage 5, même code) à 60 % ici : l'écart mesure ce que les corrections avaient appris sur les questions qu'elles corrigeaient.",
+ "image": "Comme un vendeur à qui l'on demande si ce pantalon me va, et qui répond « oui, si vous prenez la taille au-dessus » : l'agent juge un autre projet que celui qu'on lui décrit.",
+ "contresens": {
+  "C01": {
+   "extrait": "Oui, sous conditions : […] il doit être implanté à au moins 3 mètres de la limite séparative",
+   "pourquoi": "Le projet décrit est à 50 cm du mur et à 1 m du fond : c'est interdit en UD (sur la limite ou à 3 m au moins). L'agent cite la bonne règle, puis répond sur un autre emplacement."
+  },
+  "C02": {
+   "extrait": "Oui, sous conditions : la véranda de 4,5 m² reste sous le seuil de 40 m² de la zone UD",
+   "pourquoi": "La personne dit que l'emprise maximale est déjà atteinte : 4,5 m² de plus la dépassent. L'agent répond sur la démarche et rappelle la limite, sans conclure qu'elle est franchie."
+  },
+  "C05": {
+   "extrait": "l'extension limitée à 25 % de la surface de plancher existante avant le 27 mars 1995",
+   "pourquoi": "Mauvais secteur : 25 %, c'est la règle du secteur Nh ; la parcelle est en N, où l'extension est limitée à 10 %, soit 9 m² pour 90 m². 25 m² sont interdits."
+  },
+  "C09": {
+   "extrait": "Oui, sous conditions : la piscine est couverte, mais l'abri doit rester une piscine non couverte au sens de l'article Ncu 2",
+   "pourquoi": "La réponse se contredit : Ncu 2 n'admet qu'une piscine non couverte, un abri de plus de 1,80 m est une construction interdite. Le tri avait rangé le projet en « autre », d'où la démarche manquante."
+  }
+ },
+ "autres": {
+  "C03": "Noté juste (le verdict « information » est imposé et l'article est le bon), mais faux sur le fond : « c'est le débord de toit qui doit être sur la limite, pas la dalle ». C'est l'inverse : la construction se pose sur la limite, le débord est une saillie.",
+  "C07": "« Oui sous conditions » au lieu de « impossible à dire » : l'extension en Nh dépend de la surface de la maison avant mars 1995, que la question ne donne pas. La réponse mêle aussi des chiffres de secteurs voisins (« emprise au sol maximale de 0,10 »).",
+  "C11": "Verdict juste, démarche fausse : le tri a rangé « une maison à étage » en surélévation, d'où « dépend de la surface créée » au lieu d'un permis de construire.",
+  "C12": "Le tri a classé la question en « droit » au lieu d'« explication » : réponse « oui sous conditions » sur l'emprise, alors que la question portait sur la surface de plancher possible.",
+  "C13": "Le tri a rangé « quelle emprise ai-je le droit de construire ? » en maison neuve ; l'agent applique alors une clause de UB 1 réservée aux abords de l'aéroport (courbe « C » du plan d'exposition au bruit) et conclut « non ».",
+  "C14": "Aucune réponse : la réflexion courte a rendu un morceau de JSON sans verdict, accepté comme réponse, puis la correction n'a rien produit (294 s). Il manque une vérification que la réponse a bien tous ses champs."
+ },
+ "tient": [
+  [
+   "Citations 20/20",
+   "Aucune citation inventée ni retouchée, sur des articles que le banc de mise au point ne sollicitait pas (UH, UB 9, Ncu, Nh)."
+  ],
+  [
+   "Le verrou de zone",
+   "C15 : « non » pour une maison neuve en UG, justifié par l'article UG 1."
+  ],
+  [
+   "Le périmètre",
+   "C04, C18, C19, C20 : risques, impôts, dérogation, autre commune, tous écartés en 6 secondes."
+  ],
+  [
+   "La démarche",
+   "8 sur 10, dont la déclaration préalable des clôtures de Biarritz (C06, C17) et le permis sans architecte (C08)."
+  ]
+ ],
+ "suite": [
+  [
+   "Le verdict décidé par le code, règle par règle.",
+   "Le modèle remplit une grille : pour chaque règle citée, la valeur du projet, le seuil, respecté ou non ; le code en déduit le verdict (une règle non respectée suffit pour « non »). C'est la réponse au défaut principal, trop fréquent pour une consigne de plus."
+  ],
+  [
+   "Le tri plus robuste.",
+   "« Abri de piscine », « maison à étage » : des mots qui fixent le projet par le code, comme le périmètre."
+  ],
+  [
+   "Secteurs et clauses localisées.",
+   "Marquer chaque passage du règlement par le secteur ou la zone qu'il vise (Nh, courbe du bruit), et refuser qu'il serve ailleurs."
+  ],
+  [
+   "Une réponse incomplète est une non-réponse.",
+   "Vérifier que le JSON a un verdict et un texte avant de l'accepter (C14)."
+  ],
+  [
+   "Un nouveau banc caché.",
+   "Celui-ci est maintenant connu : après les corrections, il faudra de nouvelles questions pour mesurer à nouveau."
+  ]
+ ]
+}

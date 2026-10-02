@@ -1,0 +1,20 @@
+[project]
+name = "k2"
+version = "0.1.0"
+description = "K2 Horizon 7B servi en local (transformers + PyTorch CUDA), avec la même interface que Ollama /api/chat"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "accelerate>=1.15.0",
+    "bitsandbytes>=0.50.2",
+    "safetensors>=0.8.0",
+    "torch>=2.14.0",
+    "transformers>=5.15",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu130"
+url = "https://download.pytorch.org/whl/cu130"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu130" }

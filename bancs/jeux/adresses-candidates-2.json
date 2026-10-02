@@ -1,0 +1,886 @@
+[
+ {
+  "adresse": "12 Avenue de la Gare 64200 Biarritz",
+  "zone": "UB",
+  "parcelle": "AX 0460",
+  "surface_m2": 1607,
+  "prescriptions": [],
+  "hauteurs_au_plan": [
+   "3"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "42 Avenue du Maréchal Joffre 64200 Biarritz",
+  "zone": "UB",
+  "parcelle": "BN 0128",
+  "surface_m2": 482,
+  "prescriptions": [
+   "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)"
+  ],
+  "hauteurs_au_plan": [
+   "2"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "5 Avenue d'Etienne 64200 Biarritz",
+  "zone": "UB",
+  "parcelle": "AC 0037",
+  "surface_m2": 3555,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)"
+  ],
+  "hauteurs_au_plan": [
+   "5"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "2 Rue Gradwold 64200 Biarritz",
+  "zone": "UBa",
+  "parcelle": "AI 0013",
+  "surface_m2": 142,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "1 Rue Harispe 64200 Biarritz",
+  "zone": "UBa",
+  "parcelle": "BN 0070",
+  "surface_m2": 757,
+  "prescriptions": [
+   "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)",
+   "Linéaire commercial protégé (L151-1 6-1)"
+  ],
+  "hauteurs_au_plan": [
+   "1"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "5 Avenue Voltaire 64200 Biarritz",
+  "zone": "UBa",
+  "parcelle": "AK 0303",
+  "surface_m2": 265,
+  "prescriptions": [
+   "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)"
+  ],
+  "hauteurs_au_plan": [
+   "2"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "14 Rue Larivière 64200 Biarritz",
+  "zone": "UC",
+  "parcelle": "AE 0450",
+  "surface_m2": 393,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "39e Avenue de Coulaoun 64200 Biarritz",
+  "zone": "UC",
+  "parcelle": "AL 0125",
+  "surface_m2": 31809,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "9 Avenue des Chênes 64200 Biarritz",
+  "zone": "UC",
+  "parcelle": "AE 0372",
+  "surface_m2": 1127,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "43 Avenue du Maréchal Joffre 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "BK 0072",
+  "surface_m2": 2907,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "14 Avenue Notre-Dame 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "BM 0227",
+  "surface_m2": 610,
+  "prescriptions": [
+   "Secteur à plan masse Beaurivage UBc",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "11ter Avenue de la République 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "BK 0405",
+  "surface_m2": 1191,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "9 Avenue de Chassin 64200 Biarritz",
+  "zone": "UDa",
+  "parcelle": "AI 0156",
+  "surface_m2": 1576,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "35B Rue de Madrid 64200 Biarritz",
+  "zone": "UDa",
+  "parcelle": "BR 0114",
+  "surface_m2": 4287,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "31 Avenue Larochefoucauld 64200 Biarritz",
+  "zone": "UDa",
+  "parcelle": "AD 0171",
+  "surface_m2": 425,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "12 Allée des 3 Fontaines 64200 Biarritz",
+  "zone": "UDa",
+  "parcelle": "AX 0591",
+  "surface_m2": 598,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "11 Allée du Fer à Cheval 64200 Biarritz",
+  "zone": "UDb",
+  "parcelle": "BK 0194",
+  "surface_m2": 298,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "5 Impasse Guine 64200 Biarritz",
+  "zone": "UDb",
+  "parcelle": "AA 0116",
+  "surface_m2": 592,
+  "prescriptions": [
+   "Règles architecturales particulières (cf. Art. 11)",
+   "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "1 Rue Haraout 64200 Biarritz",
+  "zone": "UDc",
+  "parcelle": "AK 0643",
+  "surface_m2": 2141,
+  "prescriptions": [
+   "Secteur à plan masse Haraout",
+   "Secteur à plan masse Kleber UCc",
+   "Logements sociaux - Rue Lahontine"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "36 Avenue Carnot 64200 Biarritz",
+  "zone": "UG",
+  "parcelle": "BI 0083",
+  "surface_m2": 350,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "12 Avenue Beaurivage 64200 Biarritz",
+  "zone": "UG",
+  "parcelle": "BM 0233",
+  "surface_m2": 3618,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Secteur à plan masse Beaurivage UBc",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "21 Rue de la Barthe 64200 Biarritz",
+  "zone": "UG",
+  "parcelle": "AM 0060",
+  "surface_m2": 6935,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "14E Rue de Larreguy 64200 Biarritz",
+  "zone": "UH",
+  "parcelle": "AT 0117",
+  "surface_m2": 19716,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Espace boisé classé (L113-1)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "32b Rue Petricot 64200 Biarritz",
+  "zone": "UH",
+  "parcelle": "BO 0015",
+  "surface_m2": 30650,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "10 Avenue du Président JF Kennedy 64200 Biarritz",
+  "zone": "UH",
+  "parcelle": "BK 0244",
+  "surface_m2": 3666,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "7 Rue Luis Mariano 64200 Biarritz",
+  "zone": "UY",
+  "parcelle": "AP 0060",
+  "surface_m2": 3129,
+  "prescriptions": [
+   "Linéaire commercial protégé (L151-1 6-1)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "SUP T1 des Pyrénées-Atlantiques"
+  ],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "20 Avenue du Sabaou 64200 Biarritz",
+  "zone": "UY",
+  "parcelle": "AK 0441",
+  "surface_m2": 1533,
+  "prescriptions": [
+   "Ligne d'implantation obligatoire ou recul minimal imposé suivant la règle applicable à l'article 6 de chaque zone"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "23 Avenue d'Ilbarritz 64200 Biarritz",
+  "zone": "N",
+  "parcelle": "BT 0041",
+  "surface_m2": 6285,
+  "prescriptions": [
+   "Bande des 100m 'Loi littorale' (L121-16)",
+   "Espaces proches du rivage : EPR",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Espace boisé classé (L113-1)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz",
+   "ChÃ¢teau d'Ilbarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "54 Avenue de l'Impératrice 64200 Biarritz",
+  "zone": "N",
+  "parcelle": "AA 0008",
+  "surface_m2": 2140,
+  "prescriptions": [
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "28 Rue de Minjongo 64200 Biarritz",
+  "zone": "Ncu",
+  "parcelle": "BX 0011",
+  "surface_m2": 71183,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "93 Avenue de Bidart 64200 Biarritz",
+  "zone": "Ncu",
+  "parcelle": "BT 0047",
+  "surface_m2": 614,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "10 Impasse Orisson 64200 Biarritz",
+  "zone": "Nh",
+  "parcelle": "CL 0001",
+  "surface_m2": 3980,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Espace boisé classé (L113-1)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "4 Rue Pierre de Chevigné 64200 Biarritz",
+  "zone": "Nh",
+  "parcelle": "BX 0012",
+  "surface_m2": 14560,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "5 Rue de Silhouette 64200 Biarritz",
+  "zone": "Nh",
+  "parcelle": "CE 0027",
+  "surface_m2": 5053,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Espace boisé classé (L113-1)",
+   "Alignement d'arbres à conserver"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "parcelle BM 0334, Biarritz",
+  "ref": "BM 0334",
+  "zone": "Ner",
+  "parcelle": "BM 0334",
+  "surface_m2": 19487,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "parcelle BB 0002, Biarritz",
+  "ref": "BB 0002",
+  "zone": "Ner",
+  "parcelle": "BB 0002",
+  "surface_m2": 345,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "parcelle BB 0110, Biarritz",
+  "ref": "BB 0110",
+  "zone": "Ner",
+  "parcelle": "BB 0110",
+  "surface_m2": 292,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "parcelle CE 0057, Biarritz",
+  "ref": "CE 0057",
+  "zone": "N",
+  "parcelle": "CE 0057",
+  "surface_m2": 27712,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Elargissement de l'A.63",
+   "Règles architecturales particulières (cf. Art. 11)",
+   "Application de l article L.111-1-4 du code de l urbanisme"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "parcelle CK 0037, Biarritz",
+  "ref": "CK 0037",
+  "zone": "Ncu",
+  "parcelle": "CK 0037",
+  "surface_m2": 35017,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Application de l article L.111-1-4 du code de l urbanisme"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "SUP T1 des Pyrénées-Atlantiques",
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "parcelle AV 0148, Biarritz",
+  "ref": "AV 0148",
+  "zone": "Ncu",
+  "parcelle": "AV 0148",
+  "surface_m2": 20780,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "parcelle AT 0178, Biarritz",
+  "ref": "AT 0178",
+  "zone": "N",
+  "parcelle": "AT 0178",
+  "surface_m2": 43075,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Application de l article L.111-1-4 du code de l urbanisme"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "parcelle CE 0113, Biarritz",
+  "ref": "CE 0113",
+  "zone": "N",
+  "parcelle": "CE 0113",
+  "surface_m2": 26836,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Elargissement de l'A.63",
+   "Application de l article L.111-1-4 du code de l urbanisme"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "parcelle AH 0303, Biarritz",
+  "ref": "AH 0303",
+  "zone": "N",
+  "parcelle": "AH 0303",
+  "surface_m2": 9562,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Secteur soumis à OAP : AGUILERA"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "parcelle CL 0007, Biarritz",
+  "ref": "CL 0007",
+  "zone": "Ncu",
+  "parcelle": "CL 0007",
+  "surface_m2": 88142,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Elargissement de l'A.63",
+   "Elargissement de la rue A. Seeger (15m)",
+   "Espace boisé classé (L113-1)",
+   "Application de l article L.111-1-4 du code de l urbanisme",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "19 Rue Jean Jaurès 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "BK 0132",
+  "surface_m2": 552,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [
+   "2"
+  ],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "20 Avenue du Docteur Claisse 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "AB 0521",
+  "surface_m2": 428,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "8 Avenue Notre-Dame 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "BM 0224",
+  "surface_m2": 466,
+  "prescriptions": [
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "13 Avenue du Marechal Juin 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "AL 0160",
+  "surface_m2": 1260,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "22 Rue de l'Océan 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "BN 0110",
+  "surface_m2": 183,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "3 Avenue Maurice Trubert 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "AC 0114",
+  "surface_m2": 176,
+  "prescriptions": [
+   "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "21 Rue Antoine Lalanne 64200 Biarritz",
+  "zone": "UD",
+  "parcelle": "AB 0221",
+  "surface_m2": 330,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "2 Rue Eugène Raulet 64200 Biarritz",
+  "zone": "UDa",
+  "parcelle": "AT 0052",
+  "surface_m2": 422,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "8 Allée de la Forêt 64200 Biarritz",
+  "zone": "UDa",
+  "parcelle": "AT 0151",
+  "surface_m2": 2666,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Ligne d'implantation obligatoire ou recul minimal imposé suivant la règle applicable à l'article 6 de chaque zone"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "16 Allée des Ormeaux 64200 Biarritz",
+  "zone": "UDa",
+  "parcelle": "AX 0180",
+  "surface_m2": 704,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "18 Boulevard Sainte Madeleine 64200 Biarritz",
+  "zone": "UDa",
+  "parcelle": "AC 0235",
+  "surface_m2": 2736,
+  "prescriptions": [],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "47 Rue de l'Estagnas 64200 Biarritz",
+  "zone": "UDa",
+  "parcelle": "AH 0375",
+  "surface_m2": 6331,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Espace boisé classé (L113-1)",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "15b Avenue de la Milady 64200 Biarritz",
+  "zone": "UH",
+  "parcelle": "BP 0271",
+  "surface_m2": 10092,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "39 Rue de l'Estagnas 64200 Biarritz",
+  "zone": "UH",
+  "parcelle": "AH 0295",
+  "surface_m2": 16102,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Espace boisé classé (L113-1)",
+   "Elargissement du boulevard du B.A.B.(32 m)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "10 Avenue de Pestre 64200 Biarritz",
+  "zone": "UH",
+  "parcelle": "BK 0441",
+  "surface_m2": 3494,
+  "prescriptions": [
+   "Espace vert protégé (L151-19 et L151-23)",
+   "Règles architecturales particulières (cf. Art. 11)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "3 Allée de Barroilhet 64200 Biarritz",
+  "zone": "Nh",
+  "parcelle": "CE 0082",
+  "surface_m2": 3179,
+  "prescriptions": [
+   "Application de l article L.111-1-4 du code de l urbanisme"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [],
+  "site_patrimonial": false
+ },
+ {
+  "adresse": "4 Rue Uhaldia 64200 Biarritz",
+  "zone": "Nh",
+  "parcelle": "CE 0006",
+  "surface_m2": 766,
+  "prescriptions": [
+   "Espace boisé classé (L113-1)",
+   "Application de l article L.111-1-4 du code de l urbanisme"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ },
+ {
+  "adresse": "15quinquies Avenue de Grammont 64200 Biarritz",
+  "zone": "UC",
+  "parcelle": "AX 0138",
+  "surface_m2": 1126,
+  "prescriptions": [
+   "Aménagement de liaisons impasse de Grammont",
+   "Espace vert protégé (L151-19 et L151-23)"
+  ],
+  "hauteurs_au_plan": [],
+  "servitudes": [
+   "Site patrimonial remarquable de Biarritz"
+  ],
+  "site_patrimonial": true
+ }
+]

@@ -1,0 +1,75 @@
+V01  36.7 s  attendu « oui » obtenu « oui »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V02  20.5 s  attendu « oui sous conditions » obtenu « information »  verdict:✗ sens:✗ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V03  15.4 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V04  38.2 s  attendu « oui » obtenu « oui »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V05  51.3 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V06  54.8 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V07  49.9 s  attendu « oui sous conditions » obtenu « impossible à dire »  verdict:✗ sens:✗ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V08  22.6 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V09  43.4 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V10  38.6 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V11  38.3 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V12  64.8 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V13  18.8 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V14  38.4 s  attendu « impossible à dire » obtenu « non »  verdict:✗ sens:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V15  22.9 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V16  50.2 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ sens:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V17  24.2 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V18  219.4 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+V19  26.5 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V20  24.0 s  attendu « information » obtenu « information »  verdict:✓ demarche:✓ citations:✓ garde_fous:✓
+V21  5.5 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+V22  5.6 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ demarche:✓ citations:✓ garde_fous:✓
+V23  54.5 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✗
+V24  5.7 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+V25  50.5 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V26  50.1 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ sens:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V27  6.2 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+V28  6.1 s  attendu « impossible à dire » obtenu « impossible à dire »  verdict:✓ sens:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V29  7.0 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+V30  5.7 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+
+{
+ "date": "2026-10-02T14:34:02",
+ "questions": 30,
+ "scores": {
+  "verdict": [
+   25,
+   30
+  ],
+  "sens": [
+   14,
+   19
+  ],
+  "grave": [
+   15,
+   15
+  ],
+  "demarche": [
+   18,
+   18
+  ],
+  "articles": [
+   25,
+   25
+  ],
+  "citations": [
+   30,
+   30
+  ],
+  "garde_fous": [
+   29,
+   30
+  ]
+ },
+ "efforts": [
+  "low",
+  "medium"
+ ],
+ "banc": "questions-v2.json",
+ "pipeline": "grille",
+ "temps_moyen_s": 36.5,
+ "temps_max_s": 219.4,
+ "duree_totale_s": 1096
+}
+résultats : D:\PORTFOLIO\CLAUDE\assistant-plu\resultats\banc-grille-20261002-1434.json

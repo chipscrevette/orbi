@@ -1,0 +1,1990 @@
+{
+ "resume": {
+  "date": "2026-10-02T14:04:40",
+  "questions": 30,
+  "scores": {
+   "verdict": [
+    23,
+    30
+   ],
+   "grave": [
+    15,
+    15
+   ],
+   "demarche": [
+    18,
+    18
+   ],
+   "articles": [
+    25,
+    25
+   ],
+   "citations": [
+    29,
+    30
+   ],
+   "garde_fous": [
+    29,
+    30
+   ]
+  },
+  "efforts": [
+   "low",
+   "medium"
+  ],
+  "banc": "questions-v2.json",
+  "pipeline": "grille",
+  "temps_moyen_s": 32.7,
+  "temps_max_s": 70.6,
+  "duree_totale_s": 981
+ },
+ "lignes": [
+  {
+   "id": "V01",
+   "question": "J'ai 342 m² de terrain au 3 rue Pierre Dartiguelongue et ma maison fait déjà 80 m² d'emprise. Si j'ajoute une piscine non couverte de 28 m², est-ce que je dépasse l'emprise autorisée ?",
+   "attendu": {
+    "verdict": "non : une piscine non couverte ne compte pas ; l'emprise reste à 80 m² sur 85,5 m² autorisés",
+    "demarche": "déclaration préalable",
+    "regles": [
+     {
+      "article": "DG B-5",
+      "page": 9,
+      "citation": "toutefois les installations sportives de plein-air telles que piscines non couvertes",
+      "dit": "une piscine non couverte ne compte pas dans l'emprise au sol"
+     },
+     {
+      "article": "UD 9",
+      "page": 70,
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa",
+      "dit": "25 % de la parcelle en UDa (40 % pour une parcelle de moins de 1 000 m² existant avant 2003), 250 m² au plus"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-9",
+      "dit": "constructions de 5 à 20 m² : déclaration préalable ; piscines dont le bassin fait 100 m² au plus, non couvertes ou couvertes à moins de 1,80 m : déclaration préalable",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+     }
+    ],
+    "a_verifier": [
+     "que la maison fait bien 80 m² d'emprise"
+    ],
+    "verdict_type": "oui",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "DG B-5",
+     "UD 9"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. Emprise au sol maximale de 25 % de la surface de la parcelle (UD 9) — emprise au sol maximale de 25 % de 342 m², soit 85,5 m². Démarche : déclaration préalable (bassin de 100 m² au plus, non couvert), délai d'instruction : 1 mois.",
+    "regles": [
+     {
+      "article": "UD 9",
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa, UDa* et UDb",
+      "page": 70,
+      "verifiee": true
+     },
+     {
+      "article": "DG B-5",
+      "citation": "les installations sportives de plein-air telles que piscines non couvertes, tennis ne sont pas comprises dans l'emprise au sol",
+      "page": 9,
+      "verifiee": true
+     },
+     {
+      "article": "UD 7",
+      "citation": "Les piscines, spas et jacuzzis sont exclus de cette règle",
+      "page": 69,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "emprise au sol maximale de 25 % de la surface de la parcelle"
+    ],
+    "garde_fous": [],
+    "secondes": 33.2,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-134852-697749.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": false,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V02",
+   "question": "Si je fais une piscine de moins de 10 m² au 6 rue Castellamare, je n'ai rien à déclarer, donc le PLU ne s'applique pas ?",
+   "attendu": {
+    "verdict": "non : même dispensée, elle doit respecter le PLU ; et ici, en site patrimonial, la dispense ne joue pas",
+    "demarche": "déclaration préalable (site patrimonial remarquable)",
+    "regles": [
+     {
+      "article": "DG B-5",
+      "page": 9,
+      "citation": "toutefois les installations sportives de plein-air telles que piscines non couvertes",
+      "dit": "une piscine non couverte ne compte pas dans l'emprise au sol"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "L421-8",
+      "dit": "un projet dispensé de formalité doit quand même respecter les règles d'urbanisme (le PLU)",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049398814"
+     },
+     {
+      "texte": "R421-2",
+      "dit": "Sont dispensées de toute formalité [...] sauf lorsqu'ils sont implantés dans le périmètre d'un site patrimonial remarquable",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050497056"
+     }
+    ],
+    "a_verifier": [
+     "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+    ],
+    "verdict_type": "oui sous conditions",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "DG B-5"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "information",
+    "reponse": "Non, le PLU s'applique toujours : une piscine de 10 m² n'est pas dispensée de déclaration. Il faut une déclaration préalable, bassin de 100 m² au plus, non couvert ; en site patrimonial, pas de dispense ; délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial).",
+    "regles": [
+     {
+      "article": "DG B-5",
+      "citation": "L'ensemble des constructions sur l'unité foncière est comptabilisé dans l'emprise au sol, toutefois les installations sportives de plein-air telles que piscines non couvertes, tennis ne sont pas comprises dans l'emprise au sol.",
+      "page": 9,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "la piscine est-elle couverte ou non couverte ?",
+     "la piscine est-elle un bassin de 100 m² au plus ?"
+    ],
+    "garde_fous": [],
+    "secondes": 19.2,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-134911-894384.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": false,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V03",
+   "question": "Ma future piscine serait à 1,5 m de la limite du voisin, au 6 rue Castellamare : la mairie peut-elle refuser pour la distance ?",
+   "attendu": {
+    "verdict": "non pour la distance : en UD, les piscines sont exclues de la règle des limites séparatives",
+    "demarche": "déclaration préalable jusqu'à 100 m² de bassin, sans dispense en site patrimonial ; permis au-delà (surface non donnée)",
+    "regles": [
+     {
+      "article": "UD 7",
+      "page": 69,
+      "citation": "Les piscines, spas et jacuzzis sont exclus de cette règle",
+      "dit": "la règle des distances ne s'applique pas aux piscines"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-9",
+      "dit": "constructions de 5 à 20 m² : déclaration préalable ; piscines dont le bassin fait 100 m² au plus, non couvertes ou couvertes à moins de 1,80 m : déclaration préalable",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+     },
+     {
+      "texte": "R421-2",
+      "dit": "Sont dispensées de toute formalité [...] sauf lorsqu'ils sont implantés dans le périmètre d'un site patrimonial remarquable",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050497056"
+     }
+    ],
+    "a_verifier": [
+     "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+    ],
+    "verdict_type": "oui sous conditions",
+    "demarche_type": "dépend de la surface du bassin",
+    "articles": [
+     "UD 7"
+    ],
+    "correction": "démarche : dépend de la surface du bassin (non donnée)"
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. Démarche : dépend de la surface du bassin (rien jusqu'à 10 m² hors secteur protégé, déclaration jusqu'à 100 m², permis au-delà), délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial) pour une déclaration préalable ; 2 mois en principe, davantage en site patrimonial (avis de l'ABF) pour un permis.",
+    "regles": [
+     {
+      "article": "UD 7",
+      "citation": "Les piscines, spas et jacuzzis sont exclus de cette règle. Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci.",
+      "page": 69,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "l'avis de l'Architecte des Bâtiments de France (site patrimonial remarquable)"
+    ],
+    "garde_fous": [],
+    "secondes": 15.5,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-134927-406650.jsonl"
+   },
+   "demarche_obtenue": "dépend de la surface du bassin",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V04",
+   "question": "Une petite piscine hors sol de 8 m² collée au mur du voisin, au 3 rue Pierre Dartiguelongue : c'est conforme ?",
+   "attendu": {
+    "verdict": "oui pour la distance (piscines exclues de l'article UD 7) ; aucune formalité sous 10 m² ici, mais le PLU s'applique",
+    "demarche": "aucune formalité (hors secteur protégé)",
+    "regles": [
+     {
+      "article": "UD 7",
+      "page": 69,
+      "citation": "Les piscines, spas et jacuzzis sont exclus de cette règle",
+      "dit": "la règle des distances ne s'applique pas aux piscines"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-2",
+      "dit": "Sont dispensées de toute formalité [...] sauf lorsqu'ils sont implantés dans le périmètre d'un site patrimonial remarquable",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000050497056"
+     },
+     {
+      "texte": "L421-8",
+      "dit": "un projet dispensé de formalité doit quand même respecter les règles d'urbanisme (le PLU)",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000049398814"
+     }
+    ],
+    "a_verifier": [],
+    "verdict_type": "oui",
+    "demarche_type": "aucune formalité",
+    "articles": [
+     "UD 7"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. L'emprise au sol maximale est de 25 % de la parcelle, soit 85,5 m² pour 342 m² (UD 9) — la piscine hors sol de 8 m² ne compte pas dans l'emprise au sol. Une exception du règlement s'applique. Démarche : aucune formalité (bassin de 10 m² au plus, hors secteur protégé).",
+    "regles": [
+     {
+      "article": "UD 7",
+      "citation": "Les piscines, spas et jacuzzis sont exclus de cette règle.",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "DG B-5",
+      "citation": "les installations sportives de plein-air telles que piscines non couvertes, tennis ne sont pas comprises dans l’emprise au sol.",
+      "page": 9,
+      "verifiee": true
+     },
+     {
+      "article": "UD 9",
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa, UDa* et UDb",
+      "page": 70,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 34.3,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135001-669341.jsonl"
+   },
+   "demarche_obtenue": "aucune formalité",
+   "note": {
+    "verdict": false,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V05",
+   "question": "Je veux un abri de jardin de 7 m² au 3 rue Pierre Dartiguelongue : à quelle distance de la limite dois-je le mettre ?",
+   "attendu": {
+    "verdict": "sur la limite, ou à 3 m au moins ; entre les deux, non",
+    "demarche": "déclaration préalable (5 à 20 m²)",
+    "regles": [
+     {
+      "article": "UD 7",
+      "page": 69,
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+      "dit": "sur la limite, ou à 3 m au moins ; et plus on est haut, plus il faut s'écarter (D ≥ h − 3)"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-9",
+      "dit": "constructions de 5 à 20 m² : déclaration préalable ; piscines dont le bassin fait 100 m² au plus, non couvertes ou couvertes à moins de 1,80 m : déclaration préalable",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+     }
+    ],
+    "a_verifier": [],
+    "verdict_type": "oui sous conditions",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "UD 7"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. Tout point des constructions à au moins 3 m de la limite séparative, sauf en UDti (UD 7) — la question ne le dit pas. D ≥ h-3, soit h ≤ D+3, sauf en UDti où D ≥ h (UD 7) — la question ne le dit pas. Les saillies ne déterminant pas un espace clos ou couvert peuvent être autorisées dans la bande de 3 m à partir de la limite (UD 7) — la question ne le dit pas. Démarche : déclaration préalable (de 5 à 20 m²), délai d'instruction : 1 mois.",
+    "regles": [
+     {
+      "article": "UD 7",
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci.",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "UD 7",
+      "citation": "Dans toute la zone et tous les secteurs, sauf en secteur UDti : tout point des constructions est éloigné du point le plus proche de la limite séparative d'une distance horizontale (D) au moins égale à la différence d'altitude (h) entre ces deux points diminuée de 3 mètres : D ≥ h-3 soit h ≤ D + 3",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "UD 7",
+      "citation": "Des saillies telles que débords de toit, contreforts, murets, et, d'une manière générale, tous les éléments de construction ne déterminant pas un espace clos ou couvert peuvent être autorisés dans la bande de 3 m à partir de la limite séparative.",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "UD 7",
+      "citation": "Une implantation différente de celle résultant de l'application des alinéas précédents peut être acceptée : - pour les constructions et travaux liés aux réseaux si des considérations techniques le justifient. - lorsque les constructions s'adossent contre la façade aveugle d'un bâtiment existant, sous réserve d'insertion paysagère et d'harmonie architecturale avec le bâti riverain.",
+      "page": 69,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "la distance du projet à la limite séparative",
+     "la différence d'altitude entre le point le plus proche de la limite et le point le plus proche de la construction, et la distance horizontale correspondante",
+     "si le projet comporte des saillies (débords de toit, contreforts, murets) et si elles déterminent un espace clos ou couvert",
+     "si le projet s'adosserait contre la façade aveugle d'un bâtiment existant"
+    ],
+    "garde_fous": [],
+    "secondes": 59.5,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135101-143558.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V06",
+   "question": "Mon voisin a installé un abri de 15 m² à 1 m de notre limite, au 6 rue Castellamare : a-t-il le droit ?",
+   "attendu": {
+    "verdict": "a priori non : en UD, une construction doit être sur la limite ou à 3 m au moins, sauf exceptions (adossement à une façade aveugle)",
+    "demarche": "il lui fallait une déclaration préalable (5 à 20 m², site patrimonial)",
+    "regles": [
+     {
+      "article": "UD 7",
+      "page": 69,
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+      "dit": "sur la limite, ou à 3 m au moins ; et plus on est haut, plus il faut s'écarter (D ≥ h − 3)"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-9",
+      "dit": "constructions de 5 à 20 m² : déclaration préalable ; piscines dont le bassin fait 100 m² au plus, non couvertes ou couvertes à moins de 1,80 m : déclaration préalable",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+     },
+     {
+      "texte": "R421-11",
+      "dit": "en site patrimonial remarquable, les petites constructions (jusqu'à 20 m²) sont soumises à déclaration préalable, sans le seuil de 5 m²",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074075/LEGISCTA000006188272/"
+     }
+    ],
+    "a_verifier": [
+     "s'il a obtenu une autorisation",
+     "les recours : hors périmètre (mairie, conciliateur)"
+    ],
+    "verdict_type": "non",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "UD 7"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "non",
+    "reponse": "Non, ce projet n'est pas possible tel que vous le décrivez. Tout point des constructions à au moins 3 m de la limite séparative (UD 7) — Votre abri est à 1 m de la limite, donc à moins de 3 m. Abris de jardin de 9 m² d'emprise au sol maximum (UD 2) — Votre abri fait 15 m², donc il dépasse le plafond de 9 m².",
+    "regles": [
+     {
+      "article": "UD 7",
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci.",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "UD 7",
+      "citation": "Des saillies telles que débords de toit, contreforts, murets, et, d'une manière générale, tous les éléments de construction ne déterminant pas un espace clos ou couvert peuvent être autorisés dans la bande de 3 m à partir de la limite séparative.",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "UD 9",
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa, UDa* et UDb",
+      "page": 70,
+      "verifiee": true
+     },
+     {
+      "article": "UD 2",
+      "citation": "Les abris de jardin ou de piscine de 9 m2 d'emprise au sol maximum",
+      "page": 67,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 50.7,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135151-890176.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V07",
+   "question": "Puis-je faire deux abris de 9 m² chacun au 3 rue Pierre Dartiguelongue ?",
+   "attendu": {
+    "verdict": "oui si l'emprise totale de la parcelle reste sous 85,5 m² : tous les bâtiments comptent",
+    "demarche": "une déclaration préalable par abri (5 à 20 m²)",
+    "regles": [
+     {
+      "article": "DG B-5",
+      "page": 9,
+      "citation": "L’ensemble des constructions sur l’unité foncière est comptabilisé dans l’emprise au sol",
+      "dit": "tous les bâtiments de la parcelle comptent dans l'emprise"
+     },
+     {
+      "article": "UD 9",
+      "page": 70,
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa",
+      "dit": "25 % de la parcelle en UDa (40 % pour une parcelle de moins de 1 000 m² existant avant 2003), 250 m² au plus"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-9",
+      "dit": "constructions de 5 à 20 m² : déclaration préalable ; piscines dont le bassin fait 100 m² au plus, non couvertes ou couvertes à moins de 1,80 m : déclaration préalable",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+     }
+    ],
+    "a_verifier": [
+     "l'emprise des constructions existantes"
+    ],
+    "verdict_type": "oui sous conditions",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "DG B-5",
+     "UD 9"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. 3 mètres de distance minimale à la limite séparative (UD 7) — la question ne le dit pas. Démarche : déclaration préalable (de 5 à 20 m²), délai d'instruction : 1 mois.",
+    "regles": [
+     {
+      "article": "UD 2",
+      "citation": "Les abris de jardin ou de piscine de 9 m2 d'emprise au sol maximum",
+      "page": 67,
+      "verifiee": true
+     },
+     {
+      "article": "UD 9",
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa, UDa* et UDb",
+      "page": 70,
+      "verifiee": true
+     },
+     {
+      "article": "UD 7",
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+      "page": 69,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "la distance des abris à la limite séparative"
+    ],
+    "garde_fous": [],
+    "secondes": 46.6,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135238-458579.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V08",
+   "question": "L'emprise de 25 % au 3 rue Pierre Dartiguelongue, c'est 25 % de quoi exactement ?",
+   "attendu": {
+    "verdict": "de la surface de la parcelle (l'unité foncière) : 25 % de 342 m² = 85,5 m², tous bâtiments compris",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "UD 9",
+      "page": 70,
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa",
+      "dit": "25 % de la parcelle en UDa (40 % pour une parcelle de moins de 1 000 m² existant avant 2003), 250 m² au plus"
+     },
+     {
+      "article": "DG B-5",
+      "page": 9,
+      "citation": "L’ensemble des constructions sur l’unité foncière est comptabilisé dans l’emprise au sol",
+      "dit": "tous les bâtiments de la parcelle comptent dans l'emprise"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [],
+    "verdict_type": "information",
+    "demarche_type": "sans objet",
+    "articles": [
+     "UD 9",
+     "DG B-5"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "information",
+    "reponse": "L'emprise au sol maximale en UDa est de 25 % de l'unité foncière, soit ici 25 % de 342 m², égal à 85,5 m². Elle peut être portée à 40 % (136,8 m²) si la parcelle existait avant la révision du PLU de 2003, et dans tous les cas à 250 m² maximum. Pour l'application, on compte tous les points de la construction, non compris les balcons, la modénature et les débords de toits, dans la limite d'un débord de 0,80 m, prise à 0,60 m du sol naturel avant travaux.",
+    "regles": [
+     {
+      "article": "UD 9",
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa, UDa* et UDb ; toutefois elle peut être portée : - à 0,30 pour les parcelles de surface inférieure à 1.000 m² en secteur UDb. - à 0,40 pour les parcelles de surface inférieure à 1.000m² en secteurs Uda et UDa*existants antérieurement à la révision du P.L.U. de 2003. De plus, en secteurs UDa et UDa*, l’emprise au sol est limitée à 250 m² au maximum pour les parcelles de surface inférieures à 1000 m².",
+      "page": 70,
+      "verifiee": true
+     },
+     {
+      "article": "DG B-5",
+      "citation": "Pour l’application du P.L.U., on compte tous les points de la construction, non compris les balcons, la modénature et les débords de toits, dans la limite d’un débord de 0,80m, prise à 0,60 m du sol naturel avant travaux.",
+      "page": 9,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "La parcelle existait-elle avant la révision du PLU de 2003 (pour passer de 25 % à 40 %) ?"
+    ],
+    "garde_fous": [],
+    "secondes": 31.7,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135310-125455.jsonl"
+   },
+   "demarche_obtenue": "sans objet",
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": null,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V09",
+   "question": "Une cave enterrée ou une terrasse de plain-pied comptent-elles dans l'emprise au sol, au 9 allée du Moura ?",
+   "attendu": {
+    "verdict": "très probablement non : à Biarritz, l'emprise se mesure « à 0,60 m du sol naturel » ; formulation à faire confirmer par la mairie",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "DG B-5",
+      "page": 9,
+      "citation": "prise à 0,60 m du sol naturel avant travaux",
+      "dit": "l'emprise se mesure à 0,60 m au-dessus du sol naturel"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "l'interprétation exacte de la mairie"
+    ],
+    "verdict_type": "information",
+    "demarche_type": "sans objet",
+    "articles": [
+     "DG B-5"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "information",
+    "reponse": "Non, une cave entièrement enterrée ou une terrasse de plain-pied qui ne dépassent pas 0,60 m au-dessus du sol naturel ne comptent pas dans l'emprise au sol. L'emprise au sol maximale en zone UC est de 70 % de l'unité foncière, soit ici 511 m² pour 730 m².",
+    "regles": [
+     {
+      "article": "UC 9",
+      "citation": "L’EMPRISE AU SOL DES CONSTRUCTIONS Définitions : Voir ARTICLE B-5 : DISPOSITIONS GENERALES En zone UC et en secteur UC*, l'emprise au sol maximale est fixée à 70 % de l'unité foncière. Toutefois, lorsqu’un bâtiment existant excède 70% de l’unité foncière, il peut être reconstruit en tout ou partie sur l’emprise initiale, sous réserve de l’application des autres articles du présent règlement. En secteur UCc, l’emprise des constructions par polygone ne peut excéder celle des polygones d’implantation portés au plan de masse, toutefois peuvent être situés en dehors des polygones, les installations sportives de plein-air. Les installations souterraines dont l’émergence n’excède pas 0,60 m au-dessus du sol naturel, dont les parkings souterrains, Les installations techniques ou fonctionnelles émergentes des parkings souterrains (telles que trémies d’ascenseur, escaliers, ventilations, garde-corps de patios d’éclairage).",
+      "page": 56,
+      "verifiee": true
+     },
+     {
+      "article": "DG B-5",
+      "citation": "L’EMPRISE AU SOL Définitions : L’emprise au sol correspond à la projection verticale de la surface hors-œuvre d’un bâtiment (des éléments de la construction ou de plusieurs constructions) sur une surface horizontale fictive, correspondant au sol avant travaux. P.L.U. DE BIARRITZ appr. le 22/12/2003 – Modification n°13 appr. le 23/03/2024 DISPOSITIONS GENERALES 9 Pour l’application du P.L.U., on compte tous les points de la construction, non compris les balcons, la modénature et les débords de toits, dans la limite d’un débord de 0,80m, prise à 0,60 m du sol naturel avant travaux. L’ensemble des constructions sur l’unité foncière est comptabilisé dans l’emprise au sol, toutefois les installations sportives de plein-air telles que piscines non couvertes, tennis ne sont pas comprises dans l’emprise au sol.",
+      "page": 8,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "la hauteur exacte d’émergence de la cave ou de la terrasse par rapport au sol naturel avant travaux, pour confirmer qu’elle ne dépasse pas 0,60 m"
+    ],
+    "garde_fous": [],
+    "secondes": 41.3,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135351-382021.jsonl"
+   },
+   "demarche_obtenue": "sans objet",
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": null,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V10",
+   "question": "Quelle est la différence entre la surface de plancher et l'emprise au sol ?",
+   "attendu": {
+    "verdict": "l'emprise est la trace du bâtiment au sol (tous bâtiments, hors piscines non couvertes) ; la surface de plancher compte les étages fermés et couverts, sous plus de 1,80 m de plafond",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "DG B-5",
+      "page": 8,
+      "citation": "L’emprise au sol correspond à la projection verticale de la surface hors-œuvre",
+      "dit": "définition de l'emprise"
+     },
+     {
+      "article": "UC 10",
+      "page": 56,
+      "citation": "Un niveau est déterminé par un volume dont au moins une partie a un",
+      "dit": "un niveau compte à partir de 1,80 m de hauteur"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [],
+    "verdict_type": "information",
+    "demarche_type": "sans objet",
+    "articles": [
+     "DG B-5",
+     "UC 10"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "information",
+    "reponse": "La surface de plancher est la somme des surfaces de chaque niveau clos et couvert, calculée à partir du nu intérieur des façades, après déduction des surfaces de stationnement et des surfaces d'une hauteur sous plafond inférieure ou égale à 1,80 mètre. L'emprise au sol est la projection verticale du volume de la construction, tous débords et surplombs inclus, sur une surface horizontale fictive correspondant au sol avant travaux. Pour le PLU de Biarritz, l'emprise au sol correspond à la projection verticale de la surface hors-œuvre d'un bâtiment, et on compte tous les points de la construction, non compris les balcons, la modénature et les débords de toits, dans la limite d'un débord de 0,80 m, prise à 0,60 m du sol naturel avant travaux.",
+    "regles": [
+     {
+      "article": "DG B-5",
+      "citation": "L'emprise au sol correspond à la projection verticale de la surface hors-œuvre d'un bâtiment (des éléments de la construction ou de plusieurs constructions) sur une surface horizontale fictive, correspondant au sol avant travaux.",
+      "page": 8,
+      "verifiee": true
+     },
+     {
+      "article": "DG B-5",
+      "citation": "Pour l'application du P.L.U., on compte tous les points de la construction, non compris les balcons, la modénature et les débords de toits, dans la limite d'un débord de 0,80m, prise à 0,60 m du sol naturel avant travaux.",
+      "page": 9,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 33.9,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135425-285006.jsonl"
+   },
+   "demarche_obtenue": null,
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": null,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V11",
+   "question": "Quelle autorisation pour une véranda de 30 m² au 9 allée du Moura ?",
+   "attendu": {
+    "verdict": "une déclaration préalable, sauf si la maison dépasse 150 m² après travaux (alors permis)",
+    "demarche": "déclaration préalable (zone urbaine : jusqu'à 40 m²)",
+    "regles": [
+     {
+      "article": "UC 9",
+      "page": 56,
+      "citation": "l'emprise au sol maximale est fixée à 70 % de l'unité foncière",
+      "dit": "emprise au sol maximale : 70 %"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-14",
+      "dit": "agrandissement en zone urbaine d'un PLU : déclaration préalable jusqu'à 40 m², permis au-delà, ou dès 20 m² si la maison dépasse 150 m² après travaux",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+     }
+    ],
+    "a_verifier": [
+     "la surface totale de la maison après travaux"
+    ],
+    "verdict_type": "oui sous conditions",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "UC 9"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Il faut déposer une déclaration préalable, à déposer en mairie de Biarritz, pour une véranda de 30 m², sous le seuil de 40 m² en zone urbaine ; le délai d'instruction est de 1 mois. La véranda doit respecter la zone d'implantation obligatoire de 0 à 4 m et l'emprise au sol maximale de 70 % de la parcelle, soit 511 m², en comptant aussi les constructions existantes déjà présentes sur la parcelle.",
+    "regles": [
+     {
+      "article": "UC 9",
+      "citation": "L’EMPRISE AU SOL DES CONSTRUCTIONS Définitions : Voir ARTICLE B-5 : DISPOSITIONS GENERALES En zone UC et en secteur UC*, l'emprise au sol maximale est fixée à 70 % de l'unité foncière. Toutefois, lorsqu’un bâtiment existant excède 70% de l’unité foncière, il peut être reconstruit en tout ou partie sur l’emprise initiale, sous réserve de l’application des autres articles du présent règlement.",
+      "page": 56,
+      "verifiee": true
+     },
+     {
+      "article": "DG B-5",
+      "citation": "L’ensemble des constructions sur l’unité foncière est comptabilisé dans l’emprise au sol, toutefois les installations sportives de plein-air telles que piscines non couvertes, tennis ne sont pas comprises dans l’emprise au sol.",
+      "page": 9,
+      "verifiee": true
+     },
+     {
+      "article": "UC 7",
+      "citation": "Les piscines, spas et jacuzzis sont exclus de cette règle. Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci. En outre, sauf en secteur UCc, où les constructions doivent respecter les polygones d’implantation portés au plan de ZAC. tout point des constructions est éloigné du point le plus proche de la limite séparative d'une distance horizontale (D) au moins égale à la différence d'altitude entre ces deux points (h) diminuée de 3 mètres : D > h-3 soit h < D + 3",
+      "page": 55,
+      "verifiee": true
+     },
+     {
+      "article": "UC 6",
+      "citation": "6-1 – En zone UC et en secteur UC*, à l’exclusion du secteur UCc Deux types de ligne d’implantation peuvent être portés au document graphique, - L’une (en tireté bleu) impose un recul minimal à partir de cette ligne, - L’autre indique une marge d’implantation de 0 à 4,00m de la façade sur rue par rapport à la ligne portée au plan P.L.U. DE BIARRITZ appr. le 22/12/2003 – Modification n°13 appr. le 23/03/2024 ZONE UC 55",
+      "page": 54,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "la surface des constructions existantes déjà présentes sur la parcelle, pour vérifier que l'emprise au sol totale (existantes + véranda de 30 m²) reste inférieure ou égale à 511 m²",
+     "l'implantation de la véranda par rapport aux limites séparatives et aux voies, pour vérifier la distance de 3 m ou l'application de la règle D > h-3"
+    ],
+    "garde_fous": [],
+    "secondes": 52.2,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135517-449178.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V12",
+   "question": "Ma maison fait 140 m² et je veux une extension de 30 m² au 9 allée du Moura : faut-il un architecte ?",
+   "attendu": {
+    "verdict": "oui : 170 m² après travaux, donc permis de construire et architecte obligatoire",
+    "demarche": "permis de construire + architecte",
+    "regles": [
+     {
+      "article": "UC 9",
+      "page": 56,
+      "citation": "l'emprise au sol maximale est fixée à 70 % de l'unité foncière",
+      "dit": "emprise au sol maximale : 70 %"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-14",
+      "dit": "agrandissement en zone urbaine d'un PLU : déclaration préalable jusqu'à 40 m², permis au-delà, ou dès 20 m² si la maison dépasse 150 m² après travaux",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+     },
+     {
+      "texte": "R431-2",
+      "dit": "architecte obligatoire quand la surface dépasse 150 m² après travaux",
+      "url": "https://www.cauegironde.com/Ma-maison-fait-plus-de-150-m-et-je-veux-faire-une-extension-dois-je-recourir-a-un-architecte/"
+     }
+    ],
+    "a_verifier": [],
+    "verdict_type": "oui sous conditions",
+    "demarche_type": "permis de construire + architecte",
+    "articles": [
+     "UC 9"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, il faut un permis de construire avec un architecte, car la surface après travaux atteint 170 m², au-delà de 150 m². L'extension est possible si elle respecte l'emprise au sol maximale de 70 % de la parcelle, soit 511 m², et les règles d'implantation et d'urbanisme de la zone UC.",
+    "regles": [
+     {
+      "article": "UC 9",
+      "citation": "En zone UC et en secteur UC*, l'emprise au sol maximale est fixée à 70 % de l'unité foncière.",
+      "page": 56,
+      "verifiee": true
+     },
+     {
+      "article": "UC 10",
+      "citation": "En zone UC, sauf en secteur UC*, La hauteur d'une construction ne peut excéder 4 niveaux soit R + 3 + combles, superposés et 12 mètres à l'égout de toiture et acrotère, et 18 mètres au faîtage.",
+      "page": 57,
+      "verifiee": true
+     },
+     {
+      "article": "UC 11",
+      "citation": "Le projet peut-être refusée ou n'être accordée que sous réserve de l'observation de prescriptions spéciales si les constructions par leur situation, leur architecture, leurs dimensions ou l'aspect extérieur des bâtiments ou ouvrages à édifier ou à modifier, sont de nature à porter atteinte au caractère ou à l'intérêt des lieux avoisinants, aux sites, aux paysages naturels ou urbains, ainsi qu'à la conservation des perspectives monumentales.",
+      "page": 58,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "L'emprise au sol totale des constructions après travaux, pour vérifier qu'elle reste inférieure à 511 m².",
+     "La hauteur de l'extension, pour vérifier qu'elle ne dépasse pas 4 niveaux ou 12 mètres à l'égout de toiture et acrotère, 18 mètres au faîtage.",
+     "L'implantation de l'extension par rapport aux limites séparatives, pour vérifier la distance de 3 mètres ou les exceptions prévues à l'article UC 7."
+    ],
+    "garde_fous": [],
+    "secondes": 38.8,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135556-231977.jsonl"
+   },
+   "demarche_obtenue": "permis de construire + architecte",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V13",
+   "question": "Pour ma véranda de 25 m² au 3 rue Pierre Dartiguelongue, à quelle distance de la limite du voisin dois-je être ?",
+   "attendu": {
+    "verdict": "sur la limite ou à 3 m au moins ; plus la véranda est haute, plus il faut s'écarter (D ≥ h − 3)",
+    "demarche": "déclaration préalable (zone urbaine : jusqu'à 40 m²)",
+    "regles": [
+     {
+      "article": "UD 7",
+      "page": 69,
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+      "dit": "sur la limite, ou à 3 m au moins ; et plus on est haut, plus il faut s'écarter (D ≥ h − 3)"
+     },
+     {
+      "article": "UD 9",
+      "page": 70,
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa",
+      "dit": "25 % de la parcelle en UDa (40 % pour une parcelle de moins de 1 000 m² existant avant 2003), 250 m² au plus"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-14",
+      "dit": "agrandissement en zone urbaine d'un PLU : déclaration préalable jusqu'à 40 m², permis au-delà, ou dès 20 m² si la maison dépasse 150 m² après travaux",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+     }
+    ],
+    "a_verifier": [
+     "l'emprise existante"
+    ],
+    "verdict_type": "oui sous conditions",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "UD 7",
+     "UD 9"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. 3 mètres minimum de la limite séparative, sauf exception (UD 7) — la question ne le dit pas. Saillies ne formant pas d'espace clos ou couvert admises dans la bande de 3 m (UD 7) — la véranda forme un espace clos ou couvert, ce qui la place hors de cette exception. Implantation différente possible si justification technique (UD 7) — aucune justification technique n'est donnée. Démarche : déclaration préalable (25 m² créés, sous le seuil de 40 m² (zone urbaine)), délai d'instruction : 1 mois.",
+    "regles": [
+     {
+      "article": "UD 7",
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci.",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "UD 7",
+      "citation": "Des saillies telles que débords de toit, contreforts, murets, et, d'une manière générale, tous les éléments de construction ne déterminant pas un espace clos ou couvert peuvent être autorisés dans la bande de 3 m à partir de la limite séparative.",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "UD 7",
+      "citation": "Une implantation différente de celle résultant de l'application des alinéas précédents peut être acceptée : - pour les constructions et travaux liés aux réseaux si des considérations techniques le justifient.",
+      "page": 69,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "distance de la véranda à la limite séparative",
+     "si la véranda est couverte et fermée, elle n'est pas une saillie",
+     "aucune justification technique pour une implantation différente"
+    ],
+    "garde_fous": [],
+    "secondes": 45.4,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135641-606615.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V14",
+   "question": "Mes murs sont à 2 m de la limite et je veux rehausser le toit de 60 cm au 3 rue Pierre Dartiguelongue : c'est possible ?",
+   "attendu": {
+    "verdict": "impossible à dire sans la mairie : le mur est déjà à moins des 3 m de l'article UD 7 ; la hauteur doit rester sous R+1+comble, 6 m à l'égout, 9,50 m au faîtage",
+    "demarche": "au moins une déclaration préalable (aspect extérieur modifié)",
+    "regles": [
+     {
+      "article": "UD 7",
+      "page": 69,
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+      "dit": "sur la limite, ou à 3 m au moins ; et plus on est haut, plus il faut s'écarter (D ≥ h − 3)"
+     },
+     {
+      "article": "UD 10",
+      "page": 71,
+      "citation": "R + 1 + comble (2 niveaux + combles)",
+      "dit": "R+1+comble, 6 m à l'égout, 9,50 m au faîtage en UDa"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "comment la mairie traite un bâtiment existant déjà trop près de la limite"
+    ],
+    "verdict_type": "impossible à dire",
+    "demarche_type": "dépend de la surface créée",
+    "articles": [
+     "UD 7",
+     "UD 10"
+    ],
+    "correction": "démarche : dépend de la surface créée"
+   },
+   "obtenu": {
+    "verdict_type": "non",
+    "reponse": "Non, ce projet n'est pas possible tel que vous le décrivez. Construction à au moins 3 m de la limite séparative, sauf exception (UD 7) — vos murs sont à 2 m de la limite.",
+    "regles": [
+     {
+      "article": "UD 7",
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci.",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "UD 7",
+      "citation": "Des saillies telles que débords de toit, contreforts, murets, et, d'une manière générale, tous les éléments de construction ne déterminant pas un espace clos ou couvert peuvent être autorisés dans la bande de 3 m à partir de la limite séparative.",
+      "page": 69,
+      "verifiee": true
+     },
+     {
+      "article": "UD 10",
+      "citation": "il est autorisé ponctuellement une hauteur supplémentaire pour un édicule technique en terrasse R+4, limité à 89.50 m NgF",
+      "page": 71,
+      "verifiee": true
+     },
+     {
+      "article": "UD 11",
+      "citation": "Le projet peut être refusée ou n'être accordée que sous réserve de l'observation de prescriptions spéciales",
+      "page": 72,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 49.0,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135730-609693.jsonl"
+   },
+   "demarche_obtenue": "dépend de la surface créée",
+   "note": {
+    "verdict": false,
+    "grave": null,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V15",
+   "question": "On me dit qu'il faut une place de parking de plus pour ma surélévation au 3 rue Pierre Dartiguelongue : c'est dans le PLU ?",
+   "attendu": {
+    "verdict": "seulement si la surélévation crée un besoin nouveau (par exemple un logement de plus)",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "UD 12",
+      "page": 75,
+      "citation": "il ne sera exigé de places de stationnement que pour les besoins nouveaux engendrés par les projets",
+      "dit": "pour une extension, seules les places des besoins nouveaux sont exigées"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "le nombre de places exigé par logement (article UD 12)"
+    ],
+    "verdict_type": "information",
+    "demarche_type": "sans objet",
+    "articles": [
+     "UD 12"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. Les places de stationnement ne sont exigées que pour les besoins nouveaux engendrés par le projet (UD 12) — la question ne le dit pas. 2 places de stationnement pour chaque logement, sur la parcelle recevant la construction (UD 12) — la question ne le dit pas. Les aires existantes peuvent être supérieures aux besoins nouveaux, sinon il faut des places pour les besoins nouveaux (UD 12) — la question ne le dit pas. Démarche : dépend de la surface créée (au moins une déclaration préalable (aspect extérieur modifié) ; permis si plus de 40 m² sont créés en zone urbaine), délai d'instruction : 1 mois pour une déclaration préalable ; 2 mois en principe pour un permis.",
+    "regles": [
+     {
+      "article": "UD 12",
+      "citation": "Pour les changements d'affectation de locaux, les aménagements et les extensions de bâtiment, il ne sera exigé de places de stationnement que pour les besoins nouveaux engendrés par les projets",
+      "page": 75,
+      "verifiee": true
+     },
+     {
+      "article": "UD 12",
+      "citation": "b - Logements par bâtiments d'habitation individuelle, 2 places de stationnement pour chaque logement, sur la parcelle recevant la construction",
+      "page": 75,
+      "verifiee": true
+     },
+     {
+      "article": "UD 12",
+      "citation": "il ne sera exigé de places de stationnement que pour les besoins nouveaux engendrés par les projets, à moins que le nombre des aires existantes soit supérieur aux besoins existants",
+      "page": 75,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "le nombre de besoins nouveaux de stationnement engendrés par la surélévation",
+     "le nombre de logements sur la parcelle et le nombre de besoins nouveaux de stationnement",
+     "le nombre des aires existantes et le nombre des besoins existants"
+    ],
+    "garde_fous": [],
+    "secondes": 39.2,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135809-836059.jsonl"
+   },
+   "demarche_obtenue": "dépend de la surface créée",
+   "note": {
+    "verdict": false,
+    "grave": null,
+    "demarche": null,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V16",
+   "question": "Je veux poser un brise-vue de 2,60 m un peu en retrait de ma clôture, au 6 rue Castellamare : c'est permis ?",
+   "attendu": {
+    "verdict": "impossible à dire avec certitude : en limite, une clôture fait 2 m au plus ; en retrait, la mairie peut la traiter comme une clôture",
+    "demarche": "déclaration préalable (clôture en site patrimonial remarquable)",
+    "regles": [
+     {
+      "article": "UD 11",
+      "page": 74,
+      "citation": "clôtures en limites séparatives : La hauteur de la clôture ne peut excéder 2,00 mètres",
+      "dit": "en limite séparative : 2 m au plus"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-12",
+      "dit": "clôtures soumises à déclaration préalable en site patrimonial remarquable, aux abords d'un monument historique, en site classé ou si la commune l'a décidé",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034355392"
+     }
+    ],
+    "a_verifier": [
+     "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis",
+     "si l'écran en retrait est considéré comme une clôture"
+    ],
+    "verdict_type": "impossible à dire",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "UD 11"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. Hauteur de clôture supérieure à 2,00 m seulement si justifiée (mur de soutènement, continuité, technique ou esthétique) (UD 11) — question ne le dit pas. Le projet peut être refusé ou accordé sous conditions si il porte atteinte au caractère ou à l'intérêt des lieux avoisinants (UD 11) — projet en site patrimonial remarquable, avis…. Démarche : déclaration préalable (clôture en site patrimonial remarquable), délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial).",
+    "regles": [
+     {
+      "article": "UD 11",
+      "citation": "les clôtures situées sur un mur de soutènement, ou en continuité avec une clôture de hauteur supérieure à 2,00 mètres.",
+      "page": 74,
+      "verifiee": true
+     },
+     {
+      "article": "UD 11",
+      "citation": "Le projet peut être refusée ou n'être accordée que sous réserve de l'observation de prescriptions spéciales si les constructions... sont de nature à porter atteinte au caractère ou à l'intérêt des lieux avoisinants.",
+      "page": 72,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "justification de la hauteur de clôture supérieure à 2,00 m",
+     "appréciation de l'ABF sur l'impact visuel du brise-vue"
+    ],
+    "garde_fous": [],
+    "secondes": 37.0,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135846-866410.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": false,
+    "grave": null,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V17",
+   "question": "Faut-il une autorisation pour refaire ma clôture au 96 avenue de Verdun ?",
+   "attendu": {
+    "verdict": "oui : une déclaration préalable, parce que la parcelle est en site patrimonial remarquable",
+    "demarche": "déclaration préalable",
+    "regles": [
+     {
+      "article": "UB 11",
+      "page": 48,
+      "citation": "e-2 - clôtures sur l'espace public : La hauteur totale des clôtures ne peut excéder 2 mètres",
+      "dit": "sur la rue : 2 m au plus"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-12",
+      "dit": "clôtures soumises à déclaration préalable en site patrimonial remarquable, aux abords d'un monument historique, en site classé ou si la commune l'a décidé",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034355392"
+     }
+    ],
+    "a_verifier": [
+     "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+    ],
+    "verdict_type": "oui sous conditions",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "UB 11"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, une autorisation est nécessaire : il faut une déclaration préalable pour la clôture, car la communauté d'agglomération de BAYONNE ANGLET BIARRITZ a décidé de soumettre les clôtures à déclaration préalable par délibération du 21/09/2007. Le délai d'instruction est de 2 mois, soit 1 mois plus 1 mois pour l'avis de l'Architecte des Bâtiments de France en site patrimonial remarquable. La clôture doit respecter la hauteur maximale de 2,00 mètres, et son type doit correspondre aux clôtures autorisées : murs pleins, clôtures végétales éventuellement en doublage d'une grille ou grillage, ou murs bahuts surmontés d'une grille ou d'une claire-voie. Elle ne doit pas porter atteinte au caractère ou à l'intérêt des lieux avoisinants, aux sites, aux paysages naturels ou urbains, ni à la conservation des perspectives monumentales.",
+    "regles": [
+     {
+      "article": "DG B-8",
+      "citation": "Dans un site inscrit ou dans un site classé en application des articles L. 341-1 et L. 341-2 du code de l'environnement",
+      "page": 11,
+      "verifiee": true
+     },
+     {
+      "article": "DG B-8",
+      "citation": "La communauté d'agglomération de BAYONNE ANGLET BIARRITZ a décidé de soumettre les clôtures à déclaration préalable par délibération du 21/09/2007.",
+      "page": 11,
+      "verifiee": true
+     },
+     {
+      "article": "UB 11",
+      "citation": "La hauteur de la clôture ne peut excéder 2,00 mètres.",
+      "page": 48,
+      "verifiee": true
+     },
+     {
+      "article": "UB 11",
+      "citation": "Divers types de clôtures peuvent être autorisés en fonction de l'aspect du quartier et des types de clôture dominants : .murs pleins (maçonnés, moellonnés, etc...) .clôtures végétales éventuellement en doublage d'une grille ou grillage, .murs bahuts surmontés d'une grille ou d'une claire-voie ou doublé d'un rideau végétal.",
+      "page": 42,
+      "verifiee": false
+     },
+     {
+      "article": "UB 11",
+      "citation": "de prescriptions spéciales, si par ses dimensions ou son aspect extérieur, elle est de nature à porter atteinte au caractère ou à l'intérêt des lieux avoisinants, aux sites, aux paysages naturels ou urbains, ainsi qu'à la conservation des perspectives monumentales.",
+      "page": 48,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "la hauteur exacte de la clôture envisagée",
+     "le type de clôture choisi et son aspect extérieur",
+     "si la clôture est située en limite séparative ou sur l'espace public"
+    ],
+    "garde_fous": [
+     "la citation attribuée à UB 11 n'existe pas mot pour mot dans cet article : copie une phrase exacte"
+    ],
+    "secondes": 70.6,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-135957-471723.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": false,
+    "garde_fous": false
+   }
+  },
+  {
+   "id": "V18",
+   "question": "Mon voisin a fait une extension en parpaings non enduits avec un toit en bac acier, au 2 avenue d'Etienne : est-ce autorisé ?",
+   "attendu": {
+    "verdict": "non : les parpaings laissés nus et le bac acier en toiture en pente sont interdits en UB (sauf photovoltaïque, commerce ou industrie)",
+    "demarche": "sans objet (question sur un projet existant)",
+    "regles": [
+     {
+      "article": "UB 11",
+      "page": 47,
+      "citation": "l'emploi à nu des matériaux fabriqués en vue d'être recouverts d'un enduit",
+      "dit": "parpaings nus et couverture en bac acier interdits"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "les recours : hors périmètre (mairie, conciliateur)"
+    ],
+    "verdict_type": "non",
+    "demarche_type": "sans objet",
+    "articles": [
+     "UB 11"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "non",
+    "reponse": "Non, ce projet n'est pas possible tel que vous le décrivez. Pas d'emploi à nu de parpaings de béton ni de briques creuses (UB 11) — L'extension est en parpaings non enduits.",
+    "regles": [
+     {
+      "article": "UB 11",
+      "citation": "Sont notamment interdits : - l'emploi à nu des matériaux fabriqués en vue d'être recouverts d'un enduit (briques creuses, parpaings de béton), - l'emploi en grande surface de matériaux métalliques en tons naturels brillants, et murs-miroirs.",
+      "page": 47,
+      "verifiee": true
+     },
+     {
+      "article": "UB 11",
+      "citation": "Sont notamment interdits : - l'emploi … de matériaux de couverture en pente à base de produits bitumineux, de panneaux de Fibrociment ou de polyester ondulé, ou de tôle ondulée, ou de bac acier",
+      "page": 47,
+      "verifiee": true
+     },
+     {
+      "article": "UB 11",
+      "citation": "Les constructions en extensions de constructions existantes devront présenter un aspect relationnel avec l'édifice existant, en utilisant les mêmes éléments architecturaux.",
+      "page": 47,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 59.1,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140056-582786.jsonl"
+   },
+   "demarche_obtenue": "dépend de la surface",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": null,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V19",
+   "question": "Comment savoir si la maison du 12 avenue Édouard VII est protégée ?",
+   "attendu": {
+    "verdict": "elle l'est deux fois : « règles architecturales particulières » au plan (article UA 11) et site patrimonial remarquable",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "UA 11",
+      "page": 26,
+      "citation": "ajouts ou excroissances, vérandas etc... pourront être interdites",
+      "dit": "un bâtiment repéré au plan a des règles d'aspect particulières"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+    ],
+    "verdict_type": "information",
+    "demarche_type": "sans objet",
+    "articles": [
+     "UA 11"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "information",
+    "reponse": "La maison du 12 avenue Édouard VII est protégée par le site patrimonial remarquable de Biarritz, qui fait l'objet d'un avis de l'Architecte des Bâtiments de France, et par les règles architecturales particulières de l'article UA 11, car la construction est repérée au plan par un liseré à denticules. Pour savoir si un projet de travaux serait autorisé, il faudra déposer une demande d'avis de l'Architecte des Bâtiments de France, qui statue sur la conformité au site patrimonial remarquable et aux règles de l'article UA 11.",
+    "regles": [
+     {
+      "article": "UA 11",
+      "citation": "Les prescriptions de nature à assurer la protection des éléments du paysage, des quartiers, îlots, immeubles, espaces publics, monuments, sites et secteurs à protéger (article 123-11 du C. de l’U.)",
+      "page": 25,
+      "verifiee": true
+     },
+     {
+      "article": "UA 11",
+      "citation": "les constructions traditionnelles à valeur patrimoniales repérées par un liseré au plan, en distinguant les types architecturaux principaux : le type chalet, le type néo-basque, le type villa en pierre, le type immeuble urbain, la transformation de clôtures existantes les constructions récentes à composition architecturale homogène les constructions neuves: les constructions neuves et l'extension des constructions existantes.",
+      "page": 26,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "l'avis de l'Architecte des Bâtiments de France relatif au site patrimonial remarquable de Biarritz pour la parcelle BA 0008",
+     "la présence du liseré à denticules sur le plan de zonage pour confirmer la protection au titre de l'article UA 11"
+    ],
+    "garde_fous": [],
+    "secondes": 29.5,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140126-098156.jsonl"
+   },
+   "demarche_obtenue": "sans objet",
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": null,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V20",
+   "question": "Combien de temps la mairie met-elle à répondre pour une véranda de 20 m² au 12 avenue Édouard VII ?",
+   "attendu": {
+    "verdict": "2 mois : une déclaration préalable prend 1 mois, un de plus en site patrimonial remarquable (avis de l'ABF)",
+    "demarche": "déclaration préalable",
+    "regles": [],
+    "loi": [
+     {
+      "texte": "délais",
+      "dit": "déclaration préalable : 1 mois, 2 mois en site patrimonial remarquable (avis de l'ABF)",
+      "url": "https://www.culture.gouv.fr/catalogue-des-demarches-et-subventions/mes-travaux-en-site-protege/foire-aux-questions"
+     }
+    ],
+    "a_verifier": [],
+    "verdict_type": "information",
+    "demarche_type": "déclaration préalable",
+    "articles": []
+   },
+   "obtenu": {
+    "verdict_type": "information",
+    "reponse": "La mairie a deux mois pour répondre à votre déclaration préalable, car la véranda de 20 m² est sous le seuil de 40 m² et qu'il faut ajouter un mois pour l'avis de l'Architecte des Bâtiments de France, la parcelle étant en site patrimonial remarquable. La véranda doit aussi respecter les règles d'architecture, notamment l'article UA 11 qui interdit les excroissances et les ajouts sur les constructions d'intérêt architectural marquées au plan par un liseré à denticules.",
+    "regles": [
+     {
+      "article": "UA 11",
+      "citation": "Les modifications susceptibles de dénaturer l'aspect architectural par agrandissement excessif d'ouvertures, surélévations, ajouts ou excroissances, vérandas etc... pourront être interdites sur les constructions d'intérêt architectural et paysager marquées au plan par un liseré à denticule",
+      "page": 26,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "La véranda doit-elle être acceptée ou refusée par la mairie, et selon quelles règles ?",
+     "La véranda respecte-t-elle les règles d'architecture de la zone UAs, notamment l'article UA 11 ?"
+    ],
+    "garde_fous": [],
+    "secondes": 25.2,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140151-275168.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": true,
+    "articles": null,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V21",
+   "question": "Mon extension dépasse de 6 m² l'emprise autorisée au 3 rue Pierre Dartiguelongue : la mairie peut-elle m'accorder une dérogation ?",
+   "attendu": {
+    "verdict": "hors périmètre : l'assistant ne peut pas le promettre ; la loi ne prévoit que des « adaptations mineures », c'est la mairie qui décide",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "UD 9",
+      "page": 70,
+      "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa",
+      "dit": "25 % de la parcelle en UDa (40 % pour une parcelle de moins de 1 000 m² existant avant 2003), 250 m² au plus"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "le service urbanisme de la mairie"
+    ],
+    "verdict_type": "hors périmètre",
+    "demarche_type": "sans objet",
+    "articles": [
+     "UD 9"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "hors périmètre",
+    "reponse": "Je ne peux pas répondre sur ce point : seules des « adaptations mineures » sont prévues par la loi, et c'est la mairie qui en décide. Pour la démarche, en revanche : déclaration préalable (6 m² créés, sous le seuil de 40 m² (zone urbaine)).",
+    "regles": [],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 5.5,
+    "par": "code",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140156-731411.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": null,
+    "articles": null,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V22",
+   "question": "Mon abri de jardin de 12 m² au 3 rue Pierre Dartiguelongue sera-t-il taxé ?",
+   "attendu": {
+    "verdict": "hors périmètre : la taxe d'aménagement relève des impôts, pas du PLU ; la démarche, elle, est une déclaration préalable",
+    "demarche": "déclaration préalable (5 à 20 m²)",
+    "regles": [],
+    "loi": [
+     {
+      "texte": "R421-9",
+      "dit": "constructions de 5 à 20 m² : déclaration préalable ; piscines dont le bassin fait 100 m² au plus, non couvertes ou couvertes à moins de 1,80 m : déclaration préalable",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000037799137/"
+     }
+    ],
+    "a_verifier": [
+     "les impôts (taxe d'aménagement)"
+    ],
+    "verdict_type": "hors périmètre",
+    "demarche_type": "déclaration préalable",
+    "articles": []
+   },
+   "obtenu": {
+    "verdict_type": "hors périmètre",
+    "reponse": "Je ne peux pas répondre sur ce point : la taxe d'aménagement relève des impôts (centre des finances publiques), pas du PLU. Pour la démarche, en revanche : déclaration préalable (de 5 à 20 m²).",
+    "regles": [],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 5.7,
+    "par": "code",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140202-436864.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": true,
+    "articles": null,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V23",
+   "question": "Mon lotissement a son propre règlement, au 6 rue Castellamare : lequel s'applique, lui ou le PLU ?",
+   "attendu": {
+    "verdict": "en principe la règle la plus stricte : le PLU s'il est plus restrictif, sinon celle du lotissement si elle est encore en vigueur",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "DG A-I",
+      "page": 5,
+      "citation": "Si les dispositions du P.L.U. sont plus restrictives que celles d'un lotissement approuvé",
+      "dit": "le PLU s'applique s'il est plus restrictif ; sinon, les règles plus strictes du lotissement restent applicables"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "le règlement du lotissement et s'il est toujours en vigueur"
+    ],
+    "verdict_type": "information",
+    "demarche_type": "sans objet",
+    "articles": [
+     "DG A-I"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "information",
+    "reponse": "Le PLU de Biarritz s'applique toujours, car il est opposable au tiers ; le règlement du lotissement ne peut être plus restrictif que le PLU, et s'il est plus permissif, le PLU prime. Ici, le PLU est plus restrictif, donc il s'applique. Aucun projet de travaux n'est envisagé, donc aucune démarche à lancer.",
+    "regles": [
+     {
+      "article": "DG A-I",
+      "citation": "Si les dispositions du P.L.U. sont plus restrictives que celles d'un lotissement approuvé, elles s'appliquent dès que le P.L.U. est opposable au tiers. Dans le cas contraire, ce sont les dispositions du lotissement plus rigoureuses, mais néanmoins compatibles avec celles du P.L.U. qui restent applicables à moins que les dispositions régissant le lotissement ne soient mises en concordance avec celles du P.L.U. ou ne soient devenues caduques.",
+      "page": 5,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "Que le lotissement est approuvé et que son règlement est en vigueur",
+     "Que le PLU est opposable au tiers pour cette parcelle"
+    ],
+    "garde_fous": [],
+    "secondes": 21.4,
+    "par": "K2",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140223-790854.jsonl"
+   },
+   "demarche_obtenue": "sans objet",
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": null,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V24",
+   "question": "J'ai construit ma véranda à 2 m de la limite au lieu de 3, au 3 rue Pierre Dartiguelongue : la mairie peut-elle m'obliger à démolir ?",
+   "attendu": {
+    "verdict": "hors périmètre : c'est une question de contentieux (avocat, mairie) ; la règle, elle, est sur la limite ou à 3 m au moins",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "UD 7",
+      "page": 69,
+      "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+      "dit": "sur la limite, ou à 3 m au moins ; et plus on est haut, plus il faut s'écarter (D ≥ h − 3)"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "un avocat ou le service urbanisme"
+    ],
+    "verdict_type": "hors périmètre",
+    "demarche_type": "sans objet",
+    "articles": [
+     "UD 7"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "hors périmètre",
+    "reponse": "Je ne peux pas répondre sur ce point : les recours et le contentieux relèvent d'un avocat, du conciliateur ou du tribunal. Pour la démarche, en revanche : dépend de la surface (déclaration jusqu'à 20 m² (40 m² en zone urbaine), permis au-delà).",
+    "regles": [],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 5.6,
+    "par": "code",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140229-425432.jsonl"
+   },
+   "demarche_obtenue": "dépend de la surface",
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": null,
+    "articles": null,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V25",
+   "question": "Puis-je construire une véranda de 20 m² à la mairie de Biarritz, 12 avenue Édouard VII ?",
+   "attendu": {
+    "verdict": "oui sous conditions, avec un vrai risque de refus",
+    "demarche": "déclaration préalable (2 mois en site patrimonial remarquable)",
+    "regles": [
+     {
+      "article": "UA 9",
+      "page": 23,
+      "citation": "Il n'est pas fixé d'emprise au sol sauf en UAc",
+      "dit": "aucune emprise maximale en UAs"
+     },
+     {
+      "article": "UA 11",
+      "page": 26,
+      "citation": "ajouts ou excroissances, vérandas etc... pourront être interdites",
+      "dit": "sur un bâtiment repéré, une véranda peut être interdite"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-14",
+      "dit": "agrandissement en zone urbaine d'un PLU : déclaration préalable jusqu'à 40 m², permis au-delà, ou dès 20 m² si la maison dépasse 150 m² après travaux",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+     },
+     {
+      "texte": "délais",
+      "dit": "déclaration préalable : 1 mois, 2 mois en site patrimonial remarquable (avis de l'ABF)",
+      "url": "https://www.culture.gouv.fr/catalogue-des-demarches-et-subventions/mes-travaux-en-site-protege/foire-aux-questions"
+     }
+    ],
+    "a_verifier": [
+     "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+    ],
+    "verdict_type": "oui sous conditions",
+    "demarche_type": "déclaration préalable",
+    "articles": [
+     "UA 9",
+     "UA 11"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. Les modifications à une construction existante doivent tenir compte de ses éléments caractéristiques et de sa modénature (UA 11) — la véranda est une modification d'une…. Les constructions nouvelles doivent avoir un aspect relationnel avec l'environnement immédiat, sauf spécificité de programme architectural (UA 11) — la véranda est une…. Démarche : déclaration préalable (20 m² créés, sous le seuil de 40 m² (zone urbaine)), délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial).",
+    "regles": [
+     {
+      "article": "UA 11",
+      "citation": "Les modifications apportées à une construction existante devront tenir compte de ses éléments caractéristiques et de sa modénature.",
+      "page": 26,
+      "verifiee": true
+     },
+     {
+      "article": "UA 11",
+      "citation": "Les constructions nouvelles devront avoir un aspect relationnel avec l'environnement immédiat, sauf spécificité de programme architectural.",
+      "page": 30,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "les modifications à une construction existante doivent tenir compte de ses éléments caractéristiques et de sa modénature",
+     "les constructions nouvelles doivent avoir un aspect relationnel avec l'environnement immédiat, sauf spécificité de programme architectural",
+     "l'avis de l'Architecte des Bâtiments de France (site patrimonial remarquable)"
+    ],
+    "garde_fous": [],
+    "secondes": 36.6,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140306-024434.jsonl"
+   },
+   "demarche_obtenue": "déclaration préalable",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V26",
+   "question": "Je veux surélever d'un étage le bâtiment du 2 rue de la Bergerie à Biarritz. C'est possible ?",
+   "attendu": {
+    "verdict": "impossible à dire sans savoir où est le bâtiment : le plan fixe deux hauteurs sur la parcelle",
+    "demarche": "permis de construire si plus de 40 m² sont créés, sinon déclaration préalable",
+    "regles": [
+     {
+      "article": "UA 10",
+      "page": 23,
+      "citation": "La hauteur des constructions est fixée par le plan de P.L.U., au 1/2000è ci-annexé",
+      "dit": "niveaux « 3 » (12,50 m à l'égout, R+3+comble) et « 5 » (18 m, R+5+comble) sur cette parcelle"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-14",
+      "dit": "agrandissement en zone urbaine d'un PLU : déclaration préalable jusqu'à 40 m², permis au-delà, ou dès 20 m² si la maison dépasse 150 m² après travaux",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000031764577"
+     }
+    ],
+    "a_verifier": [
+     "la hauteur actuelle et la position du bâtiment",
+     "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+    ],
+    "verdict_type": "impossible à dire",
+    "demarche_type": "dépend de la surface créée",
+    "articles": [
+     "UA 10"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "oui sous conditions",
+    "reponse": "Oui, sous conditions. Tout point des constructions éloigné de la limite séparative arrière d'une distance horizontale au moins égale à la moitié de la différence d'altitude entre les deux points (UA 7)…. Démarche : dépend de la surface créée (au moins une déclaration préalable (aspect extérieur modifié) ; permis si plus de 40 m² sont créés en zone urbaine), délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial) pour une déclaration préalable ; 2 mois en principe, davantage en site patrimonial (avis de l'ABF) pour un permis.",
+    "regles": [
+     {
+      "article": "UA 10",
+      "citation": "La hauteur maximale est donnée au document graphique. Un seul étage partiel supplémentaire est admis dans le comble dont la forme est déterminée à l'article 11, au-delà de la hauteur et du nombre d'étage autorisés en UA 10-2.",
+      "page": 23,
+      "verifiee": true
+     },
+     {
+      "article": "UA 10",
+      "citation": "Un seul étage partiel supplémentaire est admis dans le comble dont la forme est déterminée à l'article 11, au-delà de la hauteur et du nombre d'étage autorisés en UA 10-2.",
+      "page": 23,
+      "verifiee": true
+     },
+     {
+      "article": "UA 7",
+      "citation": "Tout point des constructions est éloigné du point le plus proche de la limite séparative arrière d’une distance horizontale (D) au moins égale à la moitié de la différence d’altitude entre ces deux points (H) : H ≤ 2D, soit D ≥ H/2.",
+      "page": 21,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "la distance horizontale entre le bâtiment et la limite séparative arrière",
+     "l'avis de l'Architecte des Bâtiments de France (site patrimonial remarquable)"
+    ],
+    "garde_fous": [],
+    "secondes": 70.4,
+    "par": "K2 · grille",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140416-375620.jsonl"
+   },
+   "demarche_obtenue": "dépend de la surface créée",
+   "note": {
+    "verdict": false,
+    "grave": null,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V27",
+   "question": "Puis-je construire une maison individuelle au 37 allée du Moura, à Biarritz ?",
+   "attendu": {
+    "verdict": "non : l'habitation est interdite en UG, sauf extension de l'existant ou logement lié à l'équipement",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "UG 1",
+      "page": 77,
+      "citation": "les constructions destinées à l’habitation",
+      "dit": "habitation interdite en UG"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "l'emplacement réservé pour l'élargissement de la rue du Moura"
+    ],
+    "verdict_type": "non",
+    "demarche_type": "sans objet",
+    "articles": [
+     "UG 1"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "non",
+    "reponse": "Non, ce projet n'est pas possible à cet endroit. Une maison neuve n'entre dans aucune exception de l'article UG 1 en UG (seuls des logements de fonction liés à un équipement y sont prévus) (article UG 1).",
+    "regles": [
+     {
+      "article": "UG 1",
+      "citation": "les constructions destinées à l’habitation, sauf pour l’extension et la démolition des constructions existantes sous les conditions fixées à l’article UG 2",
+      "page": null,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 5.8,
+    "par": "code",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140422-182446.jsonl"
+   },
+   "demarche_obtenue": "permis de construire",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": null,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V28",
+   "question": "Puis-je poser un abri de jardin au 14 rue du Moulin de Chabiague, à Biarritz ?",
+   "attendu": {
+    "verdict": "impossible à dire sans savoir si une construction existait en mars 1995 : en zone N tout est interdit, sauf (N 2 b) les annexes des constructions existant à la révision du P.O.S. de 1995",
+    "demarche": "déclaration préalable jusqu'à 20 m², même sous 5 m² (site patrimonial remarquable) ; permis au-delà (surface non donnée)",
+    "regles": [
+     {
+      "article": "N 1",
+      "page": 132,
+      "citation": "Tous les types d'occupation ou d'utilisation des sols sont interdits",
+      "dit": "en zone N, tout est interdit sauf exceptions"
+     },
+     {
+      "article": "N 2",
+      "page": 133,
+      "citation": "l'extension, aménagement, les annexes des constructions existantes à la date d'approbation de la révision du P.O.S. de mars 1995",
+      "dit": "annexes admises seulement pour une construction existante en 1995"
+     }
+    ],
+    "loi": [
+     {
+      "texte": "R421-11",
+      "dit": "en site patrimonial remarquable, les petites constructions (jusqu'à 20 m²) sont soumises à déclaration préalable, sans le seuil de 5 m²",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006074075/LEGISCTA000006188272/"
+     }
+    ],
+    "a_verifier": [
+     "s'il existe une construction de 1995 ou avant",
+     "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+    ],
+    "verdict_type": "impossible à dire",
+    "demarche_type": "dépend de la surface",
+    "articles": [
+     "N 1",
+     "N 2"
+    ],
+    "correction": "verdict : impossible à dire (N 2 b, annexes des constructions de 1995) ; démarche : dépend de la surface"
+   },
+   "obtenu": {
+    "verdict_type": "impossible à dire",
+    "reponse": "En zone N, une annexe n'est admise que pour une construction qui existait en mars 1995 (N 2 b) : la réponse dépend de la date de la maison, que la question ne donne pas. Il me faut savoir si la maison existait déjà en mars 1995 (révision du P.O.S.). Démarche : dépend de la surface (rien jusqu'à 5 m² hors secteur protégé, déclaration jusqu'à 20 m², permis au-delà), délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial) pour une déclaration préalable ; 2 mois en principe, davantage en site patrimonial (avis de l'ABF) pour un permis.",
+    "regles": [
+     {
+      "article": "N 2",
+      "citation": "l'extension, aménagement, les annexes des constructions existantes à la date d'approbation de la révision du P.O.S. de mars 1995",
+      "page": null,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [
+     "l'avis de l'Architecte des Bâtiments de France (site patrimonial remarquable)"
+    ],
+    "garde_fous": [],
+    "secondes": 6.2,
+    "par": "code",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140428-388763.jsonl"
+   },
+   "demarche_obtenue": "dépend de la surface",
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": true,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V29",
+   "question": "Puis-je construire une maison allée Gabrielle Dorziat (parcelle CA 0044), à Biarritz ?",
+   "attendu": {
+    "verdict": "non : en Ncu, une construction neuve n'est admise que pour la sécurité, un service public ou le confortement de l'existant",
+    "demarche": "sans objet",
+    "regles": [
+     {
+      "article": "Ncu 1",
+      "page": 141,
+      "citation": "Toutes constructions qui ne seraient pas justifiées par la sécurité",
+      "dit": "constructions neuves interdites en Ncu"
+     }
+    ],
+    "loi": [],
+    "a_verifier": [
+     "espace boisé classé et espace vert protégé",
+     "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+    ],
+    "verdict_type": "non",
+    "demarche_type": "sans objet",
+    "articles": [
+     "Ncu 1"
+    ]
+   },
+   "obtenu": {
+    "verdict_type": "non",
+    "reponse": "Non, ce projet n'est pas possible à cet endroit. Une maison neuve n'entre dans aucune exception de l'article Ncu 1 en Ncu (article Ncu 1).",
+    "regles": [
+     {
+      "article": "Ncu 1",
+      "citation": "Toutes constructions qui ne seraient pas justifiées par la sécurité, l’équipement sanitaire, un service public ou la confortation de l’existant",
+      "page": null,
+      "verifiee": true
+     }
+    ],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 6.6,
+    "par": "code",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140434-954790.jsonl"
+   },
+   "demarche_obtenue": "permis de construire",
+   "note": {
+    "verdict": true,
+    "grave": true,
+    "demarche": null,
+    "articles": true,
+    "citations": true,
+    "garde_fous": true
+   }
+  },
+  {
+   "id": "V30",
+   "question": "Puis-je construire une véranda rue Marie Blanque à Anglet ?",
+   "attendu": {
+    "verdict": "hors périmètre : la v1 ne couvre que Biarritz",
+    "demarche": "sans objet",
+    "regles": [],
+    "loi": [],
+    "a_verifier": [
+     "le PLU d'Anglet auprès de la mairie"
+    ],
+    "verdict_type": "hors périmètre",
+    "demarche_type": "sans objet",
+    "articles": []
+   },
+   "obtenu": {
+    "verdict_type": "hors périmètre",
+    "reponse": "Cette adresse est à Anglet : je ne couvre pour l'instant que le PLU de Biarritz. Le service urbanisme de la commune pourra vous répondre.",
+    "regles": [],
+    "a_verifier": [],
+    "garde_fous": [],
+    "secondes": 5.6,
+    "par": "code",
+    "trace": "D:\\PORTFOLIO\\CLAUDE\\assistant-plu\\resultats\\traces\\20261002-140440-528849.jsonl"
+   },
+   "demarche_obtenue": null,
+   "note": {
+    "verdict": true,
+    "grave": null,
+    "demarche": null,
+    "articles": null,
+    "citations": true,
+    "garde_fous": true
+   }
+  }
+ ]
+}

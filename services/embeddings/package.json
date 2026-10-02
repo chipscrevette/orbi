@@ -1,0 +1,8 @@
+{
+  "name": "orbi-embeddings",
+  "private": true,
+  "description": "Serveur local d'embeddings bge-m3 pour la recherche d'Orbi (port 11600).",
+  "type": "module",
+  "scripts": { "start": "node emb_serveur.mjs 11600" },
+  "dependencies": { "@huggingface/transformers": "^3.0.0" }
+}

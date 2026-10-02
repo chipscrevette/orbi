@@ -1,0 +1,65 @@
+V01  95.2 s  attendu « oui » obtenu « oui »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V02  26.3 s  attendu « oui sous conditions » obtenu « information »  verdict:✗ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V03  67.5 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V04  25.8 s  attendu « oui » obtenu « oui »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V05  84.6 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✗ garde_fous:✗
+V06  26.3 s  attendu « non » obtenu « non »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V07  49.3 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V08  55.5 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✗ garde_fous:✗
+V09  71.7 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V10  24.3 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V11  29.5 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V12  72.6 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V13  47.9 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V14  72.5 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V15  53.9 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V16  64.0 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V17  60.8 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V18  60.6 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ grave:✗ articles:✓ citations:✓ garde_fous:✓
+V19  144.7 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V20  71.8 s  attendu « information » obtenu « information »  verdict:✓ demarche:✓ citations:✓ garde_fous:✓
+V21  11.4 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+V22  12.4 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ demarche:✓ citations:✓ garde_fous:✓
+V23  42.5 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V24  15.8 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+V25  60.4 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V26  70.9 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V27  72.1 s  attendu « non » obtenu « non »  verdict:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+V28  109.8 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V29  100.2 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ grave:✗ articles:✗ citations:✓ garde_fous:✓
+V30  15.0 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+
+{
+ "date": "2026-09-27T09:08:58",
+ "questions": 30,
+ "scores": {
+  "verdict": [
+   23,
+   30
+  ],
+  "grave": [
+   13,
+   15
+  ],
+  "demarche": [
+   18,
+   18
+  ],
+  "articles": [
+   24,
+   25
+  ],
+  "citations": [
+   28,
+   30
+  ],
+  "garde_fous": [
+   28,
+   30
+  ]
+ },
+ "temps_moyen_s": 57.2,
+ "temps_max_s": 144.7,
+ "duree_totale_s": 1715
+}
+résultats : D:\PORTFOLIO\CLAUDE\assistant-plu\resultats\banc-20260927-0908.json

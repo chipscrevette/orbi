@@ -1,0 +1,81 @@
+{
+ "titre": "Passage 3 : le périmètre tenu par le code, une recherche plus variée, une réflexion plus courte",
+ "noms": ["Passage 2", "Passage 3"],
+ "historique": [{"nom": "Passage 1", "banc": "resultats/banc-20260926-2256.json"}],
+ "sortie": "avant-apres-20260927-0908.html",
+ "etapes_qui": {"redaction": "K2, réflexion courte d'abord"},
+ "exemple": "V29",
+ "temps": "plus rapide : aucune réflexion ratée ; la réflexion courte écrit 300 à 800 jetons au lieu de 1 000 à 2 400",
+ "corrections": [
+  ["perimetre", "Le périmètre se lit dans les mots",
+   "« Dérogation », « obliger à démolir », « taxé » fixent le sujet par le code, quoi qu'en dise le tri. « Le recours à un architecte » n'est pas un contentieux.",
+   "Le panneau « sortie » ne se discute pas.", ["V21", "V22", "V24"]],
+  ["articles", "Un morceau par article",
+   "La recherche ne rend plus deux morceaux du même article : DG A-I revient pour la question du lotissement.",
+   "Deux avis du même expert ne font pas deux avis.", ["V23"]],
+  ["articles", "Les exceptions se lisent en entier",
+   "En zone N, Ncu, UG… les articles 1 et 2 sont donnés en entier : N 2 b) (les annexes des maisons de 1995) est maintenant dans le contexte.",
+   "On ne lit pas la moitié d'un contrat.", ["V27", "V28", "V29"]],
+  ["articles", "Un long article, deux morceaux au plus",
+   "L'article 11 n'apporte plus quatre morceaux à une question d'abri. Bug de ma part : le plafond ne gardait que la première recherche (V18) ; trouvé pendant ce passage, corrigé pour le suivant.",
+   "Un résumé de deux lignes, pas de quatre pages.", ["V07", "V18"]],
+  ["garde_fous", "« UD7 » devient « UD 7 »",
+   "La forme des références est ramenée à celle du règlement par le code, avant tout contrôle.",
+   "Le correcteur ne retire pas de points pour une espace oubliée.", ["V14"]],
+  ["garde_fous", "Le vouvoiement est contrôlé",
+   "Un « tu » dans la réponse est une faute, corrigée comme les autres.",
+   "Au guichet, on vouvoie.", ["V01"]],
+  ["redaction", "Le projet décrit, et les faits manquants",
+   "Un détail interdit donne « non » (parpaings nus) ; un fait déjà fixé qu'on ignore (hauteur actuelle, date de la maison) doit donner « impossible à dire ».",
+   "Le contrôle technique juge la voiture qu'on lui amène, pas une voiture en général.", ["V14", "V16", "V18", "V26"]],
+  ["redaction", "Réflexion courte d'abord",
+   "La réflexion courte répond en premier, la moyenne ne sert plus que de secours. Aucune n'a échoué à ce passage. Effets de bord probables : deux citations cousues sans « … » (V05, V08) et un raisonnement plus faible (V29, en même temps que les articles entiers).",
+   "On répond de tête, on sort la calculatrice si besoin.", ["V07", "V11", "V12", "V20", "V05", "V08", "V29"]],
+  ["demarche", "Clôtures : déclaration partout à Biarritz",
+   "Trouvé par l'agent au passage 2 dans DG B-8 (délibération du 21/09/2007) : le code disait « aucune formalité » hors site patrimonial.",
+   "Le règlement local passe avant l'habitude.", ["V16", "V17"]]
+ ],
+ "inchange": {
+  "tri": ["Inchangé", "Ses erreurs de périmètre sont rattrapées par le code, à l'étape suivante."],
+  "outils": ["Inchangés", "Adresse, parcelle, zone et contraintes : justes sur les 30 questions depuis le passage 2."]
+ },
+ "banc_titre": "Même banc, même notation",
+ "banc_sous_titre": "Rien n'a changé dans le banc entre le passage 2 et le passage 3 : la comparaison est directe.",
+ "banc_corrige": [
+  ["Même modèle", "K2 Horizon 7B, sur la même carte graphique, aux mêmes réglages de température."],
+  ["Mêmes questions", "Les 30 questions du banc, notées par le même code."],
+  ["Deux réglages à la fois", "Le contexte (articles entiers) et l'effort de réflexion ont changé ensemble : pour V29, impossible de savoir lequel est en cause sans un passage de plus."]
+ ],
+ "restes": {
+  "V02": "Toujours la frontière de catégorie : « le PLU ne s'applique pas ? » est lu comme une explication, donc « information ». Le fond est juste.",
+  "V05": "Verdict juste. Une citation de UD 9 saute la ligne du secteur UDb sans « … » : ni le recalage ni la correction ne la réparent. Réparation écrite depuis : remettre les « … » entre des passages exacts.",
+  "V08": "Même défaut que V05 : la citation de UD 9 saute une ligne sans « … ». Le verdict et l'article sont justes.",
+  "V14": "La forme est réparée (citations et garde-fous passent), le fond non : « vos murs sont à 2 m de la limite, ce qui respecte l'article UD 7 qui impose au moins 3 m ». La réponse se contredit.",
+  "V16": "« Oui sous conditions » pour un brise-vue de 2,60 m : la hauteur maximale de 2 m n'est plus citée, l'emprise au sol arrive dans une question de clôture. La démarche, elle, est juste (déclaration, délibération de 2007).",
+  "V18": "Toujours le contresens. Le passage qui interdit les parpaings nus n'était pas dans le contexte : le tri avait cherché « matériaux de construction », et mon plafond de 2 morceaux avait jeté la 2e recherche.",
+  "V26": "Mieux que le passage 2 (UA 10 cité, les deux hauteurs du plan reprises), mais ajouter un étage dépend de la hauteur actuelle du bâtiment : l'agent ne le relève pas.",
+  "V28": "N 2 b) est maintenant dans le contexte, mais l'agent ne s'en sert pas, et sa réponse se contredit : « Oui, vous pouvez poser un abri » puis « l'abri de jardin est interdit par l'article N 1 ».",
+  "V29": "Régression grave : « la maison neuve est possible dans la zone Ncu ». Une condition de l'article 2 (les secteurs bruyants) est lue comme une autorisation. Au passage 2, avec moins de texte et une réflexion moyenne, la réponse était « non »."
+ },
+ "synthese": [
+  {"cause": "Raisonnement", "ids": "V14 · V16 · V26 · V28 · V29", "remede": "même code en réflexion moyenne puis courte : deux passages pour savoir ce que coûte la vitesse"},
+  {"cause": "Contresens en zone interdite", "ids": "V29 · V18", "remede": "un verrou dans le code : les projets interdits par zone, table vérifiée dans le règlement"},
+  {"cause": "Réponse qui se contredit", "ids": "V14 · V28", "remede": "garde-fou : un « oui » dont le texte conclut « interdit », ou l'inverse, est renvoyé"},
+  {"cause": "Citations cousues", "ids": "V05 · V08", "remede": "remettre les « … » entre des passages exacts (écrit)"},
+  {"cause": "Recherche", "ids": "V18", "remede": "plafond corrigé, et une recherche fixée par le code sur les mots rares de la question (écrit)"}
+ ],
+ "angles_morts": [
+  {"id": "V09", "extrait": "une terrasse de plain-pied, qui n'est pas un balcon, est comptée",
+   "pourquoi": "Faux : l'emprise se mesure « à 0,60 m du sol naturel » (DG B-5), une terrasse de plain-pied n'en fait pas partie. Noté juste : pour une explication, le verdict « information » est imposé, et l'article cité est le bon.",
+   "capteur": "dans le banc, exiger la phrase clé attendue ; les explications sont aujourd'hui les moins contrôlées."},
+  {"id": "V10", "extrait": "la surface de plancher est la surface mesurée à l'intérieur des murs, hors des annexes et des locaux techniques",
+   "pourquoi": "En partie inventé : le règlement ne définit pas la surface de plancher, c'est le Code de l'urbanisme (article R111-22). L'agent complète au lieu de le dire.",
+   "capteur": "un petit glossaire national vérifié sur Légifrance, fourni par le code comme la démarche."},
+  {"id": "V07", "extrait": "deux abris de 9 m² chacun, soit 18 m² au total, restent sous la limite de 25 %",
+   "pourquoi": "La maison déjà construite est oubliée : l'emprise compte toutes les constructions de la parcelle (DG B-5). Le verdict reste juste, sous condition.",
+   "capteur": "écrire dans les chiffres calculés que l'emprise existante n'est pas connue, et la demander."},
+  {"id": "V23", "extrait": "ns régissant le lotissement ne soient mises en concordance avec celles du P.L.U.",
+   "pourquoi": "La citation est exacte mais commence au milieu d'un mot, là où le règlement a été découpé. Le fond dit aussi « le lotissement s'applique en priorité », alors que c'est la règle la plus stricte qui prime.",
+   "capteur": "rogner les citations aux mots entiers ; exiger la phrase clé « plus restrictives »."}
+ ]
+}

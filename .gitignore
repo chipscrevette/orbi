@@ -1,0 +1,18 @@
+# environnements et caches
+.venv/
+__pycache__/
+.pytest_cache/
+.coverage*
+htmlcov/
+services/embeddings/node_modules/
+# pages de rendu intermédiaires des schémas
+docs/outils/rendu-*.html
+# application de bureau (Electron) : dépendances, constructions, copies de données faites avant chaque construction
+node_modules/
+app/out/
+app/dist/
+app/dist-web/
+app/public/donnees/articles.json
+app/public/donnees/reglement-biarritz.pdf
+# réglages locaux de l'éditeur
+.claude/

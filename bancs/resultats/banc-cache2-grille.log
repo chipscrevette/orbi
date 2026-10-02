@@ -1,0 +1,85 @@
+D01  52.8 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D02  49.9 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D03  53.0 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D04  56.2 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D05  47.2 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D06  60.2 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D07  20.1 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✗ articles:✓ citations:✓ garde_fous:✓
+D08  51.3 s  attendu « oui » obtenu « non »  verdict:✗ sens:✗ grave:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D09  63.0 s  attendu « oui sous conditions » obtenu « non »  verdict:✗ sens:✗ grave:✗ demarche:✓ articles:✗ citations:✓ garde_fous:✓
+D10  73.3 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✗ citations:✓ garde_fous:✓
+D11  53.8 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D12  75.1 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D13  52.9 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ sens:✗ grave:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D14  51.7 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D15  6.5 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+D16  6.4 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+D17  7.2 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+D18  71.4 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ sens:✗ grave:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D19  94.3 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ sens:✗ grave:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D20  55.1 s  attendu « non » obtenu « oui sous conditions »  verdict:✗ sens:✗ grave:✗ demarche:✓ articles:✗ citations:✓ garde_fous:✓
+D21  120.5 s  attendu « impossible à dire » obtenu « impossible à dire »  verdict:✓ sens:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D22  15.3 s  attendu « impossible à dire » obtenu « impossible à dire »  verdict:✓ sens:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D23  77.0 s  attendu « impossible à dire » obtenu « impossible à dire »  verdict:✓ sens:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D24  78.3 s  attendu « impossible à dire » obtenu « non »  verdict:✗ sens:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D25  142.5 s  attendu « impossible à dire » obtenu « non »  verdict:✗ sens:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D26  84.9 s  attendu « impossible à dire » obtenu « impossible à dire »  verdict:✓ sens:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D27  147.3 s  attendu « impossible à dire » obtenu « impossible à dire »  verdict:✓ sens:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D28  60.2 s  attendu « impossible à dire » obtenu « impossible à dire »  verdict:✓ sens:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D29  104.2 s  attendu « impossible à dire » obtenu « non »  verdict:✗ sens:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D30  14.7 s  attendu « impossible à dire » obtenu « impossible à dire »  verdict:✓ sens:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D31  52.8 s  attendu « oui sous conditions » obtenu « impossible à dire »  verdict:✗ sens:✗ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D32  67.0 s  attendu « oui sous conditions » obtenu « impossible à dire »  verdict:✗ sens:✗ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+D33  60.9 s  attendu « oui sous conditions » obtenu « impossible à dire »  verdict:✗ sens:✗ grave:✓ demarche:✗ articles:✗ citations:✓ garde_fous:✓
+D34  282.2 s  attendu « non » obtenu « impossible à dire »  verdict:✗ sens:✗ grave:✓ articles:✗ citations:✓ garde_fous:✓
+D35  47.2 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+D36  30.5 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+D37  48.9 s  attendu « non » obtenu « non »  verdict:✓ sens:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+D38  16.2 s  attendu « non » obtenu « impossible à dire »  verdict:✗ sens:✗ grave:✓ articles:✗ citations:✓ garde_fous:✓
+D39  112.4 s  attendu « non » obtenu « impossible à dire »  verdict:✗ sens:✗ grave:✓ demarche:✗ articles:✗ citations:✓ garde_fous:✓
+D40  60.8 s  attendu « oui sous conditions » obtenu « impossible à dire »  verdict:✗ sens:✗ grave:✓ demarche:✗ articles:✗ citations:✓ garde_fous:✓
+
+{
+ "date": "2026-10-02T15:20:15",
+ "questions": 40,
+ "scores": {
+  "verdict": [
+   24,
+   40
+  ],
+  "sens": [
+   24,
+   40
+  ],
+  "grave": [
+   24,
+   30
+  ],
+  "demarche": [
+   28,
+   32
+  ],
+  "articles": [
+   32,
+   40
+  ],
+  "citations": [
+   40,
+   40
+  ],
+  "garde_fous": [
+   40,
+   40
+  ]
+ },
+ "efforts": [
+  "low",
+  "medium"
+ ],
+ "banc": "questions-cachees-2.json",
+ "pipeline": "grille",
+ "temps_moyen_s": 65.6,
+ "temps_max_s": 282.2,
+ "duree_totale_s": 2625
+}
+résultats : D:\PORTFOLIO\CLAUDE\assistant-plu\resultats\banc-cache2-grille-20261002-1520.json

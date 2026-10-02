@@ -1,0 +1,6 @@
+# fins de ligne Unix partout, même sous Windows : les empreintes SHA-256 des bancs scellés se calculent sur ces octets
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.webp binary
+*.ico binary

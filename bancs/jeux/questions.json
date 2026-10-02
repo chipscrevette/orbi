@@ -1,0 +1,656 @@
+[
+ {
+  "id": "Q01",
+  "type": "normale",
+  "question": "Puis-je construire une véranda de 20 m² à la mairie de Biarritz, 12 avenue Édouard VII ?",
+  "adresse": "12 Avenue Edouard VII 64200 Biarritz",
+  "projet": "véranda",
+  "faits": {
+   "zone": "UAs",
+   "parcelle": "BA 0008",
+   "surface_m2": 1472,
+   "contraintes": [
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions, avec un vrai risque de refus",
+   "regles": [
+    {
+     "article": "UA 9",
+     "page": 23,
+     "citation": "Il n'est pas fixé d'emprise au sol sauf en UAc",
+     "dit": "aucune emprise maximale en UAs"
+    },
+    {
+     "article": "UA 11",
+     "page": 26,
+     "citation": "ajouts ou excroissances, vérandas etc... pourront être interdites",
+     "dit": "sur un bâtiment repéré (règles architecturales particulières), une véranda peut être interdite"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis",
+    "déclaration préalable ou permis selon la surface"
+   ]
+  },
+  "piege": "appliquer une limite d'emprise qui ne vaut qu'en UAc"
+ },
+ {
+  "id": "Q02",
+  "type": "normale",
+  "question": "Je veux surélever d'un étage le bâtiment du 2 rue de la Bergerie à Biarritz. C'est possible ?",
+  "adresse": "2 Rue de la Bergerie 64200 Biarritz",
+  "projet": "surélévation",
+  "faits": {
+   "zone": "UA",
+   "parcelle": "AB 0433",
+   "surface_m2": 3470,
+   "contraintes": [
+    "Ligne d'implantation obligatoire ou recul minimal imposé suivant la règle applicable à l'article 6 de chaque zone",
+    "Hauteur maximale",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "impossible à dire sans savoir où est le bâtiment sur la parcelle",
+   "regles": [
+    {
+     "article": "UA 10",
+     "page": 23,
+     "citation": "La hauteur des constructions est fixée par le plan de P.L.U., au 1/2000è ci-annexé",
+     "dit": "le plan fixe la hauteur ; ici deux niveaux coexistent sur la parcelle : « 3 » (12,50 m à l'égout, R+3+comble) et « 5 » (18 m, R+5+comble)"
+    }
+   ],
+   "a_verifier": [
+    "la hauteur actuelle du bâtiment et sa position sur la parcelle",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ]
+  },
+  "piege": "donner une seule hauteur alors que le plan en indique deux sur cette grande parcelle (3 470 m²)"
+ },
+ {
+  "id": "Q03",
+  "type": "normale",
+  "question": "Puis-je ajouter un étage à ma maison au 2 avenue d'Etienne, Biarritz ?",
+  "adresse": "2 Avenue d'Etienne 64200 Biarritz",
+  "projet": "surélévation",
+  "faits": {
+   "zone": "UB",
+   "parcelle": "AC 0035",
+   "surface_m2": 410,
+   "contraintes": [
+    "Hauteur maximale",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui si le bâtiment reste sous 8,50 m à l'égout et 14 m au faîtage",
+   "regles": [
+    {
+     "article": "UB 10",
+     "page": 41,
+     "citation": "La hauteur des constructions est fixée par le plan de P.L.U., au 1/2000è ci-annexé, par mention des hauteurs autorisées par parcelle ou groupe",
+     "dit": "le plan indique le niveau « 2 » pour cette parcelle : 8,50 m à l'égout, 14 m au faîtage, rez-de-chaussée + 2 étages + comble"
+    }
+   ],
+   "a_verifier": [
+    "le nombre de niveaux et la hauteur actuels",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ]
+  },
+  "piege": "ne pas aller chercher le code de hauteur sur le plan (Géoportail)"
+ },
+ {
+  "id": "Q04",
+  "type": "normale",
+  "question": "Puis-je faire une piscine non couverte au 31 avenue du Maréchal Joffre à Biarritz ?",
+  "adresse": "31 Avenue du Maréchal Joffre 64200 Biarritz",
+  "projet": "piscine",
+  "faits": {
+   "zone": "UB",
+   "parcelle": "BL 0083",
+   "surface_m2": 200,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui en principe",
+   "regles": [
+    {
+     "article": "DG B-5",
+     "page": 9,
+     "citation": "toutefois les installations sportives de plein-air telles que piscines non couvertes",
+     "dit": "une piscine non couverte ne compte pas dans l'emprise au sol"
+    },
+    {
+     "article": "UB 9",
+     "page": 41,
+     "citation": "L’EMPRISE AU SOL DES CONSTRUCTIONS Sans objet",
+     "dit": "pas d'emprise maximale en UB"
+    },
+    {
+     "article": "UB 7",
+     "page": 39,
+     "citation": "Les piscines, spas et jacuzzis sont exclus de cette règle",
+     "dit": "la règle de distance aux limites ne s'applique pas aux piscines"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis",
+    "déclaration préalable (bassin de 10 à 100 m²)"
+   ]
+  },
+  "piege": "compter la piscine dans l'emprise au sol"
+ },
+ {
+  "id": "Q05",
+  "type": "normale",
+  "question": "Je veux une clôture de 2 m le long de la rue au 96 avenue de Verdun, Biarritz. C'est autorisé ?",
+  "adresse": "96 Avenue de Verdun 64200 Biarritz",
+  "projet": "clôture",
+  "faits": {
+   "zone": "UBa",
+   "parcelle": "AE 0250",
+   "surface_m2": 271,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui, 2 m est le maximum sur la rue en UB",
+   "regles": [
+    {
+     "article": "UB 11",
+     "page": 48,
+     "citation": "e-2 - clôtures sur l'espace public : La hauteur totale des clôtures ne peut excéder 2 mètres",
+     "dit": "clôture sur la rue : 2 m au plus"
+    },
+    {
+     "article": "UB 11",
+     "page": 48,
+     "citation": "il ne pourra être autorisé que la construction d'un mur bahut dont la hauteur n'excédera pas 1,00 mètre",
+     "dit": "dans certaines rues à murs bahuts, seul un mur bahut de 1 m surmonté d'une grille est admis"
+    }
+   ],
+   "a_verifier": [
+    "si la rue fait partie des voies à murs bahuts",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ]
+  },
+  "piege": "reprendre la limite de 1,50 m de la zone UD"
+ },
+ {
+  "id": "Q06",
+  "type": "normale",
+  "question": "Je voudrais agrandir ma maison de 40 m² au 9 allée du Moura à Biarritz. C'est possible ?",
+  "adresse": "9 Allée du Moura 64200 Biarritz",
+  "projet": "extension",
+  "faits": {
+   "zone": "UC",
+   "parcelle": "AP 0033",
+   "surface_m2": 730,
+   "contraintes": [
+    "Zone d'implantation obligatoire - 0 à 4 m (cf. Art. 6)"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui si l'emprise totale reste sous 70 % de la parcelle (511 m² sur 730)",
+   "regles": [
+    {
+     "article": "UC 9",
+     "page": 56,
+     "citation": "l'emprise au sol maximale est fixée à 70 % de l'unité foncière",
+     "dit": "emprise au sol maximale : 70 %"
+    },
+    {
+     "article": "UC 7",
+     "page": 55,
+     "citation": "Les constructions peuvent s'implanter sur les limites séparatives ou à au moins 3 mètres de celles-ci",
+     "dit": "en limite de propriété ou à 3 m au moins"
+    }
+   ],
+   "a_verifier": [
+    "l'emprise des constructions existantes",
+    "la zone d'implantation obligatoire de 0 à 4 m imposée côté rue (art. UC 6)"
+   ]
+  },
+  "piege": "oublier de convertir le pourcentage en m² de la vraie parcelle"
+ },
+ {
+  "id": "Q07",
+  "type": "normale",
+  "question": "Puis-je installer un abri de jardin de 9 m² au 30 avenue Tamames, Biarritz ?",
+  "adresse": "30 Avenue Tamames 64200 Biarritz",
+  "projet": "abri de jardin",
+  "faits": {
+   "zone": "UC",
+   "parcelle": "AK 0183",
+   "surface_m2": 4357,
+   "contraintes": [
+    "Espace boisé classé (L113-1)"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui hors de l'espace boisé classé, non dans sa partie classée",
+   "regles": [
+    {
+     "article": "UC 9",
+     "page": 56,
+     "citation": "l'emprise au sol maximale est fixée à 70 % de l'unité foncière",
+     "dit": "emprise au sol maximale : 70 %"
+    }
+   ],
+   "a_verifier": [
+    "où se trouve l'espace boisé classé (code de l'urbanisme, art. L113-1) sur la parcelle"
+   ]
+  },
+  "piege": "ignorer l'espace boisé classé signalé par le Géoportail"
+ },
+ {
+  "id": "Q08",
+  "type": "normale",
+  "question": "Puis-je construire une véranda de 20 m² avenue du Docteur Claisse (parcelle AB 0323), à Biarritz ?",
+  "adresse": "Avenue du Docteur Claisse 64200 Biarritz",
+  "projet": "véranda",
+  "faits": {
+   "zone": "UD",
+   "parcelle": "AB 0323",
+   "surface_m2": 1348,
+   "contraintes": [
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions",
+   "regles": [
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "L'emprise au sol maximale en UD et en secteurs UDi et UDi*, et UDt est fixée à 50%",
+     "dit": "emprise au sol maximale : 50 %"
+    },
+    {
+     "article": "UD 11",
+     "page": 72,
+     "citation": "L'autorisation de démolir pourra être refusée sur toute ou partie des constructions situées au droit des liserés",
+     "dit": "bâtiment repéré : son aménagement peut être encadré ; l'article UD 11 ne cite pas les vérandas"
+    }
+   ],
+   "a_verifier": [
+    "l'emprise existante",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ]
+  },
+  "piege": "recopier la phrase « vérandas… pourront être interdites » des zones UA et UB, absente en UD"
+ },
+ {
+  "id": "Q09",
+  "type": "normale",
+  "question": "Une piscine non couverte au 6 rue Castellamare, à Biarritz, c'est autorisé ?",
+  "adresse": "6 Rue Castellamare 64200 Biarritz",
+  "projet": "piscine",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AE 0090",
+   "surface_m2": 509,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui en principe",
+   "regles": [
+    {
+     "article": "DG B-5",
+     "page": 9,
+     "citation": "toutefois les installations sportives de plein-air telles que piscines non couvertes",
+     "dit": "une piscine non couverte ne compte pas dans l'emprise au sol"
+    },
+    {
+     "article": "UD 7",
+     "page": 69,
+     "citation": "Les piscines, spas et jacuzzis sont exclus de cette règle",
+     "dit": "la règle de distance aux limites ne s'applique pas aux piscines"
+    }
+   ],
+   "a_verifier": [
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis",
+    "déclaration préalable"
+   ]
+  },
+  "piege": "appliquer la limite d'emprise de 25 % de la zone UDa à une piscine non couverte"
+ },
+ {
+  "id": "Q10",
+  "type": "normale",
+  "question": "Je veux agrandir ma maison de 25 m² au 3 rue Pierre Dartiguelongue, à Biarritz. Possible ?",
+  "adresse": "3 Rue Pierre Dartiguelongue 64200 Biarritz",
+  "projet": "extension",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AT 0049",
+   "surface_m2": 342,
+   "contraintes": []
+  },
+  "attendu": {
+   "verdict": "oui si l'emprise totale ne dépasse pas 85,5 m² (25 % de 342 m²), ou 136,8 m² (40 %) si la parcelle existait avant 2003",
+   "regles": [
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa",
+     "dit": "25 % en UDa, porté à 40 % pour les parcelles de moins de 1 000 m² existant avant la révision de 2003, 250 m² au plus"
+    }
+   ],
+   "a_verifier": [
+    "l'emprise des constructions existantes",
+    "la date de création de la parcelle"
+   ]
+  },
+  "piege": "ne pas voir l'exception des 40 %"
+ },
+ {
+  "id": "Q11",
+  "type": "normale",
+  "question": "Puis-je construire une maison individuelle au 37 allée du Moura, à Biarritz ?",
+  "adresse": "37 Allée du Moura 64200 Biarritz",
+  "projet": "maison neuve",
+  "faits": {
+   "zone": "UG",
+   "parcelle": "AO 0265",
+   "surface_m2": 8522,
+   "contraintes": [
+    "Elargissement de la rue du Moura (15 m)",
+    "SUP T1 des Pyrénées-Atlantiques"
+   ]
+  },
+  "attendu": {
+   "verdict": "non",
+   "regles": [
+    {
+     "article": "UG 1",
+     "page": 77,
+     "citation": "les constructions destinées à l’habitation",
+     "dit": "l'habitation est interdite en UG, sauf extension de l'existant ou logement lié à l'équipement"
+    }
+   ],
+   "a_verifier": [
+    "l'emplacement réservé pour l'élargissement de la rue du Moura (15 m)"
+   ]
+  },
+  "piege": "répondre oui parce que la parcelle est grande (8 522 m²)"
+ },
+ {
+  "id": "Q12",
+  "type": "normale",
+  "question": "Au 21 avenue de Ségure à Biarritz, puis-je surélever l'immeuble ?",
+  "adresse": "21 Avenue de Ségure 64200 Biarritz",
+  "projet": "surélévation",
+  "faits": {
+   "zone": "UH",
+   "parcelle": "AX 0038",
+   "surface_m2": 5465,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui jusqu'à 5 niveaux (R+4) : 15 m à l'égout, 21 m au faîtage",
+   "regles": [
+    {
+     "article": "UH 10",
+     "page": 93,
+     "citation": "La hauteur d'une construction ne peut excéder 5 niveaux, soit R + 4 superposés",
+     "dit": "5 niveaux au plus, 15 m à l'égout ou à l'acrotère, 21 m au faîtage"
+    }
+   ],
+   "a_verifier": [
+    "la hauteur actuelle",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ]
+  },
+  "piege": "ne pas savoir que UH est la zone des grandes hauteurs"
+ },
+ {
+  "id": "Q13",
+  "type": "normale",
+  "question": "Puis-je poser un abri de jardin au 14 rue du Moulin de Chabiague, à Biarritz ?",
+  "adresse": "14 Rue du Moulin de Chabiague 64200 Biarritz",
+  "projet": "abri de jardin",
+  "faits": {
+   "zone": "N",
+   "parcelle": "BT 0179",
+   "surface_m2": 30189,
+   "contraintes": [
+    "Prolongement de la rue Minjongo (14 m)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non, sauf annexe d'une construction existante",
+   "regles": [
+    {
+     "article": "N 1",
+     "page": 132,
+     "citation": "Tous les types d'occupation ou d'utilisation des sols sont interdits",
+     "dit": "en zone N, tout est interdit sauf exceptions"
+    },
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "l'extension, aménagement, les annexes des constructions existantes à la date d'approbation de la révision du P.O.S. de mars 1995",
+     "dit": "les annexes ne sont admises que pour une construction existante en 1995"
+    }
+   ],
+   "a_verifier": [
+    "s'il existe une construction de 1995 ou avant sur la parcelle",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ]
+  },
+  "piege": "raisonner comme en zone urbaine"
+ },
+ {
+  "id": "Q14",
+  "type": "normale",
+  "question": "Puis-je creuser une piscine au 1 allée de Barroilhet, à Biarritz ?",
+  "adresse": "1 Allée de Barroilhet 64200 Biarritz",
+  "projet": "piscine",
+  "faits": {
+   "zone": "Nh",
+   "parcelle": "CE 0064",
+   "surface_m2": 3807,
+   "contraintes": [
+    "Espace boisé classé (L113-1)",
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Application de l article L.111-1-4 du code de l urbanisme"
+   ]
+  },
+  "attendu": {
+   "verdict": "oui sous conditions, hors espace boisé classé",
+   "regles": [
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "En Nh et Nhd, la construction d’une villa individuelle à caractère pavillonnaire",
+     "dit": "en Nh, la villa et ses annexes (garage, piscine, abri) sont admises sous condition d'insertion dans l'espace naturel"
+    },
+    {
+     "article": "N 2",
+     "page": 133,
+     "citation": "ne sont autorisés que :  les aménagements légers non bâtis",
+     "dit": "dans l'espace vert protégé, seuls des aménagements limités sont admis"
+    }
+   ],
+   "a_verifier": [
+    "où se trouvent l'espace boisé classé et l'espace vert protégé sur la parcelle"
+   ]
+  },
+  "piege": "répondre non parce que c'est une zone N"
+ },
+ {
+  "id": "Q15",
+  "type": "normale",
+  "question": "Puis-je construire une maison allée Gabrielle Dorziat (parcelle CA 0044), à Biarritz ?",
+  "adresse": "Allée Gabrielle Dorziat 64200 Biarritz",
+  "projet": "maison neuve",
+  "faits": {
+   "zone": "Ncu",
+   "parcelle": "CA 0044",
+   "surface_m2": 22737,
+   "contraintes": [
+    "Espace boisé classé (L113-1)",
+    "Espace vert protégé (L151-19 et L151-23)",
+    "Règles architecturales particulières (cf. Art. 11)",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "non",
+   "regles": [
+    {
+     "article": "Ncu 1",
+     "page": 141,
+     "citation": "Toutes constructions qui ne seraient pas justifiées par la sécurité",
+     "dit": "en Ncu (coupure d'urbanisation), une construction neuve n'est admise que pour la sécurité, un service public ou le confortement de l'existant"
+    }
+   ],
+   "a_verifier": [
+    "espace boisé classé et espace vert protégé sur la parcelle",
+    "servitude AC4 : site patrimonial remarquable, l'Architecte des Bâtiments de France (ABF) donne son avis"
+   ]
+  },
+  "piege": "confondre Ncu et Nh"
+ },
+ {
+  "id": "Q16",
+  "type": "bord",
+  "question": "Puis-je construire une véranda rue Marie Blanque à Anglet ?",
+  "adresse": "Rue Marie Blanque 64600 Anglet",
+  "projet": "véranda",
+  "faits": {
+   "zone": "hors Biarritz (commune 64024)"
+  },
+  "attendu": {
+   "verdict": "hors périmètre : la v1 ne couvre que Biarritz",
+   "regles": [],
+   "a_verifier": [
+    "le PLU d'Anglet (ou le PLUi du Pays basque) auprès de la mairie"
+   ]
+  },
+  "piege": "répondre avec le règlement de Biarritz"
+ },
+ {
+  "id": "Q17",
+  "type": "bord",
+  "question": "Combien vaut ma maison au 6 rue Castellamare à Biarritz ?",
+  "adresse": "6 Rue Castellamare 64200 Biarritz",
+  "projet": "hors carte",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AE 0090",
+   "surface_m2": 509,
+   "contraintes": [
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "hors carte : l'assistant répond sur les règles d'urbanisme, pas sur les prix",
+   "regles": [],
+   "a_verifier": []
+  },
+  "piege": "inventer une estimation"
+ },
+ {
+  "id": "Q18",
+  "type": "bord",
+  "question": "Est-ce que je peux agrandir, au 3 rue Pierre Dartiguelongue ?",
+  "adresse": "3 Rue Pierre Dartiguelongue 64200 Biarritz",
+  "projet": "à préciser",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AT 0049",
+   "surface_m2": 342,
+   "contraintes": []
+  },
+  "attendu": {
+   "verdict": "demander de quelle surface, en donnant la règle clé (25 % d'emprise en UDa)",
+   "regles": [
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa",
+     "dit": "25 % d'emprise en UDa"
+    }
+   ],
+   "a_verifier": [
+    "la surface du projet",
+    "l'emprise existante"
+   ]
+  },
+  "piege": "répondre oui ou non sans connaître la surface"
+ },
+ {
+  "id": "Q19",
+  "type": "bord",
+  "question": "Je veux installer des panneaux solaires sur mon toit au 2 rue de la Bergerie, à Biarritz.",
+  "adresse": "2 Rue de la Bergerie 64200 Biarritz",
+  "projet": "hors carte",
+  "faits": {
+   "zone": "UA",
+   "parcelle": "AB 0433",
+   "surface_m2": 3470,
+   "contraintes": [
+    "Ligne d'implantation obligatoire ou recul minimal imposé suivant la règle applicable à l'article 6 de chaque zone",
+    "Hauteur maximale",
+    "Site patrimonial remarquable de Biarritz"
+   ]
+  },
+  "attendu": {
+   "verdict": "hors carte en v1 (les 6 projets couverts sont : véranda, extension, piscine, abri, clôture, surélévation)",
+   "regles": [],
+   "a_verifier": [
+    "la mairie, et l'ABF (site patrimonial remarquable)"
+   ]
+  },
+  "piege": "répondre quand même sans avoir lu les règles utiles"
+ },
+ {
+  "id": "Q20",
+  "type": "bord",
+  "question": "Puis-je construire une piscine couverte de 30 m² au 3 rue Pierre Dartiguelongue, à Biarritz ?",
+  "adresse": "3 Rue Pierre Dartiguelongue 64200 Biarritz",
+  "projet": "piscine",
+  "faits": {
+   "zone": "UDa",
+   "parcelle": "AT 0049",
+   "surface_m2": 342,
+   "contraintes": []
+  },
+  "attendu": {
+   "verdict": "oui si l'emprise totale reste sous 85,5 m² (25 %) ou 136,8 m² (40 % si parcelle antérieure à 2003)",
+   "regles": [
+    {
+     "article": "DG B-5",
+     "page": 9,
+     "citation": "toutefois les installations sportives de plein-air telles que piscines non couvertes",
+     "dit": "une piscine non couverte ne compte pas dans l'emprise au sol"
+    },
+    {
+     "article": "UD 9",
+     "page": 70,
+     "citation": "L'emprise au sol est limitée à 25 % de l'unité foncière en secteurs UDa",
+     "dit": "une piscine couverte compte dans l'emprise : 25 % en UDa"
+    }
+   ],
+   "a_verifier": [
+    "l'emprise existante",
+    "la date de création de la parcelle"
+   ]
+  },
+  "piege": "traiter la piscine couverte comme une piscine non couverte (hors emprise)"
+ }
+]

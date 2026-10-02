@@ -1,0 +1,69 @@
+V01  55.9 s  attendu « oui » obtenu « oui »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V02  57.0 s  attendu « oui sous conditions » obtenu « information »  verdict:✗ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V03  38.9 s  attendu « oui sous conditions » obtenu « oui »  verdict:✗ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V04  40.8 s  attendu « oui » obtenu « oui »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V05  35.6 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V06  26.9 s  attendu « non » obtenu « non »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V07  191.0 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V08  37.1 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V09  69.2 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V10  77.9 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V11  186.2 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V12  81.8 s  attendu « oui sous conditions » obtenu « non »  verdict:✗ grave:✗ demarche:✓ articles:✗ citations:✓ garde_fous:✓
+V13  41.5 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V14  80.4 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V15  73.9 s  attendu « information » obtenu « non »  verdict:✗ articles:✓ citations:✓ garde_fous:✓
+V16  180.1 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V17  156.9 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V18  77.5 s  attendu « non » obtenu « non »  verdict:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+V19  72.1 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V20  22.3 s  attendu « information » obtenu « information »  verdict:✓ demarche:✓ citations:✓ garde_fous:✓
+V21  5.4 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+V22  5.6 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ demarche:✓ citations:✓ garde_fous:✓
+V23  26.6 s  attendu « information » obtenu « information »  verdict:✓ articles:✓ citations:✓ garde_fous:✓
+V24  5.8 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+V25  90.2 s  attendu « oui sous conditions » obtenu « oui sous conditions »  verdict:✓ grave:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V26  223.7 s  attendu « impossible à dire » obtenu « oui sous conditions »  verdict:✗ demarche:✓ articles:✓ citations:✗ garde_fous:✗
+V27  29.1 s  attendu « non » obtenu « non »  verdict:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+V28  69.6 s  attendu « impossible à dire » obtenu « impossible à dire »  verdict:✓ demarche:✓ articles:✓ citations:✓ garde_fous:✓
+V29  26.4 s  attendu « non » obtenu « non »  verdict:✓ grave:✓ articles:✓ citations:✓ garde_fous:✓
+V30  5.6 s  attendu « hors périmètre » obtenu « hors périmètre »  verdict:✓ citations:✓ garde_fous:✓
+
+{
+ "date": "2026-09-27T10:24:07",
+ "questions": 30,
+ "scores": {
+  "verdict": [
+   23,
+   30
+  ],
+  "grave": [
+   14,
+   15
+  ],
+  "demarche": [
+   18,
+   18
+  ],
+  "articles": [
+   24,
+   25
+  ],
+  "citations": [
+   29,
+   30
+  ],
+  "garde_fous": [
+   29,
+   30
+  ]
+ },
+ "efforts": [
+  "medium",
+  "low"
+ ],
+ "temps_moyen_s": 69.7,
+ "temps_max_s": 223.7,
+ "duree_totale_s": 2091
+}
+résultats : D:\PORTFOLIO\CLAUDE\assistant-plu\resultats\banc-20260927-1024.json
