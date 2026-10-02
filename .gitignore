@@ -14,5 +14,7 @@ app/dist/
 app/dist-web/
 app/public/donnees/articles.json
 app/public/donnees/reglement-biarritz.pdf
+# les questions posées dans l'application (traces personnelles)
+conversations/
 # réglages locaux de l'éditeur
 .claude/

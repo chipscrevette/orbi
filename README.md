@@ -35,7 +35,7 @@ total. Chaque échec est expliqué dans `labo/vitesse/PLAN-v4.md` : ce que le co
 
 ## La qualité
 
-**1 047 tests unitaires et de mutation** (quelques secondes, sans modèle), **3 rejeux d'intégration** (les passages
+**1 078 tests unitaires et de mutation** (quelques secondes, sans modèle), **3 rejeux d'intégration** (les passages
 enregistrés du banc, rejoués sans le modèle, doivent redonner exactement les mêmes réponses), **88 % de couverture**.
 Les 7 défauts connus restants sont écrits comme des tests marqués `xfail`, avec leur explication : un défaut corrigé fait
 échouer son marqueur, on ne peut pas l'oublier.
@@ -51,7 +51,8 @@ orbi/
 │  ├─ outils/         les API publiques (adresse, cadastre, Géoportail de l'Urbanisme), avec cache disque
 │  ├─ modele/         le client du modèle local et ses consignes
 │  ├─ agent/          l'orchestration : l'agent historique et la grille
-│  └─ evaluation/     la notation des bancs, le rejeu sans modèle, le scellé, les pages de rapport
+│  ├─ evaluation/     la notation des bancs, le rejeu sans modèle, le scellé, les pages de rapport
+│  └─ api/            le serveur local de l'application : l'état de la machine, les réponses en direct
 ├─ tests/             unitaires, mutations (on casse le moteur exprès), intégration
 ├─ bancs/             les questions (jeux/), les générateurs, les passages et leurs traces (resultats/)
 ├─ donnees/           le règlement, l'index de recherche, les zones du PLU, le cache des API
@@ -70,7 +71,13 @@ uv sync --group dev                         # le paquet orbi et les outils de te
 uv run pytest                               # les tests unitaires et de mutation (sans modèle, quelques secondes)
 uv run pytest -m integration                # le rejeu des traces enregistrées (serveur d'embeddings requis)
 uv run orbi-banc --grille                   # le banc de mise au point, avec le modèle
+uv run orbi-serveur                         # le serveur local de l'application : http://127.0.0.1:4770 (API : /api/docs)
 ```
+
+Le serveur local répond en direct : chaque étape de l'agent part vers l'application au moment où elle se termine
+(Server-Sent Events), puis le lieu (parcelle, zone, servitudes), puis la réponse. Une vraie question, jamais vue :
+« Je veux construire une véranda de 15 m² sur ma maison au 10 rue Gambetta à Biarritz » → parcelle BC 0074, zone UAs,
+site patrimonial remarquable, *oui sous conditions*, en 69 secondes sur une RTX 3060.
 
 Les deux services locaux : `services/k2/serveur_k2.py` (port 11500) et `services/embeddings/emb_serveur.mjs` (port 11600).
 

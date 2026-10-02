@@ -8,10 +8,9 @@ import json
 import os
 import sys
 
-os.environ["PLU_SANS_TRACE"] = "1"
-from orbi.modele import cerveau  # noqa: E402
-from orbi.agent.historique import Agent  # noqa: E402
-from orbi.evaluation.traces import trace_locale  # noqa: E402
+from orbi.agent.historique import Agent
+from orbi.evaluation.traces import trace_locale
+from orbi.modele import cerveau
 
 
 def sequence(trace):
@@ -56,7 +55,8 @@ def rejouer(chemin, ids=None):
         agent = Agent()
     identiques, diffs = 0, []
     lignes = [l for l in d["lignes"] if not ids or l["id"] in ids]
-    vrai = cerveau.demander
+    vrai, sans_trace = cerveau.demander, os.environ.get("PLU_SANS_TRACE")
+    os.environ["PLU_SANS_TRACE"] = "1"  # le rejeu ne remplit pas les traces ; rétabli à la fin, pour ne rien changer ailleurs
     try:
         for l in lignes:
             trace = trace_locale(l["obtenu"].get("trace"))
@@ -76,6 +76,10 @@ def rejouer(chemin, ids=None):
                 diffs.append((l["id"], {k: (a[k], b[k]) for k in a if a[k] != b[k]}))
     finally:
         cerveau.demander = vrai
+        if sans_trace is None:
+            os.environ.pop("PLU_SANS_TRACE", None)
+        else:
+            os.environ["PLU_SANS_TRACE"] = sans_trace
     return identiques, len(lignes), diffs, grille
 
 

@@ -537,7 +537,7 @@ class Agent:
         res["secondes"] = round(time.time() - self.t0, 1)
         if os.environ.get("PLU_SANS_TRACE"):  # le rejeu (orbi.evaluation.rejeu) ne doit pas remplir les traces
             return res
-        dossier = TRACES
+        dossier = getattr(self, "dossier_traces", None) or TRACES  # l'application range ses traces à part
         os.makedirs(dossier, exist_ok=True)
         chemin = os.path.join(dossier, f"{datetime.now():%Y%m%d-%H%M%S-%f}.jsonl")
         with open(chemin, "w", encoding="utf-8") as fo:
