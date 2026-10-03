@@ -18,3 +18,9 @@ app/public/donnees/reglement-biarritz.pdf
 conversations/
 # réglages locaux de l'éditeur
 .claude/
+# le film : les images et les essais se refont avec brag-output/work/rendre.mjs
+brag-output/work/images/
+brag-output/work/essais/
+brag-output/work/*.wav
+brag-output/work/orbi.png
+brag-output/work/inter.woff2

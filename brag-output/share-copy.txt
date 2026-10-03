@@ -1,0 +1,1 @@
+Orbi lit le PLU de Biarritz sur votre ordinateur : vous donnez une adresse et un projet, il répond oui, non ou sous conditions, avec la phrase exacte du règlement et sa page. Le modèle lit, le code vérifie chaque citation mot à mot. 27 bonnes réponses sur 40 questions jamais vues, et on continue. github.com/chipscrevette/orbi

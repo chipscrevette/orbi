@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Orbi · film</title>
+<style>
+@font-face { font-family: Inter; src: url(inter.woff2) format('woff2'); font-weight: 100 900; }
+:root {
+  --encre: #0c1a44; --encre-2: #33405e; --encre-3: #6a7a94; --accent: #1f68e8; --accent-vif: #3d9bff;
+  --vert: #12c97a; --vert-texte: #157a50; --vert-pale: #e6f8ef; --ambre: #f0a20b; --ambre-texte: #985a00; --ambre-pale: #fff4da;
+  --carte: #fefdfb; --carte-bord: #eceff0; --centre: #fdfcfa; --barre: #f3f9fc;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; font-family: Inter, sans-serif; color: var(--encre); }
+body { background: linear-gradient(160deg, #d8e8f6 0%, #e4eff8 45%, #eef7f9 100%); }
+.abs { position: absolute; }
+.scene { position: absolute; inset: 0; opacity: 0; }
+/* 1. accroche */
+#titre { left: 130px; top: 410px; font-size: 104px; font-weight: 800; letter-spacing: -3px; white-space: nowrap; }
+#curseur { display: inline-block; width: 8px; height: 92px; margin-left: 8px; background: var(--accent-vif); vertical-align: -10px; }
+#sous { left: 136px; top: 570px; font-size: 44px; color: var(--encre-3); font-weight: 500; }
+#orbi1 { width: 450px; left: 1360px; top: 380px; transform-origin: 50% 100%; }
+.etincelles { position: absolute; }
+.etincelles i { position: absolute; width: 10px; height: 46px; border-radius: 6px; background: #2f7cf6; }
+/* la fenêtre de l'appli */
+#fenetre { left: 110px; top: 70px; width: 1700px; height: 940px; border-radius: 22px; background: var(--centre);
+  box-shadow: 0 1px 2px rgba(20,50,90,.05), 0 30px 80px rgba(40,84,130,.18); overflow: hidden; }
+#barre { left: 0; top: 0; bottom: 0; width: 230px; background: var(--barre); }
+.pastilles { left: 26px; top: 24px; display: flex; gap: 9px; }
+.pastilles i { width: 15px; height: 15px; border-radius: 50%; }
+#logo { left: 30px; top: 70px; width: 128px; }
+#marque { left: 34px; top: 165px; font-size: 34px; font-weight: 800; }
+#marque2 { left: 35px; top: 210px; font-size: 18px; color: var(--encre-3); }
+#question { right: 60px; top: 50px; max-width: 900px; padding: 20px 26px; border-radius: 18px 18px 6px 18px; background: #e7f0fd;
+  font-size: 25px; line-height: 1.45; }
+#saisie { left: 330px; right: 60px; bottom: 44px; height: 128px; border: 2px solid #b9d1e2; border-radius: 18px; background: #fefdfc; }
+#saisieTexte { left: 30px; top: 24px; right: 140px; font-size: 25px; line-height: 1.45; color: var(--encre); }
+#saisieTexte.vide { color: #7d8aa5; }
+#envoyer { right: 18px; bottom: 16px; width: 74px; height: 64px; border-radius: 14px; background: var(--accent-vif); display: grid; place-items: center; }
+#envoyer svg { width: 32px; height: 32px; }
+#travail { left: 400px; top: 200px; width: 900px; padding: 26px 32px; border: 2px solid var(--carte-bord); border-radius: 20px; background: var(--carte);
+  box-shadow: 0 6px 18px rgba(16,38,74,.05); }
+#travail h3 { margin: 0 0 14px; font-size: 26px; display: flex; justify-content: space-between; }
+.ligne { display: flex; align-items: center; gap: 18px; height: 58px; border-top: 1px solid #efede9; font-size: 25px; color: var(--encre-3); }
+.ligne:first-of-type { border-top: 0; }
+.ligne .rond { width: 32px; height: 32px; border-radius: 50%; border: 2.5px solid #cfd8e3; display: grid; place-items: center; flex: none; }
+.ligne.faite .rond { background: var(--vert); border-color: var(--vert); }
+.ligne.faite .rond::after { content: ''; width: 12px; height: 7px; border: solid #fff; border-width: 0 0 3.5px 3.5px; transform: translateY(-2px) rotate(-45deg); }
+.ligne.active { color: var(--encre); font-weight: 600; }
+.ligne.active .rond { border-color: var(--accent-vif); border-right-color: transparent; }
+.ligne.faite { color: var(--encre); }
+.ligne .detail { font-size: 20px; color: var(--encre-3); font-weight: 400; }
+.ligne .temps { margin-left: auto; font-size: 21px; color: var(--encre-3); font-variant-numeric: tabular-nums; }
+.ligne.active .temps { color: var(--accent); font-weight: 700; }
+#reel { left: 400px; top: 690px; padding: 10px 20px; border-radius: 999px; background: #eaf4fe; color: var(--accent); font-size: 21px; font-weight: 600; }
+/* la réponse */
+#resume { left: 290px; top: 196px; padding: 8px 18px 8px 10px; border: 2px solid var(--carte-bord); border-radius: 999px; background: #fff;
+  display: flex; align-items: center; gap: 12px; font-size: 21px; color: var(--encre-2); }
+#resume i { width: 28px; height: 28px; border-radius: 50%; background: var(--vert); }
+#reponse { left: 290px; top: 262px; width: 780px; border: 2px solid #f6e3b6; border-radius: 20px; background: var(--carte); overflow: hidden; }
+#verdict { padding: 22px 30px; background: var(--ambre-pale); color: var(--ambre-texte); font-size: 40px; font-weight: 800; display: flex; align-items: center; gap: 18px; }
+#verdict svg { width: 46px; height: 46px; }
+#corps { padding: 22px 30px 26px; }
+#lieu { white-space: nowrap; display: inline-flex; gap: 12px; align-items: center; padding: 9px 18px; border: 2px solid #9cc3f7; border-radius: 999px; background: #f4f9ff;
+  font-size: 19px; font-weight: 700; }
+#lieu span { padding: 3px 10px; border-radius: 8px; background: var(--ambre-pale); color: var(--ambre-texte); font-weight: 600; font-size: 19px; }
+#regle { margin-top: 22px; padding: 18px 22px; border: 2px solid var(--carte-bord); border-radius: 14px; }
+#regleTete { display: flex; align-items: center; gap: 14px; font-size: 20px; }
+#regleTete b { padding: 4px 12px; border-radius: 8px; background: #e7f0fd; color: var(--accent); }
+#verifiee { color: var(--vert-texte); font-weight: 700; }
+#page { margin-left: auto; color: var(--accent); font-weight: 700; }
+#citation { margin-top: 12px; padding-left: 16px; border-left: 4px solid #cfe0f5; font-size: 22px; line-height: 1.5; color: var(--encre-2); min-height: 100px; }
+#demarche { margin-top: 20px; font-size: 22px; color: var(--encre); }
+#demarche b { color: var(--accent); }
+#carte { left: 1100px; top: 262px; width: 560px; height: 350px; border-radius: 18px; overflow: hidden; background: #dfe9ef;
+  box-shadow: 0 6px 18px rgba(16,38,74,.08); }
+#carte svg { position: absolute; inset: 0; }
+#etiquette { left: 16px; top: 14px; padding: 8px 16px; border-radius: 999px; background: #fff; font-size: 19px; font-weight: 700; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+/* 4. la preuve */
+#preuveTitre { left: 0; right: 0; top: 250px; text-align: center; font-size: 76px; font-weight: 800; letter-spacing: -2px; }
+.stat { top: 470px; width: 500px; height: 340px; padding: 40px 38px; border-radius: 26px; background: #fff; box-shadow: 0 20px 60px rgba(40,84,130,.14); }
+.stat b { display: block; font-size: 84px; font-weight: 800; letter-spacing: -2px; color: var(--accent); font-variant-numeric: tabular-nums; }
+.stat p { margin: 18px 0 0; font-size: 28px; line-height: 1.4; color: var(--encre-2); }
+/* 5. fin */
+#orbi5 { width: 520px; left: 700px; top: 150px; transform-origin: 50% 100%; }
+#nom { left: 0; right: 0; top: 590px; text-align: center; font-size: 120px; font-weight: 800; letter-spacing: -3px; }
+#devise { left: 0; right: 0; top: 750px; text-align: center; font-size: 46px; color: var(--encre-2); font-weight: 500; }
+#lien { left: 0; right: 0; top: 860px; text-align: center; font-size: 30px; color: var(--accent); font-weight: 700; }
+</style>
+</head>
+<body>
+<!-- 1. accroche -->
+<div class="scene" id="s1">
+  <div class="abs" id="titre"><span id="titreTexte"></span><span id="curseur"></span></div>
+  <div class="abs" id="sous">Orbi a lu tout le PLU de Biarritz.</div>
+  <img class="abs" id="orbi1" src="orbi.png" alt="">
+  <div class="etincelles" id="et1"><i style="left:0;top:0;transform:rotate(30deg)"></i><i style="left:34px;top:46px;transform:rotate(70deg)"></i></div>
+</div>
+<!-- 2 et 3. l'appli -->
+<div class="scene" id="s2">
+  <div class="abs" id="fenetre">
+    <div class="abs" id="barre">
+      <div class="abs pastilles"><i style="background:#fb7269"></i><i style="background:#fac354"></i><i style="background:#34d188"></i></div>
+      <img class="abs" id="logo" src="orbi.png" alt="">
+      <div class="abs" id="marque">ORBI</div>
+      <div class="abs" id="marque2">Assistant géodata</div>
+    </div>
+    <div class="abs" id="question">Je veux construire un abri de jardin de 10 m² au 15 avenue de la Marne à Biarritz. Est-ce possible ?</div>
+    <div class="abs" id="travail">
+      <h3><span>Orbi travaille</span><span id="total">0,0 s</span></h3>
+      <div class="ligne" data-a="5.15"><span class="rond"></span><span>Je lis votre question</span><span class="temps" data-s="7,4 s"></span></div>
+      <div class="ligne" data-a="5.45"><span class="rond"></span><span>Je situe le terrain <span class="detail">AB 0073 · zone UAs</span></span><span class="temps" data-s="0,1 s"></span></div>
+      <div class="ligne" data-a="5.75"><span class="rond"></span><span>Je cherche les articles du règlement</span><span class="temps" data-s="0,5 s"></span></div>
+      <div class="ligne" data-a="6.95"><span class="rond"></span><span>K2 remplit la grille des règles</span><span class="temps" data-s="70,9 s" id="tempsK2"></span></div>
+      <div class="ligne" data-a="7.12"><span class="rond"></span><span>Je vérifie chaque citation mot à mot</span><span class="temps" data-s="0,0 s"></span></div>
+      <div class="ligne" data-a="7.28"><span class="rond"></span><span>Je décide le verdict</span><span class="temps" data-s="0,0 s"></span></div>
+    </div>
+    <div class="abs" id="reel">Temps réel : 1 min 19 s, sur une RTX 3060</div>
+    <div class="abs" id="resume"><i></i>6 étapes · 1 min 19 s</div>
+    <div class="abs" id="reponse">
+      <div id="verdict"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>Oui, sous conditions</div>
+      <div id="corps">
+        <div id="lieu">parcelle AB 0073 · zone UAs · 439 m² <span>site patrimonial</span></div>
+        <div id="regle">
+          <div id="regleTete"><b>UA 7</b><span id="verifiee">✓ vérifiée mot à mot</span><span id="page">p. 21</span></div>
+          <div id="citation"></div>
+        </div>
+        <div id="demarche">Démarche : <b>déclaration préalable</b> · instruction en 2 mois (avis de l'ABF)</div>
+      </div>
+    </div>
+    <div class="abs" id="carte"><svg id="carteSvg" viewBox="0 0 640 400"></svg><div class="abs" id="etiquette">AB 0073 · zone UAs</div></div>
+    <div class="abs" id="saisie">
+      <div class="abs" id="saisieTexte"></div>
+      <div class="abs" id="envoyer"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg></div>
+    </div>
+  </div>
+</div>
+<!-- 4. la preuve -->
+<div class="scene" id="s4">
+  <div class="abs" id="preuveTitre">Le modèle lit. Le code vérifie.</div>
+  <div class="abs stat" id="st1" style="left:170px"><b>100 %</b><p>sur votre machine : K2 Horizon 7B tourne sur une RTX 3060.</p></div>
+  <div class="abs stat" id="st2" style="left:710px"><b id="nbTests">0</b><p>tests : chaque citation est vérifiée mot à mot par le code.</p></div>
+  <div class="abs stat" id="st3" style="left:1250px"><b>27 / 40</b><p>sur des questions jamais vues, scellées avant le test.</p></div>
+</div>
+<!-- 5. fin -->
+<div class="scene" id="s5">
+  <img class="abs" id="orbi5" src="orbi.png" alt="">
+  <div class="etincelles" id="et5"><i style="left:0;top:0;transform:rotate(30deg)"></i><i style="left:34px;top:46px;transform:rotate(70deg)"></i></div>
+  <div class="abs" id="nom">Orbi</div>
+  <div class="abs" id="devise">Votre projet. Le PLU. Article par article.</div>
+  <div class="abs" id="lien">github.com/chipscrevette/orbi</div>
+</div>
+<script>
+const $ = (id) => document.getElementById(id);
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const p = (t, a, b) => clamp((t - a) / (b - a));
+const sortie = (x) => 1 - Math.pow(1 - x, 3);
+const ressort = (x) => { const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
+const fondu = (t, a, b, c, d) => Math.min(p(t, a, b), 1 - p(t, c, d));
+const QUESTION = $('question').textContent;
+const CITATION = "Tout point des constructions est éloigné du point le plus proche de la limite séparative arrière d’une distance horizontale (D) au moins égale à la différence d’altitude entre ces deux points moins 3,00 m : H ≤ D + 3, soit D ≥ H – 3.";
+const TITRE = 'Puis-je construire ici ?';
+function montre(el, o, dy = 0, s = 1) { el.style.opacity = o; el.style.transform = `translateY(${dy}px) scale(${s})`; }
+function brique(el, t, t0, sol) {
+  // la brique tombe, s'écrase un peu, se redresse
+  const chute = sortie(p(t, t0, t0 + 0.45));
+  const y = (1 - chute) * -700;
+  const choc = p(t, t0 + 0.45, t0 + 0.9);
+  const ecrase = Math.sin(choc * Math.PI) * (1 - choc) * 0.5;
+  el.style.opacity = t < t0 ? 0 : 1;
+  el.style.transform = `translateY(${y}px) scale(${1 + ecrase * 0.35}, ${1 - ecrase * 0.4})`;
+}
+function etincelles(el, t, t0, x, y) {
+  el.style.left = x + 'px'; el.style.top = y + 'px';
+  const a = p(t, t0, t0 + 0.2);
+  el.style.opacity = a; el.style.transform = `scale(${0.6 + 0.4 * sortie(a)})`;
+}
+let carte;
+async function preparer() {
+  carte = await (await fetch('carte.json')).json();
+  const svg = $('carteSvg');
+  svg.innerHTML = carte.chemins.map((c) => `<path d="${c.d}" fill="${c.couleur}" fill-opacity="${c.code === 'UAs' ? 0.62 : 0.28}" stroke="${c.couleur}" stroke-width="${c.code === 'UAs' ? 3 : 1.2}" stroke-opacity=".9" class="${c.code === 'UAs' ? 'uas' : ''}"/>`).join('')
+    + `<circle id="halo" cx="${carte.point[0]}" cy="${carte.point[1]}" r="14" fill="#3d9bff" opacity=".3"/><circle cx="${carte.point[0]}" cy="${carte.point[1]}" r="11" fill="#1f68e8" stroke="#fff" stroke-width="4"/>`;
+  await document.fonts.ready;
+  await Promise.all([...document.images].map((i) => i.decode()));
+}
+function rendre(t) {
+  // ----- 1. accroche (0 → 3 s)
+  $('s1').style.opacity = 1 - p(t, 2.75, 3.0);
+  const n = Math.round(TITRE.length * p(t, 0.15, 1.05));
+  $('titreTexte').textContent = TITRE.slice(0, n);
+  $('curseur').style.opacity = t < 1.2 || Math.floor(t * 2.5) % 2 ? 1 : 0;
+  montre($('sous'), p(t, 1.15, 1.45), 14 * (1 - sortie(p(t, 1.15, 1.45))));
+  brique($('orbi1'), t, 0.35);
+  etincelles($('et1'), t, 1.05, 1790, 350);
+  // ----- 2 et 3. l'appli (3 → 13 s)
+  const s2 = fondu(t, 3.0, 3.3, 12.75, 13.0);
+  $('s2').style.opacity = s2;
+  $('fenetre').style.transform = `translateY(${40 * (1 - sortie(p(t, 3.0, 3.45)))}px)`;
+  const nq = Math.round(QUESTION.length * p(t, 3.35, 4.55));
+  const tape = t < 4.75 ? QUESTION.slice(0, nq) : '';
+  $('saisieTexte').textContent = tape || 'Posez votre question…';
+  $('saisieTexte').className = 'abs' + (tape ? '' : ' vide');
+  const clic = p(t, 4.6, 4.8);
+  $('envoyer').style.transform = `scale(${1 - 0.14 * Math.sin(clic * Math.PI)})`;
+  montre($('question'), p(t, 4.75, 4.95), 20 * (1 - sortie(p(t, 4.75, 4.95))));
+  const enTravail = fondu(t, 4.85, 5.05, 7.3, 7.44);
+  montre($('travail'), enTravail, 24 * (1 - sortie(p(t, 4.85, 5.1))));
+  const lignes = [...document.querySelectorAll('.ligne')];
+  let debut = 4.95;
+  lignes.forEach((l, i) => {
+    const a = parseFloat(l.dataset.a);
+    const faite = t >= a, active = !faite && t >= debut;
+    l.className = 'ligne' + (faite ? ' faite' : active ? ' active' : '');
+    const temps = l.querySelector('.temps');
+    if (faite) temps.textContent = l.dataset.s;
+    else if (active && i === 3) temps.textContent = (70.9 * p(t, debut, a)).toFixed(1).replace('.', ',') + ' s';
+    else temps.textContent = '';
+    if (active) l.querySelector('.rond').style.transform = `rotate(${t * 540}deg)`;
+    else l.querySelector('.rond').style.transform = '';
+    debut = a;
+  });
+  const total = 78.9 * p(t, 4.95, 7.28);
+  $('total').textContent = total >= 60 ? `1 min ${String(Math.round(total - 60)).padStart(2, '0')} s` : total.toFixed(1).replace('.', ',') + ' s';
+  montre($('reel'), fondu(t, 5.3, 5.5, 7.3, 7.44), 0);
+  montre($('resume'), p(t, 7.5, 7.7), 0);
+  const r = p(t, 7.6, 8.0);
+  montre($('reponse'), r, 40 * (1 - sortie(r)), 0.97 + 0.03 * sortie(r));
+  $('verdict').style.transform = `scale(${t < 7.6 ? 1 : 1 + 0.06 * Math.sin(p(t, 7.85, 8.15) * Math.PI)})`;
+  montre($('lieu'), p(t, 8.15, 8.35), 10 * (1 - p(t, 8.15, 8.35)));
+  montre($('regle'), p(t, 8.55, 8.75), 10 * (1 - p(t, 8.55, 8.75)));
+  $('citation').textContent = CITATION.slice(0, Math.round(CITATION.length * p(t, 8.8, 10.3)));
+  $('verifiee').style.opacity = p(t, 10.35, 10.5);
+  $('verifiee').style.transform = `scale(${1 + 0.18 * Math.sin(p(t, 10.35, 10.65) * Math.PI)})`;
+  montre($('demarche'), p(t, 10.9, 11.1), 8 * (1 - p(t, 10.9, 11.1)));
+  const c = p(t, 7.9, 8.4);
+  montre($('carte'), c, 0, 0.96 + 0.04 * sortie(c));
+  $('carteSvg').style.transform = `scale(${1.25 - 0.25 * sortie(p(t, 7.9, 9.4))})`;
+  const halo = $('halo');
+  if (halo) { const h = (t * 1.2) % 1; halo.setAttribute('r', 12 + 26 * h); halo.setAttribute('opacity', 0.45 * (1 - h)); }
+  montre($('etiquette'), p(t, 8.6, 8.8), 0);
+  $('saisie').style.opacity = 1 - p(t, 7.45, 7.65);
+  // ----- 4. la preuve (13 → 16,5 s)
+  $('s4').style.opacity = fondu(t, 13.05, 13.3, 16.3, 16.5);
+  montre($('preuveTitre'), p(t, 13.1, 13.4), 20 * (1 - sortie(p(t, 13.1, 13.4))));
+  [['st1', 13.45], ['st2', 13.7], ['st3', 13.95]].forEach(([id, a]) => {
+    const k = p(t, a, a + 0.35);
+    montre($(id), k, 60 * (1 - sortie(k)), 0.9 + 0.1 * ressort(k));
+  });
+  $('nbTests').textContent = Math.round(1108 * sortie(p(t, 13.75, 14.5))).toLocaleString('fr-FR');
+  // ----- 5. fin (16,5 → 20 s)
+  $('s5').style.opacity = p(t, 16.55, 16.8);
+  brique($('orbi5'), t, 16.6);
+  etincelles($('et5'), t, 17.25, 1190, 120);
+  montre($('nom'), p(t, 17.15, 17.45), 24 * (1 - sortie(p(t, 17.15, 17.45))));
+  montre($('devise'), p(t, 17.45, 17.75), 16 * (1 - sortie(p(t, 17.45, 17.75))));
+  montre($('lien'), p(t, 17.9, 18.15), 0);
+  document.body.dataset.t = t.toFixed(3);
+}
+window.pret = preparer().then(() => { rendre(0); return true; });
+</script>
+</body>
+</html>
