@@ -1,0 +1,55 @@
+.legende {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: rgb(255 255 255 / 0.92);
+  box-shadow: 0 2px 10px rgb(16 38 74 / 0.12);
+  color: var(--encre);
+  font-size: 12.5px;
+  list-style: none;
+}
+
+.legende li {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.legende strong {
+  font-weight: 650;
+}
+
+.libelle {
+  color: var(--encre-3);
+}
+
+.pastille {
+  flex: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  opacity: 0.85;
+}
+
+.compacte {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3px 10px;
+  padding: 5px 9px;
+  border-radius: 8px;
+  font-size: 10.5px;
+}
+
+.compacte li {
+  gap: 4px;
+}
+
+.compacte .pastille {
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+}

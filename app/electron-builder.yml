@@ -1,0 +1,29 @@
+# Installateur Windows (NSIS) : npm run dist
+appId: fr.orbi.app
+productName: Orbi
+copyright: Orbi
+directories:
+  output: dist/installateur
+  buildResources: build
+files:
+  - out/**/*
+  - package.json
+extraResources:
+  - from: build/icon.png
+    to: icon.png
+extraMetadata:
+  main: out/main/index.js
+npmRebuild: false
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.ico
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  artifactName: Orbi-${version}-installation.${ext}
+  shortcutName: Orbi
+  uninstallDisplayName: Orbi

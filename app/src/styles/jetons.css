@@ -1,0 +1,86 @@
+/*
+ * Jetons de design d'Orbi, relevés sur la maquette (1536 × 1024) : couleurs échantillonnées, dimensions mesurées.
+ * Les couleurs des familles de zones de la carte sont dans src/logique/zones.ts (Leaflet les lit en JavaScript).
+ */
+:root {
+  /* bureau et fenêtre */
+  --bureau: #e4eff8;
+  --bureau-degrade: linear-gradient(160deg, #d8e8f6 0%, #e4eff8 45%, #eef7f9 100%);
+  --fenetre-rayon: 16px;
+  --fenetre-ombre: 0 1px 2px rgba(20, 50, 90, 0.05), 0 20px 50px rgba(40, 84, 130, 0.12);
+  --barre: #f3f9fc;
+  --centre: #fdfcfa;
+  --colonne-droite: #f8faf9;
+  --carte: #fefdfb;
+  --carte-bord: #eceff0;
+  --carte-ombre: 0 1px 2px rgba(16, 38, 74, 0.035), 0 6px 18px rgba(16, 38, 74, 0.04);
+  --separateur: #efede9;
+
+  /* encre */
+  --encre: #0c1a44;
+  --encre-2: #33405e;
+  --encre-3: #6a7a94;
+  --encre-4: #8693aa;
+
+  /* accent */
+  --accent: #1f68e8;
+  --accent-vif: #3d9bff;
+  --accent-vif-survol: #2a8af4;
+  --accent-pale: #cde6fd;
+  --accent-tres-pale: #eaf4fe;
+  --tuile-bleue: #dcecfd;
+  --tuile-grise: #e8eef6;
+  --tuile-verte: #e2f7ec;
+  --saisie-bord: #b9d1e2;
+  --saisie-bord-actif: #7fb2ee;
+
+  /* états et verdicts : la couleur se colle au mot */
+  --vert: #12c97a;
+  --vert-texte: #157a50;
+  --vert-pale: #e6f8ef;
+  --ambre: #f0a20b;
+  --ambre-texte: #985a00;
+  --ambre-pale: #fff4da;
+  --rouge: #e5484d;
+  --rouge-texte: #b42318;
+  --rouge-pale: #fdeded;
+  --gris: #8a96ad;
+  --gris-texte: #4a5672;
+  --gris-pale: #eef1f5;
+  --bleu-texte: #1d5cc8;
+  --bleu-pale: #e7f0fd;
+
+  /* jauges */
+  --jauge-vert: #3ed299;
+  --jauge-bleu: #3594fd;
+  --jauge-ambre: #f5b13d;
+  --jauge-rouge: #ef6a5e;
+  --jauge-piste: #ecf2f5;
+
+  /* pastilles de fenêtre */
+  --pastille-rouge: #fb7269;
+  --pastille-jaune: #fac354;
+  --pastille-verte: #34d188;
+
+  /* mascotte (rendu 3D : bleu roi en lumière, plus sombre dans l'ombre) */
+  --orbi-clair: #2f6bf2;
+  --orbi-ombre: #1e4fd0;
+  --orbi-etincelle: #2f7cf6;
+
+  /* typographie */
+  --police: 'Inter Variable', Inter, system-ui, 'Segoe UI', sans-serif;
+
+  /* rayons */
+  --rayon-carte: 16px;
+  --rayon-moyen: 12px;
+  --rayon-petit: 8px;
+
+  /* mouvement : l'effet fort à l'entrée seulement, ce qui se répète reste sous 250 ms */
+  --duree-rapide: 150ms;
+  --duree-entree: 460ms;
+  --courbe-sortie: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* colonnes */
+  --largeur-barre: 188px;
+  --largeur-droite: clamp(360px, 27.4vw, 440px);
+}

@@ -1,0 +1,158 @@
+.saisie {
+  display: flex;
+  flex-direction: column;
+  width: min(804px, 100%);
+  min-height: clamp(96px, 11.4vh, 117px);
+  margin: 0 auto;
+  border: 1px solid var(--saisie-bord);
+  border-radius: 14px;
+  background: #fefdfc;
+  box-shadow: 0 1px 2px rgb(16 38 74 / 0.03);
+  transition:
+    border-color var(--duree-rapide),
+    box-shadow var(--duree-rapide);
+}
+
+.saisie:focus-within {
+  border-color: var(--saisie-bord-actif);
+  box-shadow: 0 0 0 4px rgb(61 155 255 / 0.1);
+}
+
+.champ {
+  flex: 1;
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  max-height: 168px;
+  padding: 19px 22px 4px;
+  border: 0;
+  outline: none;
+  resize: none;
+  overflow-y: auto;
+  background: transparent;
+  color: var(--encre);
+  font-size: 15px;
+  line-height: 1.5;
+  field-sizing: content;
+}
+
+/* le cadre entier s'allume (:focus-within) : pas de second contour, carré, autour du seul champ */
+.champ:focus-visible {
+  outline: none;
+}
+
+.champ::placeholder {
+  color: #7d8aa5;
+}
+
+.outils {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 17px 17px 22px;
+}
+
+.bulle {
+  position: relative;
+  display: inline-flex;
+}
+
+/* infobulle visible au survol et au clavier */
+.bulle::after {
+  content: attr(data-bulle);
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  z-index: 10;
+  padding: 5px 9px;
+  border-radius: 7px;
+  background: var(--encre);
+  color: #fff;
+  font-size: 12px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 3px);
+  transition:
+    opacity var(--duree-rapide),
+    transform var(--duree-rapide);
+}
+
+.bulle:hover::after,
+.bulle:focus-within::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.outil {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  margin: 0 -4px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #4b5d7d;
+  transition: background-color var(--duree-rapide);
+}
+
+.outil svg {
+  width: 22px;
+  height: 22px;
+}
+
+.outil:hover:not([aria-disabled='true']) {
+  background: var(--accent-tres-pale);
+  color: var(--accent);
+}
+
+.outil[aria-disabled='true'] {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.message {
+  flex: 1;
+  margin: 0;
+  color: var(--rouge-texte);
+  font-size: 12.5px;
+  text-align: right;
+}
+
+.envoyer {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 57px;
+  height: 49px;
+  padding: 0;
+  border: 0;
+  border-radius: 11px;
+  background: var(--accent-vif);
+  box-shadow: 0 4px 12px rgb(61 155 255 / 0.28);
+  color: #fff;
+  transition:
+    background-color var(--duree-rapide),
+    transform var(--duree-rapide);
+}
+
+.envoyer svg {
+  width: 22px;
+  height: 22px;
+}
+
+.envoyer:hover:not(:disabled) {
+  background: var(--accent-vif-survol);
+}
+
+.envoyer:active:not(:disabled) {
+  transform: scale(0.96);
+}
+
+.envoyer:disabled {
+  cursor: default;
+  box-shadow: none;
+  opacity: 0.85;
+}

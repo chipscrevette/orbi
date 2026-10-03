@@ -1,6 +1,7 @@
 """Une question, une réponse en direct. L'agent grille tourne dans un fil à part ; chaque étape qu'il note part aussitôt
 vers l'application, puis le lieu (dès que les outils ont trouvé la parcelle), puis la réponse. Une réponse prend une
-minute : l'application montre où en est Orbi au lieu de laisser attendre.
+minute : l'application montre où en est Orbi au lieu de laisser attendre. Un message qui n'est pas une question
+d'urbanisme (« coucou », « merci ») reçoit une réponse de conversation : une étape « conversation », puis un « message ».
 
 Le format est celui des Server-Sent Events : « event: <nom> », « data: <json> », une ligne vide."""
 import json
@@ -8,6 +9,7 @@ import queue
 import threading
 
 from orbi.agent.grille import AgentGrille
+from orbi.api.conversation import est_conversation, repondre_conversation
 
 BATTEMENT = 10  # secondes sans événement avant un battement de cœur (« : … ») : la connexion reste ouverte
 _FIN = object()
@@ -63,6 +65,11 @@ def repondre_en_direct(question, dossier_traces=None, a_la_fin=None, fabrique=Ag
 
     def travail():
         try:
+            if est_conversation(question):
+                envoyer("etape", {"id": "conversation", "t": 0.0})
+                texte, secondes = repondre_conversation(question)
+                envoyer("message", {"texte": texte, "duree_s": secondes})
+                return
             res = fabrique(envoyer, dossier_traces).repondre(question)
             if res.get("faits"):
                 envoyer("lieu", lieu_depuis_faits(res["faits"], res.get("zone")))

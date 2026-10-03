@@ -1,0 +1,203 @@
+.barre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  padding: 72px 15px 21px 13px;
+  background: var(--barre);
+}
+
+.marque {
+  padding-left: 7px;
+}
+
+.marque .mascotte {
+  margin-left: -2px;
+}
+
+.nom {
+  margin: 12px 0 0;
+  color: var(--encre);
+  font-size: 27px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: 0.01em;
+}
+
+.sousTitre {
+  margin: 8px 0 0;
+  color: var(--encre-3);
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 30px;
+}
+
+.lien {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  width: 160px;
+  height: 50px;
+  padding: 0 0 0 16px;
+  border: 0;
+  border-radius: var(--rayon-moyen);
+  background: transparent;
+  color: var(--encre-2);
+  font-size: 16px;
+  text-align: left;
+  transition:
+    background-color var(--duree-rapide),
+    color var(--duree-rapide);
+}
+
+.lien svg {
+  flex: none;
+  width: 24px;
+  height: 24px;
+  color: #1a2a52;
+}
+
+.lien:hover {
+  background: var(--accent-tres-pale);
+}
+
+.lien[aria-current='page'] {
+  background: var(--accent-pale);
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.lien[aria-current='page'] svg {
+  color: var(--accent);
+}
+
+.materiel {
+  margin: auto 0 0 6px;
+  width: 160px;
+  padding: 14px 15px 13px 16px;
+  border: 1px solid var(--carte-bord);
+  border-radius: var(--rayon-moyen);
+  background: var(--carte);
+  box-shadow: var(--carte-ombre);
+}
+
+.materiel p {
+  margin: 0;
+}
+
+.materielTitre {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap; /* « RTX 3060 » sur une ligne, comme sur la maquette */
+  color: var(--encre);
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.materielTitre svg {
+  flex: none;
+  width: 23px;
+  height: 23px;
+  color: var(--encre);
+}
+
+.voyant {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  margin-left: auto;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0 0 0 3.5px var(--gris);
+}
+
+.vert {
+  box-shadow: inset 0 0 0 3.5px var(--vert);
+}
+
+.rouge {
+  box-shadow: inset 0 0 0 3.5px var(--rouge);
+}
+
+.gris {
+  box-shadow: inset 0 0 0 3.5px var(--gris);
+}
+
+.materielModele {
+  margin-top: 12px !important;
+  color: var(--encre);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.materielLieu {
+  margin-top: 4px !important;
+  color: var(--encre-3);
+  font-size: 14px;
+}
+
+/* sous 760 px : la colonne devient une barre en haut */
+@media (max-width: 759px) {
+  .barre {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    overflow-x: auto;
+  }
+
+  .marque {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+  }
+
+  .marque .mascotte {
+    display: none;
+  }
+
+  .nom {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .sousTitre,
+  .materiel {
+    display: none;
+  }
+
+  .navigation {
+    flex-direction: row;
+    margin: 0 0 0 auto;
+    gap: 4px;
+  }
+
+  .lien {
+    width: auto;
+    height: 40px;
+    gap: 8px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+
+  .lien svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 759px) and (max-width: 520px) {
+  .lien span {
+    display: none;
+  }
+}

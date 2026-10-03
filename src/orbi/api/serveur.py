@@ -18,6 +18,7 @@ from orbi.api.flux import repondre_en_direct, sse
 from orbi.chemins import RACINE
 
 PORT = 4770
+ATTENTE = 10  # secondes entre deux battements de cœur quand une question attend la fin de la précédente
 INTERFACE = os.path.join(RACINE, "app", "out", "renderer")
 CONVERSATIONS = os.path.join(RACINE, "conversations")  # les traces des questions posées dans l'application (hors dépôt)
 
@@ -39,8 +40,10 @@ def creer_application(interface=INTERFACE, dossier_traces=CONVERSATIONS, repondr
     def question(q: Question):
         def flux():
             if not app.state.occupe.acquire(blocking=False):
-                yield sse("erreur", {"message": "Orbi répond déjà à une question : attendez la fin de la réponse en cours."})
-                return
+                # une autre réponse est en cours (le modèle occupe toute la carte graphique) : on attend son tour
+                yield sse("etape", {"id": "attente", "t": 0.0})
+                while not app.state.occupe.acquire(timeout=ATTENTE):
+                    yield ": battement\n\n"
             libere = False
             try:
                 manque = sondes.services_manquants()

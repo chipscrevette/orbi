@@ -1,0 +1,6 @@
+node_modules
+out
+dist
+public/donnees
+build
+package-lock.json

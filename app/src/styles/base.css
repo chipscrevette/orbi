@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#racine {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: var(--bureau-degrade);
+  color: var(--encre);
+  font-family: var(--police);
+  font-size: 14px;
+  line-height: 1.45;
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-vif);
+  outline-offset: 2px;
+}
+
+/* Fenêtre sans cadre d'Electron : tout ce qui se clique échappe à la zone de glissement. */
+html[data-cadre='electron'] :is(button, a, input, textarea, select, label, [role='button'], .leaflet-container) {
+  -webkit-app-region: no-drag;
+}
+
+.visuellement-cache {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Leaflet aux couleurs d'Orbi */
+.leaflet-container {
+  font-family: var(--police);
+  background: #eef2ea;
+}
+
+.leaflet-control-attribution {
+  font-size: 10px;
+  background: rgb(255 255 255 / 0.75) !important;
+}
+
+.leaflet-control-zoom a {
+  color: var(--encre-2) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 1ms !important;
+  }
+}

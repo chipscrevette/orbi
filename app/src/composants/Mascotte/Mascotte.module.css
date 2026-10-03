@@ -1,0 +1,127 @@
+.mascotte {
+  position: relative;
+  display: inline-block;
+  flex: none;
+  width: var(--taille);
+  /* proportions de l'image détourée : 560 × 368 */
+  height: calc(var(--taille) * 0.6571);
+  /* les étincelles dépassent à droite et au-dessus : on leur garde la place */
+  margin-right: calc(var(--taille) * 0.2);
+  margin-top: calc(var(--taille) * 0.08);
+}
+
+.corps {
+  position: absolute;
+  inset: 0;
+  transform-origin: 50% 90%;
+}
+
+.image,
+.dessin {
+  display: block;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+/* l'ombre posée au sol : la brique ne flotte pas */
+.ombre {
+  position: absolute;
+  left: 14%;
+  right: 4%;
+  bottom: -4%;
+  height: 16%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgb(30 79 208 / 0.3), rgb(30 79 208 / 0.1) 60%, rgb(30 79 208 / 0));
+  filter: blur(calc(var(--taille) * 0.025));
+}
+
+.etincelles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.etincelles line {
+  stroke: var(--orbi-etincelle);
+  stroke-width: 3.6;
+  stroke-linecap: round;
+}
+
+/* réfléchit : un balancement très discret, tant que la réponse se prépare */
+.mascotte[data-humeur='reflechit'] .corps {
+  animation: balancer 2.6s ease-in-out infinite;
+}
+
+.mascotte[data-humeur='reflechit'] .etincelles line {
+  animation: scintiller 2.6s ease-in-out infinite;
+}
+
+.mascotte[data-humeur='reflechit'] .etincelles line + line {
+  animation-delay: 0.2s;
+}
+
+/* contente : un seul petit saut, à l'arrivée de la réponse */
+.mascotte[data-humeur='contente'] .corps {
+  animation: sauter 560ms var(--courbe-sortie) 1;
+}
+
+/* inquiète : un léger tassement, une seule fois, puis la brique reste penchée */
+.mascotte[data-humeur='inquiete'] .corps {
+  animation: tasser 520ms var(--courbe-sortie) 1 forwards;
+}
+
+.mascotte[data-humeur='inquiete'] .etincelles {
+  opacity: 0;
+  transition: opacity var(--duree-rapide);
+}
+
+@keyframes balancer {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-1.5%) rotate(-1.2deg);
+  }
+}
+
+@keyframes scintiller {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+@keyframes sauter {
+  0% {
+    transform: translateY(0) scale(1, 1);
+  }
+  25% {
+    transform: translateY(2%) scale(1.04, 0.95);
+  }
+  55% {
+    transform: translateY(-12%) scale(0.98, 1.03);
+  }
+  100% {
+    transform: translateY(0) scale(1, 1);
+  }
+}
+
+@keyframes tasser {
+  0% {
+    transform: rotate(0deg) scale(1, 1);
+  }
+  40% {
+    transform: rotate(-4deg) scale(1.02, 0.96);
+  }
+  100% {
+    transform: rotate(-3deg) scale(1, 1);
+  }
+}

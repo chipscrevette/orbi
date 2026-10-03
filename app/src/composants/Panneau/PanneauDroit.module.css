@@ -1,0 +1,421 @@
+.panneau {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  min-height: 0;
+  padding: 44px 17px 26px 24px;
+  overflow-y: auto;
+  background: var(--colonne-droite);
+}
+
+.fermer {
+  display: none;
+}
+
+.carte {
+  flex: none;
+  padding: 18px 18px 20px;
+  border: 1px solid var(--carte-bord);
+  border-radius: var(--rayon-carte);
+  background: var(--carte);
+  box-shadow: var(--carte-ombre);
+}
+
+.entete {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tuile {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+}
+
+.tuile svg {
+  width: 23px;
+  height: 23px;
+}
+
+.tuileBleue {
+  background: var(--tuile-bleue);
+  color: #1f6ef0;
+}
+
+.tuileGrise {
+  background: var(--tuile-grise);
+  color: #142650;
+}
+
+.tuileVerte {
+  background: var(--tuile-verte);
+  color: #0c8f4e;
+}
+
+.titres {
+  min-width: 0;
+}
+
+.surtitre {
+  margin: 0;
+  color: var(--encre-2);
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.titreModele {
+  margin: 2px 0 0;
+  color: var(--encre);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.titreSection {
+  margin: 0 0 0 6px;
+  color: var(--encre);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.pastilleEtat {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: var(--gris-pale);
+  color: var(--gris-texte);
+  font-size: 13.5px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.point {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gris);
+}
+
+.vert.pastilleEtat {
+  background: var(--vert-pale);
+  color: var(--vert-texte);
+}
+
+.vert .point {
+  background: var(--vert);
+}
+
+.ambre.pastilleEtat {
+  background: var(--ambre-pale);
+  color: var(--ambre-texte);
+}
+
+.ambre .point {
+  background: var(--ambre);
+}
+
+.rouge.pastilleEtat {
+  background: var(--rouge-pale);
+  color: var(--rouge-texte);
+}
+
+.rouge .point {
+  background: var(--rouge);
+}
+
+.separateur {
+  height: 1px;
+  margin: 18px 0 8px;
+  border: 0;
+  background: var(--separateur);
+}
+
+.jauges {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jauge {
+  display: grid;
+  grid-template-columns: 22px 118px minmax(0, 1fr) 84px; /* la valeur la plus longue : « 12,8 / 15,9 Go » */
+  align-items: center;
+  column-gap: 10px;
+  height: 44px;
+  padding-left: 3px;
+}
+
+.iconeJauge {
+  width: 22px;
+  height: 22px;
+  color: #172a55;
+}
+
+.libelleJauge {
+  overflow: hidden;
+  color: #1f2b48;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.piste {
+  position: relative;
+  height: 12px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--jauge-piste);
+}
+
+.remplissage {
+  position: absolute;
+  inset: 0 auto 0 0;
+  border-radius: 6px;
+  background: var(--jauge-vert);
+  transition: width 240ms ease;
+}
+
+.remplissage.bleu {
+  background: var(--jauge-bleu);
+}
+
+.remplissage.ambre {
+  background: var(--jauge-ambre);
+}
+
+.remplissage.rouge {
+  background: var(--jauge-rouge);
+}
+
+.valeur {
+  color: #6e7a92;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.absent {
+  grid-column: 3 / 5;
+  color: var(--encre-4);
+  font-size: 12.5px;
+  font-style: italic;
+  text-align: right;
+}
+
+.sources {
+  margin: 14px 0 0;
+  padding: 0 10px;
+  border: 1px solid #efeeea;
+  border-radius: var(--rayon-moyen);
+  background: #fefefc;
+  list-style: none;
+}
+
+.source {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 72px;
+  padding: 10px 0;
+}
+
+.source + .source {
+  border-top: 1px solid #f0efeb;
+}
+
+.tuileSource {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: var(--rayon-moyen);
+}
+
+.tuileSource svg {
+  width: 27px;
+  height: 27px;
+}
+
+.sourceNom {
+  margin: 0;
+  color: var(--encre);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.sourceDetail {
+  margin: 3px 0 0;
+  color: #7a859a;
+  font-size: 12.5px;
+}
+
+.apercu {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  min-height: 260px;
+}
+
+.agrandir {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #4a5b78;
+  transition: background-color var(--duree-rapide);
+}
+
+.agrandir:hover {
+  background: var(--accent-tres-pale);
+  color: var(--accent);
+}
+
+.agrandir svg {
+  width: 22px;
+  height: 22px;
+}
+
+.cadre {
+  position: relative;
+  flex: 1;
+  min-height: 180px;
+  margin-top: 18px;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #eef2ea;
+}
+
+.carteLeaflet {
+  position: absolute;
+  inset: 0;
+}
+
+.etiquette {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 600;
+  margin: 0;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.94);
+  box-shadow: 0 2px 8px rgb(16 38 74 / 0.15);
+  color: var(--encre);
+  font-size: 12px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.legende {
+  position: absolute;
+  right: 8px;
+  bottom: 22px;
+  left: 8px;
+  z-index: 600;
+  display: flex;
+  justify-content: flex-start;
+  pointer-events: none;
+}
+
+/* fenêtres basses : tout tient sans faire défiler */
+@media (max-height: 860px) {
+  .panneau {
+    gap: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .carte {
+    padding: 14px 16px 14px;
+  }
+
+  .separateur {
+    margin: 12px 0 4px;
+  }
+
+  .jauge {
+    height: 34px;
+  }
+
+  .sources {
+    margin-top: 10px;
+  }
+
+  .source {
+    min-height: 58px;
+    padding: 6px 0;
+  }
+
+  .tuileSource {
+    width: 44px;
+    height: 44px;
+  }
+
+  .apercu {
+    min-height: 200px;
+  }
+
+  .cadre {
+    min-height: 140px;
+    margin-top: 12px;
+  }
+}
+
+/* sous 1100 px : la colonne se replie dans un panneau qu'on ouvre à la demande */
+@media (max-width: 1099px) {
+  .panneau {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 30;
+    width: min(400px, 92%);
+    box-shadow: -12px 0 40px rgb(16 38 74 / 0.16);
+    transform: translateX(105%);
+    transition: transform 220ms var(--courbe-sortie);
+  }
+
+  .panneau[data-ouvert='true'] {
+    transform: none;
+  }
+
+  .fermer {
+    display: grid;
+    place-items: center;
+    align-self: flex-end;
+    width: 32px;
+    height: 32px;
+    margin: -8px -4px -14px 0;
+    padding: 0;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--encre-2);
+  }
+
+  .fermer svg {
+    width: 20px;
+    height: 20px;
+  }
+}

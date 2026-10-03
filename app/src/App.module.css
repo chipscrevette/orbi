@@ -1,0 +1,116 @@
+/* Dans un navigateur, la fenêtre est posée sur le bureau bleu pâle, comme sur la maquette ; dans Electron, elle est
+   la fenêtre elle-même (sans cadre). */
+.bureau {
+  height: 100%;
+  padding: 22px 17px 25px 22px;
+}
+
+:global(html[data-cadre='electron']) .bureau {
+  padding: 0;
+}
+
+.fenetre {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--largeur-barre) minmax(0, 1fr) var(--largeur-droite);
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--fenetre-rayon);
+  background: var(--centre);
+  box-shadow: var(--fenetre-ombre);
+}
+
+:global(html[data-cadre='electron']) .fenetre {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* bande de glissement de la fenêtre sans cadre (Electron seulement) */
+.zoneGlisser {
+  display: none;
+}
+
+:global(html[data-cadre='electron']) .zoneGlisser {
+  position: absolute;
+  inset: 0 0 auto;
+  z-index: 1;
+  display: block;
+  height: 40px;
+  -webkit-app-region: drag;
+}
+
+.centre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  background: var(--centre);
+}
+
+.vue {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.vue[hidden] {
+  display: none;
+}
+
+.boutonPanneau {
+  display: none;
+}
+
+@media (max-height: 820px) {
+  .bureau {
+    padding: 12px;
+  }
+}
+
+/* sous 1100 px : la colonne de droite se replie, un bouton l'ouvre */
+@media (max-width: 1099px) {
+  .fenetre {
+    grid-template-columns: var(--largeur-barre) minmax(0, 1fr);
+  }
+
+  .boutonPanneau {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    padding: 0;
+    border: 1px solid var(--carte-bord);
+    border-radius: 10px;
+    background: var(--carte);
+    box-shadow: var(--carte-ombre);
+    color: var(--encre-2);
+  }
+
+  .boutonPanneau svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* sous 760 px : la colonne de gauche devient une barre en haut */
+@media (max-width: 759px) {
+  .bureau {
+    padding: 0;
+  }
+
+  .fenetre {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    border-radius: 0;
+  }
+
+  .boutonPanneau {
+    top: 10px;
+  }
+}

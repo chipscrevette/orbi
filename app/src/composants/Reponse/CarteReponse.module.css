@@ -1,0 +1,379 @@
+.carte {
+  --ton: var(--gris);
+  --ton-texte: var(--gris-texte);
+  --ton-pale: var(--gris-pale);
+  overflow: hidden;
+  border: 1px solid var(--carte-bord);
+  border-radius: var(--rayon-carte);
+  background: var(--carte);
+  box-shadow: var(--carte-ombre);
+}
+
+.carte[data-ton='vert'] {
+  --ton: var(--vert);
+  --ton-texte: var(--vert-texte);
+  --ton-pale: var(--vert-pale);
+}
+
+.carte[data-ton='ambre'] {
+  --ton: var(--ambre);
+  --ton-texte: var(--ambre-texte);
+  --ton-pale: var(--ambre-pale);
+}
+
+.carte[data-ton='rouge'] {
+  --ton: var(--rouge);
+  --ton-texte: var(--rouge-texte);
+  --ton-pale: var(--rouge-pale);
+}
+
+.carte[data-ton='bleu'] {
+  --ton: var(--accent);
+  --ton-texte: var(--bleu-texte);
+  --ton-pale: var(--bleu-pale);
+}
+
+/* l'effet fort, une seule fois : la carte monte, le verdict se pose */
+.nouvelle {
+  animation: monter var(--duree-entree) var(--courbe-sortie) 1;
+}
+
+.nouvelle .verdict {
+  animation: poser 520ms var(--courbe-sortie) 120ms 1 backwards;
+}
+
+.bandeau {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  padding: 14px 20px;
+  border-bottom: 1px solid color-mix(in srgb, var(--ton) 22%, transparent);
+  background: var(--ton-pale);
+}
+
+.iconeVerdict {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  color: var(--ton);
+}
+
+.verdict {
+  margin: 0;
+  color: var(--ton-texte);
+  font-size: 22px;
+  font-weight: 750;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.badgeDemo {
+  margin: 0 0 0 auto;
+  padding: 3px 10px;
+  border: 1px solid color-mix(in srgb, var(--ton-texte) 25%, transparent);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.7);
+  color: var(--encre-2);
+  font-size: 12px;
+}
+
+.corps {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 20px 18px;
+}
+
+.texte {
+  margin: 0;
+  color: #22304f;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.lieu {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: flex-start;
+  gap: 6px 8px;
+  max-width: 100%;
+  padding: 6px 12px 6px 9px;
+  border: 1px solid var(--carte-bord);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--encre);
+  font-size: 13px;
+  text-align: left;
+  transition:
+    border-color var(--duree-rapide),
+    background-color var(--duree-rapide);
+}
+
+.lieu svg {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  color: var(--accent);
+}
+
+.lieu:hover {
+  border-color: var(--accent-pale);
+}
+
+.lieuActif {
+  border-color: var(--accent-vif);
+  background: var(--accent-tres-pale);
+}
+
+.lieuTexte {
+  font-weight: 600;
+}
+
+.servitude {
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: var(--ambre-pale);
+  color: var(--ambre-texte);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sectionTitre {
+  margin: 0;
+  color: var(--encre-3);
+  font-size: 11.5px;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.regles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.regle {
+  padding: 10px 12px 11px;
+  border: 1px solid #edf0f2;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.regleTete {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.article {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 9px;
+  border: 0;
+  border-radius: 7px;
+  background: var(--accent-tres-pale);
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+button.article:hover {
+  background: var(--accent-pale);
+}
+
+.article svg {
+  width: 14px;
+  height: 14px;
+}
+
+.verifiee {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--vert-texte);
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.verifiee svg {
+  width: 15px;
+  height: 15px;
+  color: var(--vert);
+}
+
+.nonVerifiee {
+  color: var(--ambre-texte);
+  font-size: 12.5px;
+}
+
+.page {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: auto;
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.page:hover {
+  text-decoration: underline;
+}
+
+.page svg,
+.lienTexte svg {
+  width: 12px;
+  height: 12px;
+}
+
+.citation {
+  margin: 8px 0 0;
+  padding: 0 0 0 11px;
+  border-left: 3px solid var(--accent-pale);
+  color: #2b3858;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.citationRepliee {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.suite {
+  margin: 4px 0 0 14px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 500;
+}
+
+.aVerifier {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #2b3858;
+  font-size: 14px;
+}
+
+.aVerifier li {
+  position: relative;
+  padding-left: 18px;
+}
+
+.aVerifier li::before {
+  content: '';
+  position: absolute;
+  top: 0.55em;
+  left: 3px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--ambre);
+}
+
+.demarche {
+  display: flex;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #f5f8fc;
+}
+
+.iconeDemarche {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  margin-top: 1px;
+  color: var(--encre-2);
+}
+
+.demarcheType {
+  margin: 0;
+  color: var(--encre);
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.demarchePourquoi {
+  color: var(--encre-2);
+  font-weight: 400;
+}
+
+.demarcheLigne {
+  margin: 4px 0 0;
+  color: #2b3858;
+  font-size: 13.5px;
+}
+
+.demarcheLigne strong {
+  font-weight: 600;
+}
+
+.lienTexte {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lienTexte:hover {
+  text-decoration: underline;
+}
+
+.pied {
+  padding: 10px 20px;
+  border-top: 1px solid var(--separateur);
+  color: var(--encre-3);
+  font-size: 12.5px;
+}
+
+@keyframes monter {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes poser {
+  0% {
+    opacity: 0;
+    transform: scale(1.18);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.97);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

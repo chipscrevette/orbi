@@ -1,0 +1,119 @@
+.accueil {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* « safe » : si la hauteur manque, le contenu défile au lieu de passer sous le haut de la fenêtre */
+  justify-content: safe flex-end;
+  min-height: 0;
+  overflow-y: auto;
+  padding: 16px 32px clamp(28px, 9.5vh, 97px);
+  text-align: center;
+  animation: apparaitre var(--duree-entree) var(--courbe-sortie) 1;
+}
+
+.accueil .mascotte {
+  margin: 0 0 clamp(18px, 3.4vh, 35px) calc(var(--taille) * 0.12);
+}
+
+.titre {
+  margin: 0;
+  color: var(--encre);
+  font-size: clamp(30px, 4.3vh, 44px);
+  font-weight: 750;
+  line-height: 1.1;
+  letter-spacing: -0.012em;
+}
+
+.sousTitre {
+  margin: clamp(10px, 1.6vh, 16px) 0 0;
+  color: var(--encre-3);
+  font-size: clamp(16px, 1.95vh, 19.5px);
+  line-height: 1.5;
+}
+
+.suggestions {
+  display: flex;
+  flex-wrap: nowrap; /* les quatre cartes sur une ligne, comme sur la maquette */
+  justify-content: center;
+  gap: 14px;
+  margin: clamp(26px, 5.1vh, 52px) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.suggestion {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+  min-width: 150px;
+  height: clamp(76px, 8.7vh, 89px);
+  padding: 0 clamp(12px, 1.2vw, 18px);
+  justify-content: center;
+  border: 1px solid #ebeeef;
+  border-radius: var(--rayon-moyen);
+  background: #fdfdfc;
+  box-shadow: 0 1px 2px rgb(16 38 74 / 0.03);
+  color: var(--encre);
+  font-size: 14.5px;
+  transition:
+    border-color var(--duree-rapide),
+    box-shadow var(--duree-rapide),
+    transform var(--duree-rapide);
+}
+
+.suggestion:hover:not(:disabled) {
+  border-color: var(--accent-pale);
+  box-shadow: 0 4px 14px rgb(31 104 232 / 0.09);
+  transform: translateY(-1px);
+}
+
+.suggestion:disabled {
+  cursor: default;
+  opacity: 0.55;
+}
+
+.icone {
+  width: 23px;
+  height: 23px;
+  color: var(--accent);
+}
+
+.libelle {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  white-space: nowrap;
+}
+
+.fleche {
+  width: 15px;
+  height: 15px;
+  color: #4d5c78;
+}
+
+.bientot {
+  position: absolute;
+  top: 7px;
+  right: 8px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--gris-pale);
+  color: var(--encre-3);
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+@keyframes apparaitre {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

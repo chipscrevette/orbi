@@ -1,0 +1,12 @@
+# dépendances et constructions
+node_modules/
+out/
+dist/
+coverage/
+*.tsbuildinfo
+*.log
+
+# copies faites par scripts/preparer.mjs (les originaux sont dans ../donnees/)
+public/donnees/articles.json
+public/donnees/reglement-biarritz.pdf
+

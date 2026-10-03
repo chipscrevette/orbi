@@ -8,7 +8,7 @@ from fastapi.testclient import TestClient
 
 from orbi.agent import historique
 from orbi.api import etat as sondes
-from orbi.api import flux, serveur
+from orbi.api import conversation, flux, serveur
 from orbi.api.flux import AgentEnDirect, lieu_depuis_faits, repondre_en_direct, reponse_depuis_resultat, sse
 from orbi.modele import cerveau
 from tests.faux import FausseRecherche, FauxCerveau, faits, ligne, tri
@@ -165,12 +165,15 @@ def test_une_question_donne_les_etapes_le_lieu_puis_la_reponse(client):
     assert not app.state.occupe.locked(), "le verrou est rendu"
 
 
-def test_une_seule_question_a_la_fois(client):
+def test_une_question_qui_arrive_pendant_une_autre_attend_son_tour(client, monkeypatch):
+    """Une seule réponse à la fois (le modèle occupe la carte graphique) : la seconde attend, puis passe ; jamais d'erreur."""
+    monkeypatch.setattr(serveur, "ATTENTE", 0.05)
     app, c = client([("reponse", REPONSE)])
     app.state.occupe.acquire()
+    threading.Timer(0.3, app.state.occupe.release).start()
     evts = lire_flux(c.post("/api/question", json={"question": "Puis-je poser un abri ?"}).text)
-    assert evts[0][0] == "erreur" and "déjà" in evts[0][1]["message"]
-    app.state.occupe.release()
+    assert evts == [("etape", {"id": "attente", "t": 0.0}), ("reponse", REPONSE)]
+    assert not app.state.occupe.locked()
 
 
 def test_sans_modele_une_erreur_explique_comment_le_lancer(client, machine):
@@ -252,3 +255,53 @@ def test_un_battement_de_coeur_quand_l_agent_reflechit_longtemps(faux_agent):
     evts = list(repondre_en_direct("Abri ?", fabrique=Lent, battement=0.05))
     assert (None, None) in evts and evts[-1][0] == "reponse"
     assert flux.BATTEMENT == 10
+
+
+# ------------------------------------------------------------------------------------------------ la conversation
+@pytest.mark.parametrize("message", ["coucou", "test", "Bonjour !", "merci beaucoup", "qui es-tu ?", "Comment tu marches ?",
+                                     "ça va ?", "Salut Orbi"])
+def test_un_message_sans_projet_est_de_la_conversation(message):
+    assert conversation.est_conversation(message)
+
+
+@pytest.mark.parametrize("message", [
+    "Puis-je poser un abri de jardin au 5 impasse Monnier ?", "Quelle hauteur en zone UD ?", "c'est quoi le PLU ?",
+    "Je veux agrandir ma maison", "parcelle BC 0074", "et pour 30 m² ?", "mes clôtures", "Bonjour, puis-je construire une piscine ?",
+], ids=["adresse", "zone", "le PLU", "un projet", "une parcelle", "une surface", "un pluriel", "salut puis question"])
+def test_une_question_d_urbanisme_part_a_l_analyse(message):
+    assert not conversation.est_conversation(message)
+
+
+def test_la_conversation_est_ecrite_par_le_modele_avec_la_voix_d_orbi(monkeypatch):
+    appels = []
+
+    def faux(systeme, utilisateur, schema, **k):
+        appels.append((systeme, utilisateur, k))
+        return {"reponse": "Bonjour ! Donnez-moi une adresse à Biarritz."}, {}
+    monkeypatch.setattr(cerveau, "demander", faux)
+    texte, secondes = conversation.repondre_conversation("coucou")
+    assert texte == "Bonjour ! Donnez-moi une adresse à Biarritz." and secondes >= 0
+    systeme, utilisateur, k = appels[0]
+    assert "Tu es Orbi" in systeme and "N'invente aucune règle" in systeme and utilisateur == "coucou"
+    assert k["effort"] == "low", "une réponse de conversation doit rester rapide"
+
+
+@pytest.mark.parametrize("panne", [lambda *a, **k: (None, {}), lambda *a, **k: ({"reponse": "  "}, {}),
+                                   lambda *a, **k: (_ for _ in ()).throw(ConnectionError("K2 éteint"))],
+                         ids=["pas de JSON", "réponse vide", "modèle éteint"])
+def test_sans_reponse_du_modele_orbi_repond_quand_meme(monkeypatch, panne):
+    monkeypatch.setattr(cerveau, "demander", panne)
+    assert conversation.repondre_conversation("coucou")[0] == conversation.SECOURS
+
+
+def test_un_coucou_donne_un_message_et_pas_une_analyse(monkeypatch):
+    monkeypatch.setattr(cerveau, "demander", lambda *a, **k: ({"reponse": "Bonjour !"}, {}))
+
+    class Interdit(AgentEnDirect):
+        def repondre(self, question):
+            raise AssertionError("un coucou ne lance pas l'analyse")
+    fini = threading.Event()
+    evts = list(repondre_en_direct("coucou", a_la_fin=fini.set, fabrique=Interdit))
+    assert [n for n, _ in evts] == ["etape", "message"]
+    assert evts[0][1]["id"] == "conversation" and evts[1][1]["texte"] == "Bonjour !"
+    assert fini.is_set()

@@ -1,0 +1,263 @@
+.travail {
+  padding: 14px 18px 10px;
+  border: 1px solid var(--carte-bord);
+  border-radius: 14px;
+  background: var(--carte);
+  box-shadow: var(--carte-ombre);
+  animation: entrer var(--duree-entree) var(--courbe-sortie) 1;
+}
+
+.fige {
+  animation: none;
+}
+
+.entete {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.titre {
+  margin: 0;
+  color: var(--encre);
+  font-size: 15px;
+  font-weight: 650;
+}
+
+.accelere {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--bleu-pale);
+  color: var(--bleu-texte);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.accelere svg {
+  width: 13px;
+  height: 13px;
+}
+
+.total {
+  margin-left: auto;
+  color: var(--encre-2);
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.replier {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: var(--encre-3);
+  transform: rotate(180deg);
+}
+
+.replier:hover {
+  background: var(--gris-pale);
+}
+
+.replier svg {
+  width: 17px;
+  height: 17px;
+}
+
+.etapes {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.etape {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 12px;
+  padding: 7px 0;
+  border-top: 1px solid #f2f1ee;
+  color: var(--encre-4);
+  font-size: 14px;
+}
+
+.etape:first-child {
+  border-top: 0;
+}
+
+.marque {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  margin-top: -1px;
+  border: 1.5px solid #d3dae4;
+  border-radius: 50%;
+}
+
+.marque svg {
+  width: 13px;
+  height: 13px;
+}
+
+.etape[data-statut='fait'] {
+  color: var(--encre-2);
+}
+
+.etape[data-statut='fait'] .marque {
+  border-color: var(--vert);
+  background: var(--vert);
+  color: #fff;
+  animation: cocher 220ms var(--courbe-sortie) 1;
+}
+
+.etape[data-statut='en_cours'] {
+  color: var(--encre);
+}
+
+.etape[data-statut='en_cours'] .libelle {
+  font-weight: 600;
+}
+
+/* l'étape en cours : un anneau qui tourne (indicateur d'activité) */
+.etape[data-statut='en_cours'] .marque {
+  border-color: var(--accent-pale);
+  border-top-color: var(--accent);
+  animation: tourner 0.9s linear infinite;
+}
+
+.etape[data-statut='saute'] .marque {
+  border-color: transparent;
+  background: var(--gris-pale);
+  color: var(--encre-4);
+}
+
+.etape[data-statut='saute'] .libelle {
+  text-decoration: line-through;
+  text-decoration-color: rgb(134 147 170 / 0.5);
+}
+
+.texte {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 2px 10px;
+  min-width: 0;
+}
+
+.detail {
+  color: var(--encre-3);
+  font-size: 12.5px;
+}
+
+.extras {
+  color: var(--encre-4);
+  font-size: 12px;
+  font-style: italic;
+}
+
+.temps {
+  min-width: 52px;
+  color: var(--encre-3);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.etape[data-statut='en_cours'] .temps {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* une fois la réponse arrivée : une ligne qui se déplie */
+.resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 12px 6px 7px;
+  border: 1px solid var(--carte-bord);
+  border-radius: 999px;
+  background: var(--carte);
+  color: var(--encre-2);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+  transition: border-color var(--duree-rapide);
+}
+
+.resume:hover {
+  border-color: var(--accent-pale);
+}
+
+.pastilleFaite {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--vert);
+  color: #fff;
+}
+
+.pastilleFaite svg,
+.pastilleArret svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* un échange arrêté (erreur, interruption) : une pastille grise, jamais la coche verte */
+.pastilleArret {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--encre-3);
+  color: #fff;
+}
+
+.voir {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.voir svg {
+  width: 15px;
+  height: 15px;
+}
+
+@keyframes entrer {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes cocher {
+  from {
+    transform: scale(0.6);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes tourner {
+  to {
+    transform: rotate(360deg);
+  }
+}
