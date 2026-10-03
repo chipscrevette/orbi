@@ -14,7 +14,7 @@ export const URL_PLAN_IGN =
   '&STYLE=normal&TILEMATRIXSET=PM&FORMAT=image/png&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}';
 
 const CENTRE_BIARRITZ: L.LatLngTuple = [43.4711, -1.5558];
-const COULEUR_POINT = '#1f68e8';
+const COULEUR_POINT = '#2f6bf2'; // le bleu de la mascotte
 
 interface Props {
   zones: CollectionZones | null;

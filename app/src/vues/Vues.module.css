@@ -236,7 +236,7 @@
 
 .recherche:focus-within {
   border-color: var(--saisie-bord-actif);
-  box-shadow: 0 0 0 4px rgb(61 155 255 / 0.1);
+  box-shadow: 0 0 0 4px rgb(47 107 242 / 0.1);
 }
 
 .recherche > svg {

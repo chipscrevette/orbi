@@ -81,3 +81,36 @@ html[data-cadre='electron'] :is(button, a, input, textarea, select, label, [role
     transition-duration: 1ms !important;
   }
 }
+
+/* Barres de défilement : fines, arrondies, au bleu de la mascotte, sans piste visible. Elles s'élargissent un peu au
+   survol pour rester faciles à attraper. (Chromium et Electron : on n'utilise pas scrollbar-color, qui désactiverait
+   ces règles.) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid transparent;
+  border-radius: 999px;
+  background: rgb(47 107 242 / 0.22) padding-box;
+  transition: background-color var(--duree-rapide);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-width: 3px;
+  background-color: rgb(47 107 242 / 0.45);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: rgb(30 79 208 / 0.6);
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}

@@ -1,6 +1,7 @@
 // Capture l'interface à une taille donnée (1536×1024 par défaut, celle de la maquette) avec Chrome sans fenêtre, en
 // pilotant la page par le protocole DevTools : cliquer sur un texte, taper une question, attendre, puis photographier.
 // Usage : node scripts/capturer.mjs <url> <sortie.png> [actions...]
+// BARRES=1 garde les barres de défilement visibles (sinon cachées, comme dans une capture de présentation).
 //   actions : clic:<texte visible>  taper:<texte>  entree  attendre:<ms>  photo:<fichier.png>
 // Exemple : node scripts/capturer.mjs http://localhost:5173/ accueil.png clic:"Règlement PLU" attendre:9000 photo:reponse.png
 import { spawn } from 'node:child_process';
@@ -21,7 +22,7 @@ const profil = join(process.env.TEMP ?? tmpdir(), `orbi-capture-${port}`);
 mkdirSync(profil, { recursive: true });
 const chrome = spawn(CHROME, [
   '--headless=new', `--remote-debugging-port=${port}`, `--user-data-dir=${profil}`, '--no-first-run',
-  '--hide-scrollbars', `--window-size=${largeur},${hauteur}`, 'about:blank',
+  ...(process.env.BARRES ? [] : ['--hide-scrollbars']), `--window-size=${largeur},${hauteur}`, 'about:blank',
 ], { stdio: 'ignore' });
 
 const pause = (ms) => new Promise((r) => setTimeout(r, ms));

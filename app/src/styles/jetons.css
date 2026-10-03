@@ -23,16 +23,17 @@
   --encre-4: #8693aa;
 
   /* accent */
-  --accent: #1f68e8;
-  --accent-vif: #3d9bff;
-  --accent-vif-survol: #2a8af4;
-  --accent-pale: #cde6fd;
-  --accent-tres-pale: #eaf4fe;
-  --tuile-bleue: #dcecfd;
+  /* le bleu de la mascotte (--orbi-clair, --orbi-ombre) est l'accent de toute l'interface */
+  --accent: #2f6bf2;
+  --accent-vif: #2f6bf2;
+  --accent-vif-survol: #1e4fd0;
+  --accent-pale: #d3e0fd;
+  --accent-tres-pale: #edf2fe;
+  --tuile-bleue: #dde7fd;
   --tuile-grise: #e8eef6;
   --tuile-verte: #e2f7ec;
   --saisie-bord: #b9d1e2;
-  --saisie-bord-actif: #7fb2ee;
+  --saisie-bord-actif: #7f9ff5;
 
   /* états et verdicts : la couleur se colle au mot */
   --vert: #12c97a;
@@ -47,12 +48,12 @@
   --gris: #8a96ad;
   --gris-texte: #4a5672;
   --gris-pale: #eef1f5;
-  --bleu-texte: #1d5cc8;
-  --bleu-pale: #e7f0fd;
+  --bleu-texte: #1e4fd0;
+  --bleu-pale: #e9effe;
 
   /* jauges */
   --jauge-vert: #3ed299;
-  --jauge-bleu: #3594fd;
+  --jauge-bleu: #2f6bf2;
   --jauge-ambre: #f5b13d;
   --jauge-rouge: #ef6a5e;
   --jauge-piste: #ecf2f5;
