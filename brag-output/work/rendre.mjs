@@ -9,7 +9,7 @@ import { pathToFileURL } from 'node:url';
 const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const [mode, ...temps] = process.argv.slice(2);
 const ICI = resolve('.');
-const DUREE = 20, IPS = 30;
+const DUREE = 18, IPS = 30;
 const port = 9400 + Math.floor(Math.random() * 400);
 const profil = join(process.env.TEMP ?? ICI, `orbi-film-${port}`);
 const chrome = spawn(CHROME, ['--headless=new', `--remote-debugging-port=${port}`, `--user-data-dir=${profil}`, '--no-first-run',

@@ -20,3 +20,9 @@ Toutes les données viennent d'une vraie réponse enregistrée le 3 octobre 2026
 
 ## Son
 Une piste unique à 120 bpm en do majeur : nappe douce, arpège pincé, pied léger à partir de la scène 2 ; les petits clics de frappe, les « pling » des étapes (notes de l'accord en cours), un « pop » sur le verdict et une cloche finale, mixés sous la musique.
+
+## Version 2 (rythmée, 18 s)
+Calée sur une pulsation à 128 bpm : les trois mots du titre tombent sur trois temps, la brique sur le quatrième ; les
+scènes entrent et sortent en glissant (0,25 s) avec une lente poussée de caméra ; les étapes se cochent sur les croches ;
+une respiration de la batterie juste avant que le verdict claque ; les trois cartes de la preuve arrivent sur trois temps.
+Son : -16 LUFS intégrés, crête vraie à -1,5 dB (ffmpeg loudnorm), au lieu de -12 LUFS écrasés dans la version 1.

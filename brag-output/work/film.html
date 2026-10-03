@@ -15,6 +15,8 @@ html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; font-fa
 body { background: linear-gradient(160deg, #d8e8f6 0%, #e4eff8 45%, #eef7f9 100%); }
 .abs { position: absolute; }
 .scene { position: absolute; inset: 0; opacity: 0; }
+.mot { display: inline-block; transform-origin: 50% 80%; }
+#verifiee { display: inline-block; }
 /* 1. accroche */
 #titre { left: 130px; top: 410px; font-size: 104px; font-weight: 800; letter-spacing: -3px; white-space: nowrap; }
 #curseur { display: inline-block; width: 8px; height: 92px; margin-left: 8px; background: var(--accent-vif); vertical-align: -10px; }
@@ -91,7 +93,7 @@ body { background: linear-gradient(160deg, #d8e8f6 0%, #e4eff8 45%, #eef7f9 100%
 <body>
 <!-- 1. accroche -->
 <div class="scene" id="s1">
-  <div class="abs" id="titre"><span id="titreTexte"></span><span id="curseur"></span></div>
+  <div class="abs" id="titre"><span class="mot">Puis-je</span> <span class="mot">construire</span> <span class="mot">ici&nbsp;?</span></div>
   <div class="abs" id="sous">Orbi a lu tout le PLU de Biarritz.</div>
   <img class="abs" id="orbi1" src="orbi.png" alt="">
   <div class="etincelles" id="et1"><i style="left:0;top:0;transform:rotate(30deg)"></i><i style="left:34px;top:46px;transform:rotate(70deg)"></i></div>
@@ -150,114 +152,6 @@ body { background: linear-gradient(160deg, #d8e8f6 0%, #e4eff8 45%, #eef7f9 100%
   <div class="abs" id="devise">Votre projet. Le PLU. Article par article.</div>
   <div class="abs" id="lien">github.com/chipscrevette/orbi</div>
 </div>
-<script>
-const $ = (id) => document.getElementById(id);
-const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
-const p = (t, a, b) => clamp((t - a) / (b - a));
-const sortie = (x) => 1 - Math.pow(1 - x, 3);
-const ressort = (x) => { const c = 1.7; return 1 + (c + 1) * Math.pow(x - 1, 3) + c * Math.pow(x - 1, 2); };
-const fondu = (t, a, b, c, d) => Math.min(p(t, a, b), 1 - p(t, c, d));
-const QUESTION = $('question').textContent;
-const CITATION = "Tout point des constructions est éloigné du point le plus proche de la limite séparative arrière d’une distance horizontale (D) au moins égale à la différence d’altitude entre ces deux points moins 3,00 m : H ≤ D + 3, soit D ≥ H – 3.";
-const TITRE = 'Puis-je construire ici ?';
-function montre(el, o, dy = 0, s = 1) { el.style.opacity = o; el.style.transform = `translateY(${dy}px) scale(${s})`; }
-function brique(el, t, t0, sol) {
-  // la brique tombe, s'écrase un peu, se redresse
-  const chute = sortie(p(t, t0, t0 + 0.45));
-  const y = (1 - chute) * -700;
-  const choc = p(t, t0 + 0.45, t0 + 0.9);
-  const ecrase = Math.sin(choc * Math.PI) * (1 - choc) * 0.5;
-  el.style.opacity = t < t0 ? 0 : 1;
-  el.style.transform = `translateY(${y}px) scale(${1 + ecrase * 0.35}, ${1 - ecrase * 0.4})`;
-}
-function etincelles(el, t, t0, x, y) {
-  el.style.left = x + 'px'; el.style.top = y + 'px';
-  const a = p(t, t0, t0 + 0.2);
-  el.style.opacity = a; el.style.transform = `scale(${0.6 + 0.4 * sortie(a)})`;
-}
-let carte;
-async function preparer() {
-  carte = await (await fetch('carte.json')).json();
-  const svg = $('carteSvg');
-  svg.innerHTML = carte.chemins.map((c) => `<path d="${c.d}" fill="${c.couleur}" fill-opacity="${c.code === 'UAs' ? 0.62 : 0.28}" stroke="${c.couleur}" stroke-width="${c.code === 'UAs' ? 3 : 1.2}" stroke-opacity=".9" class="${c.code === 'UAs' ? 'uas' : ''}"/>`).join('')
-    + `<circle id="halo" cx="${carte.point[0]}" cy="${carte.point[1]}" r="14" fill="#3d9bff" opacity=".3"/><circle cx="${carte.point[0]}" cy="${carte.point[1]}" r="11" fill="#1f68e8" stroke="#fff" stroke-width="4"/>`;
-  await document.fonts.ready;
-  await Promise.all([...document.images].map((i) => i.decode()));
-}
-function rendre(t) {
-  // ----- 1. accroche (0 → 3 s)
-  $('s1').style.opacity = 1 - p(t, 2.75, 3.0);
-  const n = Math.round(TITRE.length * p(t, 0.15, 1.05));
-  $('titreTexte').textContent = TITRE.slice(0, n);
-  $('curseur').style.opacity = t < 1.2 || Math.floor(t * 2.5) % 2 ? 1 : 0;
-  montre($('sous'), p(t, 1.15, 1.45), 14 * (1 - sortie(p(t, 1.15, 1.45))));
-  brique($('orbi1'), t, 0.35);
-  etincelles($('et1'), t, 1.05, 1790, 350);
-  // ----- 2 et 3. l'appli (3 → 13 s)
-  const s2 = fondu(t, 3.0, 3.3, 12.75, 13.0);
-  $('s2').style.opacity = s2;
-  $('fenetre').style.transform = `translateY(${40 * (1 - sortie(p(t, 3.0, 3.45)))}px)`;
-  const nq = Math.round(QUESTION.length * p(t, 3.35, 4.55));
-  const tape = t < 4.75 ? QUESTION.slice(0, nq) : '';
-  $('saisieTexte').textContent = tape || 'Posez votre question…';
-  $('saisieTexte').className = 'abs' + (tape ? '' : ' vide');
-  const clic = p(t, 4.6, 4.8);
-  $('envoyer').style.transform = `scale(${1 - 0.14 * Math.sin(clic * Math.PI)})`;
-  montre($('question'), p(t, 4.75, 4.95), 20 * (1 - sortie(p(t, 4.75, 4.95))));
-  const enTravail = fondu(t, 4.85, 5.05, 7.3, 7.44);
-  montre($('travail'), enTravail, 24 * (1 - sortie(p(t, 4.85, 5.1))));
-  const lignes = [...document.querySelectorAll('.ligne')];
-  let debut = 4.95;
-  lignes.forEach((l, i) => {
-    const a = parseFloat(l.dataset.a);
-    const faite = t >= a, active = !faite && t >= debut;
-    l.className = 'ligne' + (faite ? ' faite' : active ? ' active' : '');
-    const temps = l.querySelector('.temps');
-    if (faite) temps.textContent = l.dataset.s;
-    else if (active && i === 3) temps.textContent = (70.9 * p(t, debut, a)).toFixed(1).replace('.', ',') + ' s';
-    else temps.textContent = '';
-    if (active) l.querySelector('.rond').style.transform = `rotate(${t * 540}deg)`;
-    else l.querySelector('.rond').style.transform = '';
-    debut = a;
-  });
-  const total = 78.9 * p(t, 4.95, 7.28);
-  $('total').textContent = total >= 60 ? `1 min ${String(Math.round(total - 60)).padStart(2, '0')} s` : total.toFixed(1).replace('.', ',') + ' s';
-  montre($('reel'), fondu(t, 5.3, 5.5, 7.3, 7.44), 0);
-  montre($('resume'), p(t, 7.5, 7.7), 0);
-  const r = p(t, 7.6, 8.0);
-  montre($('reponse'), r, 40 * (1 - sortie(r)), 0.97 + 0.03 * sortie(r));
-  $('verdict').style.transform = `scale(${t < 7.6 ? 1 : 1 + 0.06 * Math.sin(p(t, 7.85, 8.15) * Math.PI)})`;
-  montre($('lieu'), p(t, 8.15, 8.35), 10 * (1 - p(t, 8.15, 8.35)));
-  montre($('regle'), p(t, 8.55, 8.75), 10 * (1 - p(t, 8.55, 8.75)));
-  $('citation').textContent = CITATION.slice(0, Math.round(CITATION.length * p(t, 8.8, 10.3)));
-  $('verifiee').style.opacity = p(t, 10.35, 10.5);
-  $('verifiee').style.transform = `scale(${1 + 0.18 * Math.sin(p(t, 10.35, 10.65) * Math.PI)})`;
-  montre($('demarche'), p(t, 10.9, 11.1), 8 * (1 - p(t, 10.9, 11.1)));
-  const c = p(t, 7.9, 8.4);
-  montre($('carte'), c, 0, 0.96 + 0.04 * sortie(c));
-  $('carteSvg').style.transform = `scale(${1.25 - 0.25 * sortie(p(t, 7.9, 9.4))})`;
-  const halo = $('halo');
-  if (halo) { const h = (t * 1.2) % 1; halo.setAttribute('r', 12 + 26 * h); halo.setAttribute('opacity', 0.45 * (1 - h)); }
-  montre($('etiquette'), p(t, 8.6, 8.8), 0);
-  $('saisie').style.opacity = 1 - p(t, 7.45, 7.65);
-  // ----- 4. la preuve (13 → 16,5 s)
-  $('s4').style.opacity = fondu(t, 13.05, 13.3, 16.3, 16.5);
-  montre($('preuveTitre'), p(t, 13.1, 13.4), 20 * (1 - sortie(p(t, 13.1, 13.4))));
-  [['st1', 13.45], ['st2', 13.7], ['st3', 13.95]].forEach(([id, a]) => {
-    const k = p(t, a, a + 0.35);
-    montre($(id), k, 60 * (1 - sortie(k)), 0.9 + 0.1 * ressort(k));
-  });
-  $('nbTests').textContent = Math.round(1108 * sortie(p(t, 13.75, 14.5))).toLocaleString('fr-FR');
-  // ----- 5. fin (16,5 → 20 s)
-  $('s5').style.opacity = p(t, 16.55, 16.8);
-  brique($('orbi5'), t, 16.6);
-  etincelles($('et5'), t, 17.25, 1190, 120);
-  montre($('nom'), p(t, 17.15, 17.45), 24 * (1 - sortie(p(t, 17.15, 17.45))));
-  montre($('devise'), p(t, 17.45, 17.75), 16 * (1 - sortie(p(t, 17.45, 17.75))));
-  montre($('lien'), p(t, 17.9, 18.15), 0);
-  document.body.dataset.t = t.toFixed(3);
-}
-window.pret = preparer().then(() => { rendre(0); return true; });
-</script>
+<script src="film.js"></script>
 </body>
 </html>
