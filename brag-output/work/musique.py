@@ -85,38 +85,48 @@ for k in range(int(DUREE / TEMPS) + 1):
     if b >= 2.55 and not respiration:
         place(musique, charley(), b + TEMPS / 2, 0.035)
 
-# bruitages, dans la tonalité, sous la musique
-for i in range(3):  # les trois mots du titre
-    place(sfx, ton(note(72 + 4 * i), 0.25, (1, 0.3)) * env(int(0.25 * SR), 0.002, 0.07), 0.12 + i * TEMPS * 0.75, 0.05)
-for x in np.linspace(2.9, 3.75, 30):  # frappe
-    n = int(0.015 * SR)
-    place(sfx, np.diff(rng.standard_normal(n), prepend=0) * np.exp(-np.arange(n) / (0.002 * SR)), x, 0.012)
-for x, n in ((4.3, 72), (4.53, 76), (4.77, 79), (5.7, 81), (5.85, 84), (6.0, 88)):  # étapes cochées
-    place(sfx, ton(note(n), 0.35, (1, 0.2)) * env(int(0.35 * SR), 0.002, 0.09), x, 0.05)
-for x, n in ((1.27, 0), (15.32, 0)):  # la brique touche le sol
-    m = int(0.3 * SR)
-    xx = np.arange(m) / SR
-    place(sfx, np.sin(2 * np.pi * np.cumsum(80 + 120 * np.exp(-xx * 25)) / SR) * np.exp(-xx * 12), x, 0.3)
-for k, n in enumerate((60, 64, 67, 72)):  # le verdict : un accord frappé
-    place(sfx, ton(note(n), 1.0, (1, 0.3)) * env(int(1.0 * SR), 0.003, 0.4), 6.5 + k * 0.012, 0.06)
-place(sfx, pied(), 6.5, 0.5)
-place(sfx, ton(note(91), 0.4, (1, 0.1)) * env(int(0.4 * SR), 0.002, 0.12), 8.2, 0.04)  # « vérifiée mot à mot »
-for x, n in ((11.6, 76), (11.6 + TEMPS, 79), (11.6 + 2 * TEMPS, 84)):  # les trois cartes
-    place(sfx, ton(note(n), 0.4, (1, 0.3)) * env(int(0.4 * SR), 0.002, 0.1), x, 0.05)
-for x in (2.3, 10.85, 14.65):  # souffles avant chaque changement de scène
-    s = bruit_filtre(0.45, 30) * np.sin(np.linspace(0, np.pi / 2, int(0.45 * SR))) ** 2
-    place(sfx, s, x, 0.18)
-for k, n in enumerate((60, 64, 67, 72, 76)):  # la cloche finale
-    place(sfx, ton(note(n), 2.6, (1, 0.3, 0.1)) * env(int(2.6 * SR), 0.01, 1.0), 15.4 + k * 0.03, 0.035)
+# bruitages haut de gamme (sfx.py), en stéréo, posés sur les événements de film.js
+import sfx as S  # noqa: E402
 
-# la musique accompagne, les bruitages racontent : la musique 9 dB plus bas, les bruitages devant
-mix = musique * 0.35 + sfx * 1.5
-mix *= np.minimum(1, t / 0.05) * np.minimum(1, (DUREE - t) / 1.2)
+effets = np.zeros((N, 2))
+
+
+def poser(son, debut, gain=1.0):
+    i = int(debut * SR)
+    j = min(N, i + len(son))
+    if 0 <= i < N:
+        effets[i:j] += gain * son[: j - i]
+
+
+for i in range(3):  # les trois mots du titre
+    poser(S.tok(1250 + 180 * i, pan=-0.3 + 0.3 * i), 0.12 + i * TEMPS * 0.75, 0.9)
+poser(S.souffle(0.35, 2500, 500, 0.2, -0.1), 0.62, 0.5)  # la brique qui tombe…
+poser(S.impact(52), 1.27, 1.0)                           # …et qui se pose
+for x in np.linspace(2.9, 3.75, 22):                     # la frappe
+    poser(S.touche(), x + rng.uniform(-0.012, 0.012), 0.5 + rng.uniform(0, 0.3))
+poser(S.souffle(0.3, 600, 6000, -0.2, 0.5), 3.72, 0.55)  # envoi
+for x, m, pan in ((4.3, 79, -0.2), (4.53, 83, 0.0), (4.77, 86, 0.2), (5.7, 88, 0.1), (5.85, 91, 0.25), (6.0, 95, 0.35)):
+    poser(S.coche(m, pan), x, 0.8)                       # les étapes cochées, en montant
+poser(S.impact(46, 1.2), 6.5, 1.0)                       # le verdict tombe
+poser(S.cloche([60, 64, 67, 71, 74], 2.2), 6.5, 0.7)
+poser(S.souffle(0.4, 800, 3000, 0.6, 0.2), 6.45, 0.35)   # la carte glisse
+poser(S.tampon(), 8.2, 1.0)                              # « vérifiée mot à mot »
+for x in (2.32, 10.82, 14.62):                           # les changements de scène
+    poser(S.souffle(0.45, 350, 7000, -0.7, 0.7), x, 0.6)
+for x, m, pan in ((11.6, 72, -0.4), (11.6 + TEMPS, 76, 0.0), (11.6 + 2 * TEMPS, 79, 0.4)):
+    poser(S.souffle(0.22, 1500, 5000, pan - 0.3, pan), x - 0.12, 0.3)
+    poser(S.pop_carte(m, pan), x, 0.9)                   # les trois cartes
+poser(S.impact(50), 15.32, 0.9)                          # la brique finale
+poser(S.cloche([48, 60, 64, 67, 72, 76], 2.6, 0.7), 15.45, 0.8)
+
+effets = S.reverb(effets)
+# la musique accompagne, les bruitages racontent : la musique bien en retrait
+mix = np.stack([musique, np.roll(musique, 220) * 0.98], axis=1) * 0.3 + effets * 1.0
+mix *= (np.minimum(1, t / 0.05) * np.minimum(1, (DUREE - t) / 1.2))[:, None]
 mix *= 0.7 / np.max(np.abs(mix))  # marge : loudnorm fixe le volume final
-stereo = np.stack([mix, np.roll(mix, 220) * 0.98], axis=1)
 with wave.open("musique.wav", "wb") as w:
     w.setnchannels(2)
     w.setsampwidth(2)
     w.setframerate(SR)
-    w.writeframes((stereo * 32767).astype("<i2").tobytes())
+    w.writeframes((mix * 32767).astype("<i2").tobytes())
 print("musique.wav", DUREE, "s")
