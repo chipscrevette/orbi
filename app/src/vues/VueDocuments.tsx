@@ -192,7 +192,7 @@ function Article({ article, ouvert, onBasculer, extrait, termes }: PropsArticle)
         <span className={styles.reference}>{article.reference}</span>
         <h3 className={styles.titreArticle}>{article.titre}</h3>
         {pages && (
-          <a className={styles.page} href={lienPage(pages[0])} target="_blank" rel="noreferrer" title="Ouvrir le PDF à cette page">
+          <a className={styles.lienNumeroPage} href={lienPage(pages[0])} target="_blank" rel="noreferrer" title="Ouvrir le PDF à cette page">
             {pages[0] === pages[1] ? `p. ${pages[0]}` : `p. ${pages[0]}-${pages[1]}`}
             <ExternalLink aria-hidden="true" strokeWidth={2} />
           </a>

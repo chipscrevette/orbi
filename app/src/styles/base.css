@@ -114,3 +114,13 @@ html[data-cadre='electron'] :is(button, a, input, textarea, select, label, [role
 ::-webkit-scrollbar-button {
   display: none;
 }
+
+/* Toutes les cartes : le fond IGN aux couleurs d'Orbi (filtre #fond-orbi défini dans index.html) */
+.leaflet-tile-pane {
+  filter: url(#fond-orbi);
+}
+
+.leaflet-container {
+  background: #e9effc;
+  font-family: var(--police);
+}

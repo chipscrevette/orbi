@@ -2,7 +2,7 @@
 // pilotant la page par le protocole DevTools : cliquer sur un texte, taper une question, attendre, puis photographier.
 // Usage : node scripts/capturer.mjs <url> <sortie.png> [actions...]
 // BARRES=1 garde les barres de défilement visibles (sinon cachées, comme dans une capture de présentation).
-//   actions : clic:<texte visible>  taper:<texte>  entree  attendre:<ms>  photo:<fichier.png>
+//   actions : eval:<expression JS>  clic:<texte visible>  taper:<texte>  entree  attendre:<ms>  photo:<fichier.png>
 // Exemple : node scripts/capturer.mjs http://localhost:5173/ accueil.png clic:"Règlement PLU" attendre:9000 photo:reponse.png
 import { spawn } from 'node:child_process';
 import { mkdirSync, writeFileSync } from 'node:fs';
@@ -80,7 +80,8 @@ try {
     else if (genre === 'entree') {
       await cdp('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Enter', code: 'Enter', windowsVirtualKeyCode: 13 });
       await cdp('Input.dispatchKeyEvent', { type: 'keyUp', key: 'Enter', code: 'Enter', windowsVirtualKeyCode: 13 });
-    } else if (genre === 'taper') await cdp('Input.insertText', { text: valeur });
+    } else if (genre === 'eval') console.log('eval :', JSON.stringify(await evaluer(valeur)));
+    else if (genre === 'taper') await cdp('Input.insertText', { text: valeur });
     else if (genre === 'clic') {
       const ok = await evaluer(`(() => {
         const texte = ${JSON.stringify(valeur)};

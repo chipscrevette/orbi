@@ -1,0 +1,12 @@
+{
+  "k2": {
+    "cwd": "D:/PORTFOLIO/CLAUDE/coach-lol/k2",
+    "env": { "UV_CACHE_DIR": "D:/tools/uv-cache", "HF_HOME": "D:/tools/hf-cache", "HF_HUB_OFFLINE": "1" }
+  },
+  "embeddings": {
+    "cwd": "D:/PORTFOLIO/CLAUDE/assistant-plu/outils"
+  },
+  "api": {
+    "env": { "UV_CACHE_DIR": "D:/tools/uv-cache" }
+  }
+}

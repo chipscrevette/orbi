@@ -7,7 +7,7 @@
  */
 import { join } from 'node:path';
 import { BrowserWindow, Menu, app, ipcMain, shell } from 'electron';
-import { ADRESSE_MOTEUR, Moteur, type StatutMoteur } from './moteur';
+import { ADRESSE_MOTEUR, Moteur, moteurRepond, type StatutMoteur } from './moteur';
 
 let fenetre: BrowserWindow | null = null;
 const moteur = new Moteur(app.getAppPath(), (statut: StatutMoteur) => fenetre?.webContents.send('moteur:statut', statut));
@@ -74,8 +74,16 @@ async function creerFenetre(): Promise<void> {
       void shell.openExternal(url);
     }
   });
-  const statut = await moteur.demarrer();
-  if (fenetre) await chargerInterface(fenetre, statut);
+  // le modèle met ~1 min 30 à charger : l'interface s'ouvre dès que le serveur Orbi répond, puis passe en local seule
+  const demarrage = moteur.demarrer();
+  const limite = Date.now() + 40_000;
+  while (Date.now() < limite && !(await moteurRepond())) {
+    if (moteur.statut.etat === 'indisponible') break;
+    await new Promise((r) => setTimeout(r, 400));
+  }
+  const pret = await moteurRepond();
+  if (fenetre) await chargerInterface(fenetre, pret ? { etat: 'pret', message: null } : moteur.statut);
+  void demarrage;
 }
 
 ipcMain.on('fenetre:fermer', () => fenetre?.close());

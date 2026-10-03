@@ -88,7 +88,7 @@ uv run pytest -m integration                # le rejeu des traces enregistrées 
 uv run orbi-banc --grille                   # le banc de mise au point, avec le modèle
 uv run orbi-serveur                         # le serveur local de l'application : http://127.0.0.1:4770 (API : /api/docs)
 node scripts/installer-app.mjs              # les dépendances de l'application de bureau (caches sur D:/tools s'il existe)
-cd app && npm run dev                       # l'application : elle démarre le serveur local toute seule
+cd app && npm run dev                       # l'application : elle démarre le serveur, la recherche et le modèle, et les arrête en se fermant
 cd app && npm test                          # les tests de l'interface
 cd app && npm run build:web                 # le site de démonstration (réponses enregistrées), pour GitHub Pages
 ```
@@ -99,6 +99,8 @@ Le serveur local répond en direct : chaque étape de l'agent part vers l'applic
 site patrimonial remarquable, *oui sous conditions*, en 69 secondes sur une RTX 3060.
 
 Les deux services locaux : `services/k2/serveur_k2.py` (port 11500) et `services/embeddings/emb_serveur.mjs` (port 11600).
+L'application les lance depuis ces dossiers ; si ta machine les fait tourner ailleurs, copie `services.exemple.json` en
+`services.local.json` (hors dépôt) et indique-y leurs dossiers et variables d'environnement. Journaux : `conversations/journaux/`.
 
 ## Feuille de route
 

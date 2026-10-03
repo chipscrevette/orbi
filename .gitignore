@@ -24,3 +24,5 @@ brag-output/work/essais/
 brag-output/work/*.wav
 brag-output/work/orbi.png
 brag-output/work/inter.woff2
+# où lancer le modèle et la recherche sur cette machine (voir app/electron/moteur.ts)
+services.local.json

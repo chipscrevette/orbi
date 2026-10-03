@@ -161,16 +161,17 @@ export function CarteZones({
 
     // Un clic dans la vue Cartes ne déplace pas la carte ; un nouveau lieu, si.
     if (pointChoisi) return;
+    // sans animation : un zoom animé lancé pendant un changement de vue restait figé (zones minuscules, carte « vide »)
     const cadrer = () => {
       const empriseZone = zone ? emprise(zone.geometry) : null;
-      if (empriseZone) carte.fitBounds(limites(empriseZone), { padding: [26, 26], maxZoom: 16.5 });
-      else if (point) carte.setView([point[1], point[0]], 16);
+      if (empriseZone) carte.fitBounds(limites(empriseZone), { padding: [26, 26], maxZoom: 16.5, animate: false });
+      else if (point) carte.setView([point[1], point[0]], 16, { animate: false });
       else if (zones) {
         const tout = empriseCollection(zones.features);
         // la commune remplit le cadre (zoom « couvrant ») : pas de bandes vides de part et d'autre
         if (tout) {
           const bornes = limites(tout);
-          carte.setView(bornes.getCenter(), carte.getBoundsZoom(bornes, true));
+          carte.setView(bornes.getCenter(), carte.getBoundsZoom(bornes, true), { animate: false });
         }
       }
     };

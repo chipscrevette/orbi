@@ -9,6 +9,19 @@
     <title>Orbi</title>
   </head>
   <body>
+    <!-- Le fond de carte aux couleurs d'Orbi : le Plan IGN passé en camaïeu, du bleu nuit (les textes, les routes
+         sombres) au blanc bleuté (les îlots), en passant par le bleu de la mascotte (la mer). Les zones du PLU restent
+         en couleurs par-dessus. Filtre léger (aucune turbulence) : rendu immédiat. -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+      <filter id="fond-orbi" color-interpolation-filters="sRGB">
+        <feColorMatrix type="matrix" values="0.30 0.55 0.15 0 0  0.30 0.55 0.15 0 0  0.30 0.55 0.15 0 0  0 0 0 1 0" />
+        <feComponentTransfer>
+          <feFuncR type="table" tableValues="0.059 0.184 0.427 0.663 0.875 0.984" />
+          <feFuncG type="table" tableValues="0.153 0.420 0.561 0.741 0.906 0.988" />
+          <feFuncB type="table" tableValues="0.408 0.949 0.945 0.957 0.980 1.000" />
+        </feComponentTransfer>
+      </filter>
+    </svg>
     <div id="racine"></div>
     <script type="module" src="./src/main.tsx"></script>
   </body>

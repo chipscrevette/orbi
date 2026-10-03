@@ -64,6 +64,8 @@
 .cadreCarte {
   position: relative;
   flex: 1;
+  align-self: stretch; /* la page centre ses enfants : sans ça, la carte avait 0 px de large */
+  width: 100%;
   min-height: 300px;
   overflow: hidden;
   border: 1px solid var(--carte-bord);
@@ -409,7 +411,8 @@
   letter-spacing: 0.02em;
 }
 
-.page {
+/* le lien « p. 21 » vers le PDF (ne pas l'appeler .page : c'est déjà la mise en page des vues) */
+.lienNumeroPage {
   display: inline-flex;
   align-items: center;
   gap: 3px;
@@ -419,11 +422,11 @@
   text-decoration: none;
 }
 
-.page:hover {
+.lienNumeroPage:hover {
   text-decoration: underline;
 }
 
-.page svg {
+.lienNumeroPage svg {
   width: 12px;
   height: 12px;
 }
