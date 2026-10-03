@@ -4,6 +4,7 @@
  */
 import { estObjet, lireEtat, texte } from '../logique/contrat.ts';
 import { analyserMessage, lireFlux } from '../logique/sse.ts';
+import type { EchangePasse } from '../etat/fil.ts';
 import type { EtatServeur, EvenementFlux, Point } from '../logique/types.ts';
 
 export const URL_ETAT = '/api/etat';
@@ -56,11 +57,12 @@ export async function poserQuestion(
   question: string,
   surEvenement: (evenement: EvenementFlux) => void,
   signal: AbortSignal,
+  historique: readonly EchangePasse[] = [],
 ): Promise<void> {
   const reponse = await fetch(URL_QUESTION, {
     method: 'POST',
     headers: { 'content-type': 'application/json', accept: 'text/event-stream' },
-    body: JSON.stringify({ question }),
+    body: JSON.stringify({ question, historique }),
     cache: 'no-store',
     signal,
   });

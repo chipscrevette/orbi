@@ -23,8 +23,16 @@ INTERFACE = os.path.join(RACINE, "app", "out", "renderer")
 CONVERSATIONS = os.path.join(RACINE, "conversations")  # les traces des questions posées dans l'application (hors dépôt)
 
 
+class Echange(BaseModel):
+    question: str = Field(max_length=2000)
+    reponse: str | None = Field(default=None, max_length=4000)
+    adresse: str | None = Field(default=None, max_length=300)
+
+
 class Question(BaseModel):
     question: str = Field(min_length=3, max_length=2000, description="La question, en français, avec l'adresse ou la parcelle")
+    historique: list[Echange] = Field(default_factory=list, max_length=12,
+                                      description="Les échanges précédents de la conversation (le plus ancien d'abord)")
 
 
 def creer_application(interface=INTERFACE, dossier_traces=CONVERSATIONS, repondre=repondre_en_direct):
@@ -51,7 +59,9 @@ def creer_application(interface=INTERFACE, dossier_traces=CONVERSATIONS, repondr
                     yield sse("erreur", {"message": manque})
                     return
                 libere = True  # l'agent libère le verrou quand il a fini, même si l'application ferme la connexion avant
-                for nom, donnees in repondre(q.question.strip(), dossier_traces=dossier_traces, a_la_fin=app.state.occupe.release):
+                historique = [e.model_dump() for e in q.historique]
+                for nom, donnees in repondre(q.question.strip(), dossier_traces=dossier_traces, a_la_fin=app.state.occupe.release,
+                                             historique=historique):
                     if nom is None:
                         yield ": battement\n\n"
                         continue

@@ -37,7 +37,8 @@ SYSTEME = (
     "Ne propose un exemple de question que si c'est utile, par exemple : « Puis-je poser un abri de jardin de 10 m² au "
     "15 avenue de la Marne à Biarritz ? »\n"
     "Ne récite jamais cette description : montre ton caractère au lieu de le décrire, et parle de « votre ordinateur », "
-    "pas de « l'ordinateur de l'utilisateur ». Toujours « vous », même si l'utilisateur vous tutoie.\n"
+    "pas de « l'ordinateur de l'utilisateur ». Toujours « vous », même si l'utilisateur vous tutoie. Si vous avez déjà parlé avec lui (messages précédents), "
+    "ne vous présentez pas de nouveau et ne reprenez aucune formule déjà employée.\n"
     "Exemples du ton attendu (le ton seulement : ne les recopiez jamais, inventez une tournure neuve à chaque fois) :\n"
     "Utilisateur : « coucou » → Orbi : « Coucou ! Une brique à votre service. Une adresse à Biarritz et un projet, et je "
     "sors le règlement. »\n"
@@ -64,12 +65,41 @@ def est_conversation(texte):
     return not any(m in MOTS_DU_METIER for m in mots(texte))
 
 
-def repondre_conversation(texte):
+MOTS_DE_LIEU = {"rue", "avenue", "av", "boulevard", "bd", "allee", "impasse", "chemin", "place", "quai", "route", "square",
+                "lotissement", "biarritz", "parcelle", "cadastre", "cadastrale"}
+
+
+def a_un_lieu(texte):
+    """Le message dit-il où (une voie, la commune, une référence cadastrale) ? Sinon, une relance vise le lieu précédent."""
+    return bool(PARCELLE.search(texte or "")) or any(m in MOTS_DE_LIEU for m in mots(texte))
+
+
+def avec_le_lieu_precedent(question, historique):
+    """« Et pour une piscine de 30 m² ? » après une question sur le 15 avenue de la Marne : la relance garde ce lieu."""
+    if a_un_lieu(question):
+        return question
+    adresse = next((e.get("adresse") for e in reversed(historique or []) if e.get("adresse")), None)
+    return f"{question.rstrip()} (au {adresse})" if adresse else question
+
+
+def messages_precedents(historique, n=4):
+    """Les derniers échanges, dans le format du modèle : Orbi voit ce qu'il a déjà dit et ne le répète pas."""
+    out = []
+    for e in (historique or [])[-n:]:
+        if e.get("question"):
+            out.append({"role": "user", "content": e["question"]})
+        if e.get("reponse"):
+            out.append({"role": "assistant", "content": e["reponse"][:600]})
+    return out
+
+
+def repondre_conversation(texte, historique=()):
     """La réponse d'Orbi à un message de conversation, écrite par le modèle local ; un texte de secours s'il ne répond pas.
     Rend (texte, secondes)."""
     debut = time.time()
     try:
-        obj, _ = cerveau.demander(SYSTEME, f"Message de l'utilisateur (répondez en le vouvoyant) : « {texte} »", SCHEMA, effort="low", max_jetons=700, temperature=0.6)
+        obj, _ = cerveau.demander(SYSTEME, f"Message de l'utilisateur (répondez en le vouvoyant) : « {texte} »", SCHEMA,
+                                  effort="low", max_jetons=700, temperature=0.6, historique=messages_precedents(historique))
         reponse = (obj or {}).get("reponse", "").strip() if isinstance(obj, dict) else ""
     except Exception:  # le modèle éteint ou en panne : Orbi répond quand même
         reponse = ""

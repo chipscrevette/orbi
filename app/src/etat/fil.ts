@@ -122,6 +122,28 @@ export function reduireFil(etat: EtatFil, action: ActionFil): EtatFil {
   }
 }
 
+/** Un échange déjà fini, tel que le serveur le relit : la question, ce qu'Orbi a répondu, le lieu trouvé. */
+export interface EchangePasse {
+  question: string;
+  reponse: string | null;
+  adresse: string | null;
+}
+
+/**
+ * Les derniers échanges finis de la conversation (le plus ancien d'abord) : le serveur s'en sert pour qu'Orbi ne se
+ * répète pas et pour qu'une relance (« et pour une piscine ? ») garde le lieu de la question précédente.
+ */
+export function historiquePourServeur(etat: EtatFil, n = 4): EchangePasse[] {
+  return etat.elements
+    .filter((e): e is Echange => e.genre === 'echange' && e.statut === 'termine')
+    .slice(-n)
+    .map((e) => ({
+      question: e.question,
+      reponse: e.message ?? e.reponse?.texte ?? null,
+      adresse: e.lieu?.adresse ?? (e.lieu?.parcelle ? `parcelle ${e.lieu.parcelle}` : null),
+    }));
+}
+
 export function echangeEnCours(etat: EtatFil): Echange | null {
   for (const el of etat.elements) if (el.genre === 'echange' && el.statut === 'en_cours') return el;
   return null;

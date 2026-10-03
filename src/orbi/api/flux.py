@@ -9,7 +9,7 @@ import queue
 import threading
 
 from orbi.agent.grille import AgentGrille
-from orbi.api.conversation import est_conversation, repondre_conversation, sans_cadratin
+from orbi.api.conversation import avec_le_lieu_precedent, est_conversation, repondre_conversation, sans_cadratin
 
 BATTEMENT = 10  # secondes sans événement avant un battement de cœur (« : … ») : la connexion reste ouverte
 _FIN = object()
@@ -58,7 +58,13 @@ class AgentEnDirect(AgentGrille):
             self.envoyer("lieu", lieu_depuis_faits(d.get("faits")))
 
 
-def repondre_en_direct(question, dossier_traces=None, a_la_fin=None, fabrique=AgentEnDirect, battement=BATTEMENT):
+def demande_de_precision(res):
+    """Une réponse qui ne fait que demander l'adresse ou la parcelle (rien trouvé, aucune règle) : c'est une question
+    d'Orbi, pas un verdict « impossible à dire »."""
+    return res.get("verdict_type") == "impossible à dire" and not res.get("regles") and not (res.get("faits") or {}).get("trouvee")
+
+
+def repondre_en_direct(question, dossier_traces=None, a_la_fin=None, fabrique=AgentEnDirect, battement=BATTEMENT, historique=()):
     """Les événements d'une réponse, au fil de l'eau : des couples (nom, données) ; (None, None) est un battement de cœur.
     a_la_fin est appelé quand l'agent a fini, même si l'application a fermé la connexion avant."""
     file = queue.Queue()
@@ -70,10 +76,13 @@ def repondre_en_direct(question, dossier_traces=None, a_la_fin=None, fabrique=Ag
         try:
             if est_conversation(question):
                 envoyer("etape", {"id": "conversation", "t": 0.0})
-                texte, secondes = repondre_conversation(question)
+                texte, secondes = repondre_conversation(question, historique)
                 envoyer("message", {"texte": texte, "duree_s": secondes})
                 return
-            res = fabrique(envoyer, dossier_traces).repondre(question)
+            res = fabrique(envoyer, dossier_traces).repondre(avec_le_lieu_precedent(question, historique))
+            if demande_de_precision(res):
+                envoyer("message", {"texte": sans_cadratin(res.get("reponse")), "duree_s": res.get("secondes")})
+                return
             if res.get("faits"):
                 envoyer("lieu", lieu_depuis_faits(res["faits"], res.get("zone")))
             envoyer("etape", {"id": "fin", "t": res.get("secondes")})

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { CHRONO_REEL } from '../../src/logique/chrono.ts';
-import { FIL_VIDE, MESSAGE_FLUX_COUPE, reduireFil, type Echange, type EtatFil } from '../../src/etat/fil.ts';
+import { FIL_VIDE, MESSAGE_FLUX_COUPE, historiquePourServeur, reduireFil, type Echange, type EtatFil } from '../../src/etat/fil.ts';
 
 const ECHANGE: Echange = {
   genre: 'echange',
@@ -49,5 +49,16 @@ describe('fil : une conversation', () => {
     const e = apres({ type: 'fin_flux', id: 'q1', maintenantMs: 50 });
     expect(e.statut).toBe('erreur');
     expect(e.erreur).toBe(MESSAGE_FLUX_COUPE);
+  });
+});
+
+describe('fil : l’historique envoyé au serveur', () => {
+  it('garde les échanges finis, avec la réponse et le lieu', () => {
+    const lieu = { adresse: '15 Avenue de la Marne 64200 Biarritz', commune: 'Biarritz', point: null, parcelle: 'AB 0073', surface_m2: 439, zone: 'UAs', servitudes: [], site_patrimonial: true };
+    let etat = reduireFil(FIL_VIDE, { type: 'debut', echange: { ...ECHANGE, id: 'a', question: 'abri ?' } });
+    etat = reduireFil(etat, { type: 'evenement', id: 'a', evenement: { type: 'lieu', lieu }, maintenantMs: 1 });
+    etat = reduireFil(etat, { type: 'evenement', id: 'a', evenement: { type: 'message', texte: 'Oui.', dureeS: 1 }, maintenantMs: 2 });
+    etat = reduireFil(etat, { type: 'debut', echange: { ...ECHANGE, id: 'b', question: 'en cours' } });
+    expect(historiquePourServeur(etat)).toEqual([{ question: 'abri ?', reponse: 'Oui.', adresse: '15 Avenue de la Marne 64200 Biarritz' }]);
   });
 });

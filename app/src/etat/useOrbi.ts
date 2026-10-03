@@ -11,7 +11,7 @@ import { dureeMoyenneDemo, dureeTypiqueEtape, planifierRejeu, trouverEntreeDemo 
 import type { CollectionZones } from '../logique/geo.ts';
 import { validerQuestion } from '../logique/question.ts';
 import type { EntreeDemo } from '../logique/types.ts';
-import { FIL_VIDE, echangeEnCours, modeDepuis, reduireFil, type Connexion, type Echange } from './fil.ts';
+import { FIL_VIDE, echangeEnCours, historiquePourServeur, modeDepuis, reduireFil, type Connexion, type Echange } from './fil.ts';
 
 export type Vue = 'chat' | 'cartes' | 'documents' | 'parametres';
 
@@ -58,6 +58,8 @@ function nouvelEchange(id: string, question: string, champs: Partial<Echange>): 
 export function useOrbi() {
   const [vue, setVue] = useState<Vue>('chat');
   const [fil, dispatch] = useReducer(reduireFil, FIL_VIDE);
+  const filRef = useRef(fil);
+  filRef.current = fil;
   const [connexion, setConnexion] = useState<Connexion>({ statut: 'recherche', etat: null });
   const [demos, setDemos] = useState<EntreeDemo[]>([]);
   const [zones, setZones] = useState<CollectionZones | null>(null);
@@ -148,6 +150,7 @@ export function useOrbi() {
         question,
         (evenement) => dispatch({ type: 'evenement', id, evenement, maintenantMs: Date.now() }),
         controleur.signal,
+        historiquePourServeur(filRef.current),
       );
       dispatch({ type: 'fin_flux', id, maintenantMs: Date.now() });
     } catch (erreur) {

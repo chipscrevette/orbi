@@ -130,7 +130,7 @@ def test_rien_ne_manque_quand_tout_tourne(machine):
 # ------------------------------------------------------------------------------------------------ le serveur
 def faux_repondre(evenements):
     """Un agent simulé : rejoue des événements, puis signale qu'il a fini (ce qui libère le verrou)."""
-    def repondre(question, dossier_traces=None, a_la_fin=None):
+    def repondre(question, dossier_traces=None, a_la_fin=None, historique=()):
         repondre.question = question
         try:
             yield from evenements
@@ -334,3 +334,61 @@ def test_orbi_a_un_caractere_et_ne_dit_pas_bonjour_a_chaque_fois():
 def test_le_cadratin_ecrit_par_le_modele_est_retire(monkeypatch):
     monkeypatch.setattr(cerveau, "demander", lambda *a, **k: ({"reponse": "Une brique — ça bâtit."}, {}))
     assert conversation.repondre_conversation("ça va ?")[0] == "Une brique : ça bâtit."
+
+
+# ------------------------------------------------------------------------------------------------ la mémoire de la conversation
+HISTORIQUE = [{"question": "Abri de 10 m² au 15 avenue de la Marne à Biarritz ?", "reponse": "Oui, sous conditions.",
+               "adresse": "15 Avenue de la Marne 64200 Biarritz"},
+              {"question": "merci", "reponse": "Avec plaisir.", "adresse": None}]
+
+
+@pytest.mark.parametrize("question, attendu", [
+    ("Et pour une piscine de 30 m² ?", "Et pour une piscine de 30 m² ? (au 15 Avenue de la Marne 64200 Biarritz)"),
+    ("Et au 3 rue Gambetta ?", "Et au 3 rue Gambetta ?"),
+    ("Et sur la parcelle BC 0074 ?", "Et sur la parcelle BC 0074 ?"),
+], ids=["relance sans lieu", "nouvelle adresse", "nouvelle parcelle"])
+def test_une_relance_sans_lieu_garde_le_lieu_precedent(question, attendu):
+    assert conversation.avec_le_lieu_precedent(question, HISTORIQUE) == attendu
+
+
+def test_sans_historique_la_question_ne_change_pas():
+    assert conversation.avec_le_lieu_precedent("Et pour une piscine ?", []) == "Et pour une piscine ?"
+
+
+def test_orbi_voit_ses_reponses_precedentes():
+    m = conversation.messages_precedents(HISTORIQUE)
+    assert [x["role"] for x in m] == ["user", "assistant", "user", "assistant"] and m[-1]["content"] == "Avec plaisir."
+
+
+def test_la_conversation_passe_l_historique_au_modele(monkeypatch):
+    vu = {}
+    monkeypatch.setattr(cerveau, "demander", lambda *a, **k: vu.update(k) or ({"reponse": "Re-bonjour."}, {}))
+    conversation.repondre_conversation("re", HISTORIQUE)
+    assert len(vu["historique"]) == 4
+
+
+def test_une_demande_d_adresse_est_une_question_d_orbi_pas_un_verdict():
+    class SansAdresse(AgentEnDirect):
+        def repondre(self, question):
+            return {"verdict_type": "impossible à dire", "reponse": "Pour vous répondre, il me faut l'adresse exacte du terrain.",
+                    "regles": [], "faits": None, "secondes": 5.1}
+    evts = list(repondre_en_direct("Puis-je construire une piscine ?", fabrique=SansAdresse))
+    assert evts == [("message", {"texte": "Pour vous répondre, il me faut l'adresse exacte du terrain.", "duree_s": 5.1})]
+
+
+def test_la_relance_part_a_l_agent_avec_le_lieu(monkeypatch):
+    vu = []
+
+    class Note(AgentEnDirect):
+        def repondre(self, question):
+            vu.append(question)
+            return {"verdict_type": "oui", "reponse": "Oui.", "secondes": 1.0}
+    list(repondre_en_direct("Et pour une piscine de 30 m² ?", fabrique=Note, historique=HISTORIQUE))
+    assert vu == ["Et pour une piscine de 30 m² ? (au 15 Avenue de la Marne 64200 Biarritz)"]
+
+
+def test_le_serveur_transmet_l_historique(client):
+    app, c = client([("reponse", REPONSE)])
+    r = c.post("/api/question", json={"question": "Et pour une piscine ?", "historique": HISTORIQUE})
+    assert r.status_code == 200
+    assert c.post("/api/question", json={"question": "abc", "historique": [{"question": "x"}] * 13}).status_code == 422

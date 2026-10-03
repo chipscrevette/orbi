@@ -24,6 +24,7 @@ import time
 from datetime import datetime
 
 from orbi.modele import cerveau
+from orbi.domaine import terrain
 from orbi.domaine.demarche import demarche
 from orbi.reglement.donnees import RACINE, article, chapitre, cite_bien, existe, norme, page_citation, propre, raccorder, recaler
 from orbi.outils.geo import faits as outils_faits
@@ -282,6 +283,11 @@ class Agent:
                 texte += f" Pour la démarche, en revanche : {dem['type']} ({dem['pourquoi']})."
             return self.fin(self.sans_ia("hors périmètre", texte, dem=dem, faits=f))
 
+        # aucun projet sur un terrain trouvé (« que faut-il savoir sur cette adresse ? ») : pas de verdict, la fiche du
+        # terrain. Une question d'explication (« comment savoir si la maison est protégée ? », V19, V23) garde sa réponse.
+        if projet == "aucun" and sujet != "explication":
+            return self.fiche_du_terrain(f, zone, chap)
+
         # ---------------------------------------------------------- les articles à lire
         refs = [r if r.startswith("DG") else f"{chap} {r}" for r in RECETTES.get(projet, RECETTES["aucun"])]
         if chap in RESTRICTIFS:
@@ -321,6 +327,34 @@ class Agent:
         if v:
             self.noter("verrou de zone", **v)
         return self.conclure(question, tri, f, dem, chiffres, passages, v, sujet, projet, zone)
+
+    def fiche_du_terrain(self, f, zone, chap):
+        """Ce que le PLU fixe sur ce terrain, thème par thème, une phrase exacte du règlement pour chacun (domaine/terrain.py)."""
+        regles = []
+        for num, _, requete in terrain.THEMES:
+            ref = f"{chap} {num}"
+            if not existe(ref):
+                continue
+            a = article(ref)
+            texte = propre(a["texte"])
+            pages = a["pages"]
+            if len(texte) > 2500:
+                trouves = self.recherche.chercher([requete], [chap], k=1, refs=[ref])
+                if trouves:
+                    texte, pages = trouves[0]["texte"], trouves[0]["pages"]
+            citation = terrain.extrait(texte)
+            if citation:
+                regles.append({"article": ref, "citation": citation, "page": pages[0] if pages else None, "verifiee": True})
+        chiffres = []
+        s_par = (f.get("parcelle") or {}).get("surface_m2")
+        if zone in EMPRISE and s_par:
+            chiffres.append(f"emprise au sol maximale : {EMPRISE[zone]} % de {nb(s_par)} m², soit "
+                            f"{nb(round(EMPRISE[zone] * s_par / 100, 1))} m² pour l'ensemble des constructions")
+        self.noter("fiche du terrain", articles=[r["article"] for r in regles])
+        res = self.sans_ia("information", terrain.composer(f, zone, chiffres, len(regles)), faits=f,
+                           verifier=terrain.a_retenir(f))
+        res["regles"] = regles
+        return self.fin(res)
 
     def corriger_tri(self, question, tri):
         """Un point d'entrée : une variante de l'agent peut corriger ce que le tri a lu. L'agent historique ne change rien."""
