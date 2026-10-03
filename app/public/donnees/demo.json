@@ -53,7 +53,7 @@
   ],
   "reponse": {
    "verdict": "oui sous conditions",
-   "texte": "Oui, sous conditions. Emprise au sol maximale de 50% de la parcelle (UH 9) — la question ne le dit pas. Le projet ne doit pas porter atteinte au caractère ou à l'intérêt des lieux avoisinants, aux sites, aux paysages ou aux perspectives monumentales (DG A-I) — la question ne le dit…. Démarche : permis de construire (construction neuve d'habitation), délai d'instruction : 2 mois en principe, davantage en site patrimonial (avis de l'ABF).",
+   "texte": "Oui, sous conditions. Emprise au sol maximale de 50% de la parcelle (UH 9) : la question ne le dit pas. Le projet ne doit pas porter atteinte au caractère ou à l'intérêt des lieux avoisinants, aux sites, aux paysages ou aux perspectives monumentales (DG A-I) : la question ne le dit… Démarche : permis de construire (construction neuve d'habitation), délai d'instruction : 2 mois en principe, davantage en site patrimonial (avis de l'ABF).",
    "regles": [
     {
      "article": "UH 10",
@@ -145,7 +145,7 @@
   ],
   "reponse": {
    "verdict": "oui sous conditions",
-   "texte": "Oui, sous conditions. Emprise au sol maximale de 60% de l’unité foncière (UD 9) — Terrain de 2141 m², extension de 30 m², maison existante de 125 m². Implantation des constructions sur les limites séparatives ou à au moins 3 mètres de celles-ci (UD 7) — La question ne dit pas la distance de l’extension aux limites séparatives. Pour une extension d’un bâtiment existant, la hauteur de la construction initiale détermine celle à ne pas dépasser pour l’extension (UD 10) — La question ne dit pas la hauteur de…. Démarche : permis de construire + architecte (155 m² après travaux : au-delà de 150 m²), délai d'instruction : 2 mois en principe.",
+   "texte": "Oui, sous conditions. Emprise au sol maximale de 60% de l’unité foncière (UD 9) : Terrain de 2141 m², extension de 30 m², maison existante de 125 m². Implantation des constructions sur les limites séparatives ou à au moins 3 mètres de celles-ci (UD 7) : La question ne dit pas la distance de l’extension aux limites séparatives. Pour une extension d’un bâtiment existant, la hauteur de la construction initiale détermine celle à ne pas dépasser pour l’extension (UD 10) : La question ne dit pas la hauteur de… Démarche : permis de construire + architecte (155 m² après travaux : au-delà de 150 m²), délai d'instruction : 2 mois en principe.",
    "regles": [
     {
      "article": "UD 9",
@@ -250,7 +250,7 @@
   ],
   "reponse": {
    "verdict": "non",
-   "texte": "Non, ce projet n'est pas possible tel que vous le décrivez. Abris de jardin ou de piscine à 9 m² d'emprise au sol maximum (UD 2) — Votre abri de jardin a une surface créée de 10 m².",
+   "texte": "Non, ce projet n'est pas possible tel que vous le décrivez. Abris de jardin ou de piscine à 9 m² d'emprise au sol maximum (UD 2) : Votre abri de jardin a une surface créée de 10 m².",
    "regles": [
     {
      "article": "UD 7",
@@ -346,7 +346,7 @@
   ],
   "reponse": {
    "verdict": "non",
-   "texte": "Non, ce projet n'est pas possible tel que vous le décrivez. Interdire le grillage non doublé d'une haie et les panneaux en béton, plastique ou clins de bois (UH 11) — le projet est un grillage rigide vert de 1,80 m sans haie.",
+   "texte": "Non, ce projet n'est pas possible tel que vous le décrivez. Interdire le grillage non doublé d'une haie et les panneaux en béton, plastique ou clins de bois (UH 11) : le projet est un grillage rigide vert de 1,80 m sans haie.",
    "regles": [
     {
      "article": "UH 11",
@@ -512,7 +512,7 @@
   ],
   "reponse": {
    "verdict": "oui sous conditions",
-   "texte": "Oui, sous conditions. Emprise au sol maximale de 0,10 ha (10 000 m²) en secteur Nh (N 9) — l'abri de jardin a une surface de 20 m², donc une emprise de 20 m², inférieure à 10 000 m². Démarche : déclaration préalable (de 5 à 20 m² ; en site patrimonial, même sous 5 m²), délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial).",
+   "texte": "Oui, sous conditions. Emprise au sol maximale de 0,10 ha (10 000 m²) en secteur Nh (N 9) : l'abri de jardin a une surface de 20 m², donc une emprise de 20 m², inférieure à 10 000 m². Démarche : déclaration préalable (de 5 à 20 m² ; en site patrimonial, même sous 5 m²), délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial).",
    "regles": [
     {
      "article": "N 2",
@@ -683,7 +683,7 @@
   ],
   "reponse": {
    "verdict": "oui sous conditions",
-   "texte": "Oui, sous conditions. Type de clôture admis selon l'aspect du quartier et des clôtures dominantes (UB 11) — votre clôture est un mur bahut surmonté d'une grille, un type admis. Démarche : déclaration préalable (clôture en site patrimonial remarquable), délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial).",
+   "texte": "Oui, sous conditions. Type de clôture admis selon l'aspect du quartier et des clôtures dominantes (UB 11) : votre clôture est un mur bahut surmonté d'une grille, un type admis. Démarche : déclaration préalable (clôture en site patrimonial remarquable), délai d'instruction : 2 mois (1 mois, plus 1 pour l'avis de l'ABF en site patrimonial).",
    "regles": [
     {
      "article": "UB 11",

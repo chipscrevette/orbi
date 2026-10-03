@@ -282,7 +282,7 @@ def test_la_conversation_est_ecrite_par_le_modele_avec_la_voix_d_orbi(monkeypatc
     texte, secondes = conversation.repondre_conversation("coucou")
     assert texte == "Bonjour ! Donnez-moi une adresse à Biarritz." and secondes >= 0
     systeme, utilisateur, k = appels[0]
-    assert "Tu es Orbi" in systeme and "N'invente aucune règle" in systeme and utilisateur == "coucou"
+    assert "Tu es Orbi" in systeme and "n'invente aucune règle" in systeme and "« coucou »" in utilisateur
     assert k["effort"] == "low", "une réponse de conversation doit rester rapide"
 
 
@@ -305,3 +305,32 @@ def test_un_coucou_donne_un_message_et_pas_une_analyse(monkeypatch):
     assert [n for n, _ in evts] == ["etape", "message"]
     assert evts[0][1]["id"] == "conversation" and evts[1][1]["texte"] == "Bonjour !"
     assert fini.is_set()
+
+
+# ------------------------------------------------------------------------------------------------ la voix d'Orbi
+@pytest.mark.parametrize("brut, attendu", [
+    ("Emprise de 50 % (UH 9) — la question ne le dit pas.", "Emprise de 50 % (UH 9) : la question ne le dit pas."),
+    ("Abri—possible", "Abri : possible"), ("fin — .", "fin."), ("sans tiret", "sans tiret"), ("", ""), (None, None),
+], ids=["au milieu", "collé", "avant un point", "rien à faire", "vide", "absent"])
+def test_orbi_n_ecrit_jamais_de_tiret_cadratin(brut, attendu):
+    assert conversation.sans_cadratin(brut) == attendu
+
+
+def test_la_reponse_affichee_est_sans_cadratin_mais_les_citations_restent_mot_pour_mot():
+    citation = "Les clôtures — sur rue — ne peuvent excéder 1,50 m."
+    r = reponse_depuis_resultat({"reponse": "Oui, sous conditions. Hauteur (UD 11) — la question ne le dit pas.",
+                                 "a_verifier": ["la hauteur — en mètres"], "regles": [{"article": "UD 11", "citation": citation}],
+                                 "demarche": {"type": "déclaration préalable", "pourquoi": "clôture — sur rue", "delai": "1 mois"}})
+    assert "—" not in r["texte"] + "".join(r["a_verifier"]) + r["demarche"]["pourquoi"]
+    assert r["regles"][0]["citation"] == citation
+
+
+def test_orbi_a_un_caractere_et_ne_dit_pas_bonjour_a_chaque_fois():
+    s = conversation.SYSTEME
+    assert "Ton caractère" in s and "ne commence pas par « Bonjour »" in s and "tiret cadratin" in s
+    assert not conversation.SECOURS.startswith("Bonjour")
+
+
+def test_le_cadratin_ecrit_par_le_modele_est_retire(monkeypatch):
+    monkeypatch.setattr(cerveau, "demander", lambda *a, **k: ({"reponse": "Une brique — ça bâtit."}, {}))
+    assert conversation.repondre_conversation("ça va ?")[0] == "Une brique : ça bâtit."

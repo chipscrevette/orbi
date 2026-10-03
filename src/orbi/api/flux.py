@@ -9,7 +9,7 @@ import queue
 import threading
 
 from orbi.agent.grille import AgentGrille
-from orbi.api.conversation import est_conversation, repondre_conversation
+from orbi.api.conversation import est_conversation, repondre_conversation, sans_cadratin
 
 BATTEMENT = 10  # secondes sans événement avant un battement de cœur (« : … ») : la connexion reste ouverte
 _FIN = object()
@@ -34,9 +34,12 @@ def lieu_depuis_faits(faits, zone=None):
 
 def reponse_depuis_resultat(res):
     """La réponse telle que l'application l'affiche : verdict, texte, règles citées, points à vérifier, démarche."""
-    return {"verdict": res.get("verdict_type"), "texte": res.get("reponse"),
+    dem = res.get("demarche")
+    if isinstance(dem, dict):
+        dem = {**dem, **{k: sans_cadratin(dem[k]) for k in ("pourquoi", "delai") if isinstance(dem.get(k), str)}}
+    return {"verdict": res.get("verdict_type"), "texte": sans_cadratin(res.get("reponse")),
             "regles": [{k: r.get(k) for k in ("article", "citation", "page", "verifiee")} for r in res.get("regles") or []],
-            "a_verifier": list(res.get("a_verifier") or []), "demarche": res.get("demarche"), "zone": res.get("zone"),
+            "a_verifier": [sans_cadratin(x) for x in res.get("a_verifier") or []], "demarche": dem, "zone": res.get("zone"),
             "duree_s": res.get("secondes"), "demo": False}
 
 
