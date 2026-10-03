@@ -109,7 +109,8 @@ for x in (2.3, 10.85, 14.65):  # souffles avant chaque changement de scène
 for k, n in enumerate((60, 64, 67, 72, 76)):  # la cloche finale
     place(sfx, ton(note(n), 2.6, (1, 0.3, 0.1)) * env(int(2.6 * SR), 0.01, 1.0), 15.4 + k * 0.03, 0.035)
 
-mix = musique + sfx
+# la musique accompagne, les bruitages racontent : la musique 9 dB plus bas, les bruitages devant
+mix = musique * 0.35 + sfx * 1.5
 mix *= np.minimum(1, t / 0.05) * np.minimum(1, (DUREE - t) / 1.2)
 mix *= 0.7 / np.max(np.abs(mix))  # marge : loudnorm fixe le volume final
 stereo = np.stack([mix, np.roll(mix, 220) * 0.98], axis=1)
